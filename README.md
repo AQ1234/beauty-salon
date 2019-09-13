@@ -7,5 +7,9 @@ In this project I'm going to try make a new website decidated to beauty salon. B
 
 
 One to one
+<<<<<<< HEAD
 
 three to three
+=======
+Two to Two
+>>>>>>> 69d08a4bd9fd8ac6ec5597a2777fc6ad6a708e92
