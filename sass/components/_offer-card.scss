@@ -60,15 +60,13 @@
     &__picture {
         background-size: cover;
         height: 18rem;
-        background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);    
+        background-blend-mode: screen;   
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         
         &--1 {
             
-            background-image: url(./resources/img/offers-images/massageimage.jpg);
+            background-image: url(../img/offers-images/massageimage.jpg);
         }
 
         &--2 {

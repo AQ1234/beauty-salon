@@ -220,12 +220,10 @@ body {
     background-size: cover;
     height: 18rem;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: url(../offers-images/alan-caishan-cU53ZFBr3lk-unsplash.jpg); }
+      background-image: url(../img/offers-images/massageimage.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(resources/img/offers-images/nat-5.jpg); }
     .card__picture--3 {

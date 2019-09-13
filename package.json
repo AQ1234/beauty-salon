@@ -8,7 +8,7 @@
     "devserver:sass": "live-server",
     "start": "npm-run-all --parallel devserver:sass watch:sass",
     "compile:sass": "node-sass sass/main.scss resources/css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' resources/css/style.comp.css -o resources/css/style.prefix.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' resources/css/style.comp.css -o resources/css/style.prefix.css",
     "compress:css": "node-sass resources/css/style.prefix.css resources/css/style.min.css --output-style compressed",
     "build": "npm-run-all compile:sass prefix:css compress:css"
   },
