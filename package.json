@@ -4,7 +4,13 @@
   "description": "Salon Urody",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss resources/css/style.css"
+    "watch:sass": "node-sass sass/main.scss resources/css/style.css -w",
+    "devserver:sass": "live-server",
+    "start": "npm-run-all --parallel devserver:sass watch:sass",
+    "compile:sass": "node-sass sass/main.scss resources/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' resources/css/style.comp.css -o resources/css/style.prefix.css",
+    "compress:css": "node-sass resources/css/style.prefix.css resources/css/style.min.css --output-style compressed",
+    "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "keywords": [
     "salon",
@@ -13,7 +19,12 @@
   ],
   "author": "AQ",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^4.12.0"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
   }
 }
