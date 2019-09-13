@@ -37,11 +37,23 @@
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $gold, $color-white);
+            }
+
+            &-4 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+            }
+
+            &-5 {
+                background-image: linear-gradient(to right bottom, $gold, $color-white);
+            }
+
+            &-6 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
             }
         }
     }
@@ -66,17 +78,32 @@
         
         &--1 {
             
-            background-image: url(../img/offers-images/massageimage.jpg);
+            background-image: linear-gradient(to right bottom, $gold, $color-white), url(../img/offers-images/massageimage.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-            url(resources/img/offers-images/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-white, $second_gold), 
+            url(../img/offers-images/makeupimage.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, $gold, $color-white), 
+            url(../img/offers-images/laser-treatments.jpg);
+        }
+
+        &--4 {
+            
+            background-image: linear-gradient(to right bottom, $color-white, $second_gold), url(../img/offers-images/Cosmetic-spa.jpg);
+        }
+
+        &--5 {
+            background-image: linear-gradient(to right bottom, $color-white, $second_gold), 
+            url(../img/offers-images/depilation.jpg);
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom, $color-white, $second_gold), 
+            url(../img/offers-images/massageimage-2.jpg);
         }
     }
 
@@ -112,8 +139,27 @@
 
         &--3 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .85), 
-            rgba($color-tertiary-dark, .85));
+            rgba(#EAAC75, .85), 
+            rgba($gold, .85));
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, 
+            rgba(rgb(236, 178, 127), .85), 
+            rgba($gold, .85));
+        }
+
+        &--5 {
+            
+            background-image: linear-gradient(to right bottom, 
+            rgba(#EAAC75, .85), 
+            rgba($gold, .85));
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom, 
+            rgba(rgb(247, 193, 146), .85), 
+            rgba($gold, .85));
         }
     }
 
