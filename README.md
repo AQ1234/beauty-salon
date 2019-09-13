@@ -6,4 +6,4 @@ In this project I'm going to try make a new website decidated to beauty salon. B
 `msmikesm` it was your idea!
 
 
-One
+One to one
