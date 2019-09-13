@@ -203,7 +203,7 @@ body {
     border-radius: 55px; }
     .card__side--front {
       background-color: #e8be63;
-      background-image: url(resources/img/offers-images/alan-caishan-cU53ZFBr3lk-unsplash.jpg); }
+      background-image: url(./img/offers-images/alan-caishan-cU53ZFBr3lk-unsplash.jpg); }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
