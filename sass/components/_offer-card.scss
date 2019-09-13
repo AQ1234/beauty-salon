@@ -7,7 +7,7 @@
     height: 40rem;
 
     &__side {
-        height: 40rem;
+        height: 100%;
         transition: all 1.1s ease;
         -webkit-transition: all 1.1s ease;
         -moz-transition: all 1.1s ease;
@@ -25,8 +25,9 @@
 
         &--front {
 
-            background-color: $second_gold;
-            background-image: url(./img/offers-images/alan-caishan-cU53ZFBr3lk-unsplash.jpg);
+            background-image: url(../img/offers-images/massageimage.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         &--back {
@@ -45,7 +46,6 @@
             }
         }
     }
-  
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
@@ -58,26 +58,12 @@
 
     // FRONT SIDE STYLING
     &__picture {
-        background-size: cover;
-        height: 18rem;
-        background-blend-mode: screen;   
+        background-size: contain;
+        height: 100%;
+        background-blend-mode: screen;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        
-        &--1 {
-            
-            background-image: url(../img/offers-images/massageimage.jpg);
-        }
 
-        &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-            url(resources/img/offers-images/nat-5.jpg);
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../img/nat-7.jpg);
-        }
     }
 
     &__heading {
@@ -89,7 +75,6 @@
         position: absolute;
         top: 11rem;
         width: 100%;
-    
     }
 
     &__heading-span {
@@ -98,21 +83,20 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, 
-            rgba(#EAAC75, .85), 
+            background-image: linear-gradient(to right bottom,
+            rgba(#EAAC75, .85),
             rgba($gold, .85));
         }
 
         &--2 {
-            
-            background-image: linear-gradient(to right bottom, 
-            rgba(rgb(236, 178, 127), .85), 
+            background-image: linear-gradient(to right bottom,
+            rgba(rgb(236, 178, 127), .85),
             rgba($gold, .85));
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .85), 
+            background-image: linear-gradient(to right bottom,
+            rgba($color-tertiary-light, .85),
             rgba($color-tertiary-dark, .85));
         }
     }
@@ -142,7 +126,6 @@
         }
     }
 
-    
 
     // FRONT SIDE STYLING
     &__cta {
