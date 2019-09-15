@@ -1,6 +1,6 @@
-@import "themes/functions";
-@import "themes/mixins";
-@import "themes/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
 
 @import "base/animations";
 @import "base/base";
@@ -12,9 +12,9 @@
 @import "components/composition";
 @import "components/feature-box";
 
-
-
 @import "layout/header";
 
 @import "pages/home";
+@import "pages/offer";
+
 
