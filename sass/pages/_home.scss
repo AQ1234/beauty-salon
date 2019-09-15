@@ -12,7 +12,7 @@
     position: relative;
     width: min-content;
     height: min-content;
-    top: 30%;
+    top: 10%;
     left: 10%;
 
     &__logo {
@@ -24,13 +24,15 @@
     }
 
     &__nav {
+          
         margin-top: 2rem;
         text-align: center;
-
+        width: 120rem;
         &--list {
+            text-align: right;
             list-style: none;
             cursor: pointer;
-
+            
             li {
                 display: inline-block;
                 margin-bottom: 2rem;
@@ -39,7 +41,7 @@
             a {
                 margin-right: 4rem;
                 text-decoration: none;
-                font-size: 1.6rem;
+                font-size: 1.7rem;
                 transition: all .2s;
 
                 &,
@@ -55,4 +57,17 @@
         }
     }
 
+    .hero__primary {
+        font-size: 5rem;
+        text-align: center;
+        color: #ad9b6d;
+        margin-bottom: 1.5rem;
+        background-color: beige; }
+      
+      .hero__tertiary {
+        text-align: center;
+        color: #302c24;
+        margin-bottom: 1rem; }
+
 }
+
