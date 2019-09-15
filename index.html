@@ -1,214 +1,233 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="resources/css/style.css">
-    <title>Salon Urody</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="resources/css/style.css">
+  <title>Salon Urody</title>
 </head>
 
 <body>
-   <header class="header">
-        <h1 class="header__primary">VinUroda</h1>
-        <h3 class="header__tertiary">klinika dermokosmetyczna</h3>
-    </header>   
 
-    <section class="section-offer" id="section-offer">
-      <div class="u-center-text">
-        <h2 class="section-offer__header">
-          Oferta zabiegów
-        </h2>
+  <header class="main-header">
+      <div class="header--logo">
+        <img src="/resources/img/villalogo.png" alt="Villauroda">
+      </div>
+      <nav class="header__main-nav">
+        <ul class="nav-list">
+          <li><a href="#">Strona Główna</a></li>
+          <li><a href="#">Zabiegi</a></li>
+          <li><a href="#">Cennik</a></li>
+          <li><a href="#">Pakiety</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+
+  </header>
+  <h1 class="header__primary">VinUroda</h1>
+      <h3 class="header__tertiary">klinika dermokosmetyczna</h3>
+   
+
+  <section class="section-offer" id="section-offer">
+    <div class="u-center-text">
+      <h2 class="section-offer__header">
+        Oferta zabiegów
+      </h2>
+    </div>
+
+    <div class="offer-flex-container offer-flex-container--1">
+      <div class="flex-item card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--1">
+
+          </div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--1">Zabiegi na ciało</span>
+          </h4>
+
+        </div>
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <div class="card__details card__details--back">
+              <ul>
+                <li>Gold & Pearls Ceremony</li>
+                <li>Zabieg Cynamonowy</li>
+                <li>Zabieg Owocowy</li>
+                <li>Oraz inne</li>
+              </ul>
+            </div>
+            <div class="card__price-box">
+              <p class="card__price-only">Tylko</p>
+              <p class="card__price-value">100zł</p>
+            </div>
+            <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="flex-item card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--2">
+
+          </div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--2">Zabiegi pielęgnacyjne</span>
+          </h4>
+
+        </div>
+        <div class="card__side card__side--back card__side--back-2">
+          <div class="card__cta">
+            <div class="card__details card__details--back">
+              <ul>
+                <li>Intensywny - przeciwstarzeniowy rytułał</li>
+                <li>Regenerująco-odżywczy zabieg dla skóry suchej i wrażliwej</li>
+                <li>intensywny rytutłał na twarz i ciało</li>
+                <li>Wygładzanie i wypełnianie zmarszczek</li>
+                <li>Wygładzanie i wypełnianie zmarszczek</li>
+              </ul>
+            </div>
+            <div class="card__price-box">
+              <p class="card__price-only">Tylko</p>
+              <p class="card__price-value">200zł</p>
+            </div>
+            <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="flex-container flex-container--1">
-        <div class="flex-item card">
-          <div class="card__side card__side--front">
-              <div class="card__picture card__picture--1">
-                
-                </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--1">Zabiegi na ciało</span>
-            </h4>
-          
+      <div class="flex-item card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--3">
+
           </div>
-          <div class="card__side card__side--back card__side--back-1">
-            <div class="card__cta">
-                <div class="card__details card__details--back">
-                    <ul>
-                      <li>Gold & Pearls Ceremony</li>
-                      <li>Zabieg Cynamonowy</li>
-                      <li>Zabieg Owocowy</li>
-                      <li>Oraz inne</li>
-                    </ul>
-                  </div>
-              <div class="card__price-box">
-                <p class="card__price-only">Tylko</p>
-                <p class="card__price-value">100zł</p>
-              </div>
-              <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--3">Zabiegi laserowe</span>
+          </h4>
+
+        </div>
+        <div class="card__side card__side--back card__side--back-3">
+          <div class="card__cta">
+            <div class="card__details card__details--back">
+              <ul>
+                <li>
+                  <string>Laser Bio-Light</string>
+                </li>
+                <li>Światło niebieskie</li>
+                <li>Światło zielone</li>
+                <li>Światło żółte</li>
+                <li>Światło czerwone</li>
+                <li>Światło pomarańczowe</li>
+              </ul>
             </div>
+            <div class="card__price-box">
+              <p class="card__price-only">Tylko</p>
+              <p class="card__price-value">300zł</p>
+            </div>
+            <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
           </div>
 
         </div>
-        <div class="flex-item card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">
-                
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">Zabiegi pielęgnacyjne</span>
-              </h4>
-              
-            </div>
-            <div class="card__side card__side--back card__side--back-2">
-              <div class="card__cta">
-                  <div class="card__details card__details--back">
-                    <ul>
-                      <li>Intensywny - przeciwstarzeniowy rytułał</li>
-                      <li>Regenerująco-odżywczy zabieg dla skóry suchej i wrażliwej</li>
-                      <li>intensywny rytutłał na twarz i ciało</li>
-                      <li>Wygładzanie i wypełnianie zmarszczek</li>
-                      <li>Wygładzanie i wypełnianie zmarszczek</li>
-                    </ul>
-                    </div>
-                <div class="card__price-box">
-                  <p class="card__price-only">Tylko</p>
-                  <p class="card__price-value">200zł</p>
-                </div>
-                <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
-              </div>
 
-            </div>
-
-          </div>
-
-          <div class="flex-item card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture--3">
-                  
-                </div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--3">Zabiegi laserowe</span>
-                </h4>
-                
-              </div>
-              <div class="card__side card__side--back card__side--back-3">
-                <div class="card__cta">
-                    <div class="card__details card__details--back">
-                      <ul>
-                        <li><string>Laser Bio-Light</string></li>
-                        <li>Światło niebieskie</li>
-                        <li>Światło zielone</li>
-                        <li>Światło żółte</li>
-                        <li>Światło czerwone</li>
-                        <li>Światło pomarańczowe</li>
-                      </ul>
-                      </div>
-                  <div class="card__price-box">
-                    <p class="card__price-only">Tylko</p>
-                    <p class="card__price-value">300zł</p>
-                  </div>
-                  <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
-                </div>
-    
-              </div>
-    
-            </div>
       </div>
+    </div>
 
-      <div class="flex-container flex-container--2">
-        <div class="flex-item card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--4">
-              &nbsp;
-            </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--4">kosmetyka lecznicza</span>
-            </h4>
-           
+    <div class="offer-flex-container offer-flex-container--2">
+      <div class="flex-item card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--4">
+            &nbsp;
           </div>
-          <div class="card__side card__side--back card__side--back-4">
-            <div class="card__cta">
-                <div class="card__details card__details--back">
-                  <ul>
-                    <li><strong>Zabiegi stosowane w kosmetyce leczniczej:</strong></li>
-                    <li>mechaniczne oczyszczanie skóry</li>
-                    <li>eksfoliacje kwasowe</li>
-                    <li>peelingi medyczne</li>
-                    <li>pelling kawitacyjny</li>
-                  </ul>
-                </div>
-              <div class="card__price-box">
-                <p class="card__price-only">Tylko</p>
-                <p class="card__price-value">$400</p>
-              </div>
-              <a href="#popup" class="btn btn--gold">Zobacz więcej</a>
-            </div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--4">kosmetyka lecznicza</span>
+          </h4>
 
+        </div>
+        <div class="card__side card__side--back card__side--back-4">
+          <div class="card__cta">
+            <div class="card__details card__details--back">
+              <ul>
+                <li><strong>Zabiegi stosowane w kosmetyce leczniczej:</strong></li>
+                <li>mechaniczne oczyszczanie skóry</li>
+                <li>eksfoliacje kwasowe</li>
+                <li>peelingi medyczne</li>
+                <li>pelling kawitacyjny</li>
+              </ul>
+            </div>
+            <div class="card__price-box">
+              <p class="card__price-only">Tylko</p>
+              <p class="card__price-value">$400</p>
+            </div>
+            <a href="#popup" class="btn btn--gold">Zobacz więcej</a>
           </div>
 
         </div>
-        <div class="flex-item card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--5">
-              &nbsp;
-            </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--5">Depilacja</span>
-            </h4>
-            </div>
-          <div class="card__side card__side--back card__side--back-5">
-            <div class="card__cta">
-                <div class="card__details card__details--back">
-                  <ul>
-                    <li><strong>To zabieg całkowicie bezpieczny</strong>, bezinwazyjny, dający świetny efekt gładkiej skóry. Kosmetyczki pracujące w białostockiej dermoklinice Villa Uroda wykonują zabieg depilacji woskiem z najwyższą starannością i dbałością o komfort i dobre samopoczucie Klientów.</li>
-                  </ul>
-                      </div>
-              <div class="card__price-box">
-                <p class="card__price-only">Tylko</p>
-                <p class="card__price-value">500zł</p>
-              </div>
-              <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
-            </div>
 
-          </div>
-
-        </div>
-        <div class="flex-item card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--6">
-              &nbsp;
-            </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--6">Masaże</span>
-            </h4>
-          </div>
-          <div class="card__side card__side--back card__side--back-6">
-            <div class="card__cta">
-                <div class="card__details card__details--back">
-                  <ul>
-                    <li>Masaż klasyczny</li>
-                    <li>Masaż relaksacyjny</li>
-                    <li>Masaż gorącą świecą</li>
-                    <li>Masaż gorącymi kamieniami</li>
-                  </ul>
-                      </div>
-              <div class="card__price-box">
-                <p class="card__price-only"Tylko</p>
-                <p class="card__price-value">600zl</p>
-              </div>
-              <a href="#popup" class="btn btn--gold">Zobacz więcej</a>
-            </div>
-
-          </div>
-
-        </div>
       </div>
+      <div class="flex-item card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--5">
+            &nbsp;
+          </div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--5">Depilacja</span>
+          </h4>
+        </div>
+        <div class="card__side card__side--back card__side--back-5">
+          <div class="card__cta">
+            <div class="card__details card__details--back">
+              <ul>
+                <li><strong>To zabieg całkowicie bezpieczny</strong>, bezinwazyjny, dający świetny efekt gładkiej skóry.
+                  Kosmetyczki pracujące w białostockiej dermoklinice Villa Uroda wykonują zabieg depilacji woskiem z
+                  najwyższą starannością i dbałością o komfort i dobre samopoczucie Klientów.</li>
+              </ul>
+            </div>
+            <div class="card__price-box">
+              <p class="card__price-only">Tylko</p>
+              <p class="card__price-value">500zł</p>
+            </div>
+            <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
+          </div>
 
-    </section>
-    <!--Section for offers from 7-12
+        </div>
+
+      </div>
+      <div class="flex-item card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--6">
+            &nbsp;
+          </div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--6">Masaże</span>
+          </h4>
+        </div>
+        <div class="card__side card__side--back card__side--back-6">
+          <div class="card__cta">
+            <div class="card__details card__details--back">
+              <ul>
+                <li>Masaż klasyczny</li>
+                <li>Masaż relaksacyjny</li>
+                <li>Masaż gorącą świecą</li>
+                <li>Masaż gorącymi kamieniami</li>
+              </ul>
+            </div>
+            <div class="card__price-box">
+              <p class="card__price-only" Tylko</p> <p class="card__price-value">600zl</p>
+            </div>
+            <a href="#popup" class="btn btn--gold">Zobacz więcej</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!--Section for offers from 7-12
     <section class="section-offer__2" id="section-offer-2">
        
         <div class="flex-container flex-container--1">
@@ -411,6 +430,12 @@
         </div>
   
       </section>-->
-   
+
+<!-- </div> -->
+
+
+
+
 </body>
+
 </html>

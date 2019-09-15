@@ -1,49 +1,4 @@
 /*GRID*/
-/*@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-
-        transform: translateX(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}*/
 *,
 *::after,
 *::before {
@@ -62,13 +17,14 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 4.5rem; }
+  padding: 10.5rem; }
 
 .header__primary {
   font-size: 5rem;
   text-align: center;
   color: #ad9b6d;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  background-color: beige; }
 
 .header__tertiary {
   text-align: center;
@@ -86,7 +42,7 @@ body {
     height: 3px;
     background-color: #e8be63;
     content: "";
-    width: 23%;
+    width: 25%;
     margin: 0 auto;
     margin-top: .5rem; }
 
@@ -118,7 +74,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -126,13 +82,6 @@ body {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn--gold {
-  background-color: rgba(123, 69, 21, 0.493);
-  color: #302c24;
-  border: 1px solid #fff; }
-  .btn--gold::after {
-    background-color: #fff; }
 
 .btn::after {
   content: "";
@@ -150,36 +99,31 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-.btn-text:link, .btn-text:visited {
-  font-size: 1.8rem;
-  color: #55c57a;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #55c57a;
-  padding: 3px;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s; }
+.btn--gold {
+  background-color: rgba(123, 69, 21, 0.493);
+  color: #302c24;
+  border: 0.5px solid #fff; }
+  .btn--gold::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
-.btn-text:hover {
-  background-color: #55c57a;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-  -webkit-transform: translateY(-2px);
-  -moz-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
-  -o-transform: translateY(-2px); }
+.offer-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  align-content: center; }
 
-.btn-text:active {
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0); }
+.flex-item {
+  padding: 2% 2rem;
+  margin: 1rem 1.4rem;
+  height: 40rem;
+  text-align: center;
+  width: 25vw;
+  top: 50%; }
 
 .card {
   perspective: 150rem;
@@ -297,23 +241,43 @@ body {
     font-size: 5rem;
     font-weight: 100; }
 
-.flex-container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-align-content: center;
-  align-content: center; }
+/**
+ * Images a now responsive
+ */
+img {
+  max-width: 100%;
+  height: auto; }
 
-.flex-item {
-  padding: 2% 2rem;
-  margin: 1rem 1.4rem;
-  height: 40rem;
-  text-align: center;
-  width: 25vw;
-  top: 50%; }
+/**
+ * Limit the container in
+ * width for big screens
+ */
+header {
+  background-image: url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-width: 100%; }
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .main-header--logo {
+    position: relative;
+    height: 50vh;
+    left: 70%; }
+
+.header__main-nav ul {
+  position: absolute;
+  margin: 1em 0 .5em;
+  text-align: center; }
+  .header__main-nav ul li {
+    display: inline; }
+    .header__main-nav ul li a {
+      display: inline-block;
+      padding: .5em 1.5em; }
 
 .section-offer {
   min-height: 100vh;
