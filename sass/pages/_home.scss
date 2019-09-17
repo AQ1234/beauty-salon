@@ -1,6 +1,9 @@
 // Można było też zrobić HOME, HOME__BOX, HOME__BOX--logo itd...
 .home {
-    background-image: url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+
+
+    background: linear-gradient(to bottom, rgba(255,255,255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237,237,237,0.4) 12%, rgba(236,234,234,0.17) 7%, rgba(235,232,232,0.17) 100%),url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+    // background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(pexels-photo-814499-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,21 +30,38 @@
 .hero {
     position: relative;
     width: min-content;
+    width: 95%;
     height: min-content;
-    top: 30%;
-    left: 10%;
-
+    top: 5%;
+    left: 5%;
+    
+    &:after {
+        display: block;
+        height: .7px;
+        background-color: $gold;
+        content: "";
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        
+    }
+    
     &__logo {
         height: min-content;
-
+     display: inline-block;
+        
         img {
             height: 8rem;
         }
     }
 
     &__nav {
-        margin-top: 2rem;
-        text-align: center;
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin: 5rem 4rem;
+        
+       
 
         &--list {
             list-style: none;
@@ -55,7 +75,7 @@
             a {
                 margin-right: 4rem;
                 text-decoration: none;
-                font-size: 1.6rem;
+                font-size: 2rem;
                 transition: all .2s;
 
                 &,
@@ -65,7 +85,7 @@
                 }
 
                 &:hover {
-                    color: $gold-darker
+                    color: $color-grey-dark-2;
                 }
             }
         }

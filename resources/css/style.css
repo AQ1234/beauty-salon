@@ -215,7 +215,7 @@ body {
       font-weight: 100; }
 
 .home {
-  background-image: url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237, 237, 237, 0.4) 12%, rgba(236, 234, 234, 0.17) 7%, rgba(235, 232, 232, 0.17) 100%), url(../img/attractive-beautiful-beauty-638700-cut-3.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -235,16 +235,28 @@ body {
 .hero {
   position: relative;
   width: min-content;
+  width: 95%;
   height: min-content;
-  top: 30%;
-  left: 10%; }
+  top: 5%;
+  left: 5%; }
+  .hero:after {
+    display: block;
+    height: .7px;
+    background-color: #ad9b6d;
+    content: "";
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem; }
   .hero__logo {
-    height: min-content; }
+    height: min-content;
+    display: inline-block; }
     .hero__logo img {
       height: 8rem; }
   .hero__nav {
-    margin-top: 2rem;
-    text-align: center; }
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin: 5rem 4rem; }
     .hero__nav--list {
       list-style: none;
       cursor: pointer; }
@@ -254,12 +266,12 @@ body {
       .hero__nav--list a {
         margin-right: 4rem;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 2rem;
         transition: all .2s; }
         .hero__nav--list a, .hero__nav--list a:link, .hero__nav--list a:visited {
           color: #ad9b6d; }
         .hero__nav--list a:hover {
-          color: #88784d; }
+          color: #555; }
 
 .section-offer {
   min-height: 100vh;
