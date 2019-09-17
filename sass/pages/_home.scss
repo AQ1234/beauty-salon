@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    margin-bottom: 5rem;
 
     &__primary {
         font-size: 5rem;
@@ -16,6 +17,7 @@
         color: $gold;
         margin-bottom: 1.5rem;
         background-color: beige;
+      
         
         }
         
@@ -41,7 +43,7 @@
         background-color: $gold;
         content: "";
         width: 90%;
-        margin: 0 auto;
+        margin: 1% auto;
         margin-top: 2rem;
         
     }
@@ -60,8 +62,7 @@
         float: right;
         text-align: right;
         margin: 5rem 4rem;
-        
-       
+     
 
         &--list {
             list-style: none;
@@ -93,3 +94,45 @@
 
 }
 
+.down__nav {
+
+    margin: 77vh 0; //Powiedz czy taki sposób "przyklejenia" nav może być
+    background-color: rgba($gold, .75);
+    width:min-content;
+    width: 100%;
+    text-align: center;
+    height: 11rem;
+
+    &--list {
+
+        list-style: none;
+       
+
+        li {
+        
+            display: inline-block;
+            margin:0 9rem;
+            text-align: justify;
+            
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            transition: all .2s;
+
+            &,
+            &:link,
+            &:visited {
+                color: $color-grey-dark-2;
+            }
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+
+
+    }
+
+}

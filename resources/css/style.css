@@ -220,7 +220,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 5rem; }
   .home__primary {
     font-size: 5rem;
     text-align: center;
@@ -245,7 +246,7 @@ body {
     background-color: #ad9b6d;
     content: "";
     width: 90%;
-    margin: 0 auto;
+    margin: 1% auto;
     margin-top: 2rem; }
   .hero__logo {
     height: min-content;
@@ -272,6 +273,28 @@ body {
           color: #ad9b6d; }
         .hero__nav--list a:hover {
           color: #555; }
+
+.down__nav {
+  margin: 77vh 0;
+  background-color: rgba(173, 155, 109, 0.75);
+  width: min-content;
+  width: 100%;
+  text-align: center;
+  height: 11rem; }
+  .down__nav--list {
+    list-style: none; }
+    .down__nav--list li {
+      display: inline-block;
+      margin: 0 9rem;
+      text-align: justify; }
+    .down__nav--list a {
+      text-decoration: none;
+      font-size: 2rem;
+      transition: all .2s; }
+      .down__nav--list a, .down__nav--list a:link, .down__nav--list a:visited {
+        color: #555; }
+      .down__nav--list a:hover {
+        color: #fff; }
 
 .section-offer {
   min-height: 100vh;
