@@ -4,3 +4,21 @@
     padding: 1rem 0 1rem 0;
 
 }
+
+.offer--header {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $gold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    &:after {
+            display: block;
+            height: 3px;
+            background-color: $second_gold;
+            content: "";
+            width: 25%;
+            margin: 0 auto;
+            margin-top: .5rem; 
+    }
+}

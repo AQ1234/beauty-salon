@@ -6,13 +6,29 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+
+    &__primary {
+        font-size: 5rem;
+        text-align: center;
+        color: $gold;
+        margin-bottom: 1.5rem;
+        background-color: beige;
+        
+        }
+        
+        &__tertiary {
+            text-align: center;
+            color: $bronze-dark;
+            margin-bottom: 1rem;
+        }
+        
 }
 
 .hero {
     position: relative;
     width: min-content;
     height: min-content;
-    top: 10%;
+    top: 30%;
     left: 10%;
 
     &__logo {
@@ -24,15 +40,13 @@
     }
 
     &__nav {
-          
         margin-top: 2rem;
         text-align: center;
-        width: 120rem;
+
         &--list {
-            text-align: right;
             list-style: none;
             cursor: pointer;
-            
+
             li {
                 display: inline-block;
                 margin-bottom: 2rem;
@@ -41,7 +55,7 @@
             a {
                 margin-right: 4rem;
                 text-decoration: none;
-                font-size: 1.7rem;
+                font-size: 1.6rem;
                 transition: all .2s;
 
                 &,
@@ -56,18 +70,6 @@
             }
         }
     }
-
-    .hero__primary {
-        font-size: 5rem;
-        text-align: center;
-        color: #ad9b6d;
-        margin-bottom: 1.5rem;
-        background-color: beige; }
-      
-      .hero__tertiary {
-        text-align: center;
-        color: #302c24;
-        margin-bottom: 1rem; }
 
 }
 

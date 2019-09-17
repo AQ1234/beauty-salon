@@ -31,6 +31,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.offer__center-text {
+  text-align: center; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -77,7 +80,7 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.offer-flex-container {
+.offer__flex-container {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-around;
@@ -87,7 +90,7 @@ body {
   -webkit-align-content: center;
   align-content: center; }
 
-.flex--item {
+.offer__flex-item {
   padding: 2% 2rem;
   margin: 1rem 1.4rem;
   height: 40rem;
@@ -136,23 +139,23 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  .card__picture {
+  .card--picture {
     background-size: cover;
     height: 32rem;
     background-blend-mode: screen;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
-    .card__picture--1 {
+    .card--picture--1 {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/massageimage.jpg); }
-    .card__picture--2 {
+    .card--picture--2 {
       background-image: linear-gradient(to right bottom, black, #ad9b6d), url(../img/offers-images/makeupimage.jpg); }
-    .card__picture--3 {
+    .card--picture--3 {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/laser-treatments.jpg); }
-    .card__picture--4 {
+    .card--picture--4 {
       background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.4)), url(../img/offers-images/Cosmetic-spa.jpg); }
-    .card__picture--5 {
+    .card--picture--5 {
       background-image: linear-gradient(to right bottom, rgba(173, 155, 109, 0.9), rgba(255, 255, 255, 0.5)), url(../img/offers-images/depilation.jpg); }
-    .card__picture--6 {
+    .card--picture--6 {
       background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(173, 155, 109, 0.2)), url(../img/offers-images/massageimage-2.jpg); }
   .card__heading {
     font-size: 2.2rem;
@@ -163,21 +166,21 @@ body {
     position: absolute;
     top: 80%;
     width: 100%; }
-  .card__heading-span {
+  .card--heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--1 {
+    .card--heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card__heading-span--2 {
+    .card--heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card__heading-span--3 {
+    .card--heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card__heading-span--4 {
+    .card--heading-span--4 {
       background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card__heading-span--5 {
+    .card--heading-span--5 {
       background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card__heading-span--6 {
+    .card--heading-span--6 {
       background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85)); }
   .card__details {
     padding: 0 2rem; }
@@ -204,12 +207,12 @@ body {
     text-align: center;
     color: #fff;
     margin-bottom: 1rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 5rem;
-    font-weight: 100; }
+    .card__price-box--price {
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+    .card__price-box--price-value {
+      font-size: 5rem;
+      font-weight: 100; }
 
 .home {
   background-image: url(../img/attractive-beautiful-beauty-638700-cut-3.png);
@@ -218,12 +221,22 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%; }
+  .home__primary {
+    font-size: 5rem;
+    text-align: center;
+    color: #ad9b6d;
+    margin-bottom: 1.5rem;
+    background-color: beige; }
+  .home__tertiary {
+    text-align: center;
+    color: #302c24;
+    margin-bottom: 1rem; }
 
 .hero {
   position: relative;
   width: min-content;
   height: min-content;
-  top: 10%;
+  top: 30%;
   left: 10%; }
   .hero__logo {
     height: min-content; }
@@ -231,10 +244,8 @@ body {
       height: 8rem; }
   .hero__nav {
     margin-top: 2rem;
-    text-align: center;
-    width: 120rem; }
+    text-align: center; }
     .hero__nav--list {
-      text-align: right;
       list-style: none;
       cursor: pointer; }
       .hero__nav--list li {
@@ -243,23 +254,28 @@ body {
       .hero__nav--list a {
         margin-right: 4rem;
         text-decoration: none;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         transition: all .2s; }
         .hero__nav--list a, .hero__nav--list a:link, .hero__nav--list a:visited {
           color: #ad9b6d; }
         .hero__nav--list a:hover {
           color: #88784d; }
-  .hero .hero__primary {
-    font-size: 5rem;
-    text-align: center;
-    color: #ad9b6d;
-    margin-bottom: 1.5rem;
-    background-color: beige; }
-  .hero .hero__tertiary {
-    text-align: center;
-    color: #302c24;
-    margin-bottom: 1rem; }
 
 .section-offer {
   min-height: 100vh;
   padding: 1rem 0 1rem 0; }
+
+.offer--header {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ad9b6d;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+  .offer--header:after {
+    display: block;
+    height: 3px;
+    background-color: #e8be63;
+    content: "";
+    width: 25%;
+    margin: 0 auto;
+    margin-top: .5rem; }

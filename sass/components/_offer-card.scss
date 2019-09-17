@@ -1,4 +1,4 @@
-.offer-flex-container{
+.offer__flex-container{
     display:-webkit-flex;
     display:flex;
     -webkit-justify-content:space-around;
@@ -27,7 +27,7 @@
 
     }
 
-     .flex--item {
+     .offer__flex-item {
         padding: 2% 2rem;
         margin: 1rem 1.4rem;
         height: 40rem;
@@ -115,7 +115,7 @@
 
     // FRONT SIDE STYLING
 
-    &__picture {
+    &--picture {
         background-size: cover;
         height: 32rem;
         background-blend-mode: screen;
@@ -166,7 +166,7 @@
 
     }
 
-    &__heading-span {
+    &--heading-span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
@@ -241,17 +241,20 @@
         text-align: center;
         color: $color-white;
         margin-bottom: 1rem;
-
+       
+       
+        &--price {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        
+    
+        &--price-value {
+            font-size: 5rem;
+            font-weight: 100;
+    
+        }
     }
-
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
-
-    &__price-value {
-        font-size: 5rem;
-        font-weight: 100;
-
-    }
+   
+   
 }
