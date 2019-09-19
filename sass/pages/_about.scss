@@ -1,0 +1,45 @@
+.about {
+
+    height: 100vh;
+    font-size: 1.5rem;
+    margin: 10rem 0;
+    padding: 2rem 4rem;
+ 
+
+&__header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    color: $gold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    &:after {
+        display: block;
+        height: 3px;
+        background-color: $second_gold;
+        content: "";
+        width: 8%;
+        margin: 0 auto;
+        margin-top: .5rem; 
+}
+}
+    &__content {
+        text-align: justify;
+
+        &--header {
+            display: inline;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $bronze-dark;
+
+        }
+    }
+
+    &__picture {
+
+       width: 60rem;
+        float: right;
+
+    }
+}

@@ -2,7 +2,7 @@
 .home {
 
 
-    background: linear-gradient(to bottom, rgba(255,255,255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237,237,237,0.4) 12%, rgba(236,234,234,0.17) 7%, rgba(235,232,232,0.17) 100%),url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237,237,237,0.4) 12%, rgba(236,234,234,0.17) 7%, rgba(235,232,232,0.17) 100%),url(../img/attractive-beautiful-beauty-638700-cut-3.png);
     // background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(pexels-photo-814499-min.jpg);
     background-size: cover;
     background-position: center;
@@ -39,12 +39,12 @@
     
     &:after {
         display: block;
-        height: .7px;
+        height: .8px;
         background-color: $gold;
         content: "";
-        width: 90%;
-        margin: 1% auto;
-        margin-top: 2rem;
+        width: 94%;
+        margin: 2rem 0;
+        margin-top: 2.2rem;
         
     }
     
@@ -96,15 +96,13 @@
 
 .down__nav {
 
-    margin: 77vh 0; //Powiedz czy taki sposób "przyklejenia" nav może być
-    background-color: rgba($gold, .75);
+    margin: 77.5vh 0; //Powiedz czy taki sposób "przyklejenia" nav może być
+    background-color: rgba($gold, .35);
     width:min-content;
     width: 100%;
-    text-align: center;
-    height: 11rem;
 
     &--list {
-
+        text-align: center;
         list-style: none;
        
 
@@ -112,12 +110,12 @@
         
             display: inline-block;
             margin:0 9rem;
-            text-align: justify;
             
         }
 
         a {
             text-decoration: none;
+            padding: 2rem 0;
             font-size: 2rem;
             transition: all .2s;
 

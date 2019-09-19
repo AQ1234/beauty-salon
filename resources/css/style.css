@@ -14,7 +14,10 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.7;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
+  background-size: cover;
+  background-attachment: fixed; }
 
 .u-center-text {
   text-align: center; }
@@ -215,7 +218,7 @@ body {
       font-weight: 100; }
 
 .home {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237, 237, 237, 0.4) 12%, rgba(236, 234, 234, 0.17) 7%, rgba(235, 232, 232, 0.17) 100%), url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237, 237, 237, 0.4) 12%, rgba(236, 234, 234, 0.17) 7%, rgba(235, 232, 232, 0.17) 100%), url(../img/attractive-beautiful-beauty-638700-cut-3.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -242,12 +245,12 @@ body {
   left: 5%; }
   .hero:after {
     display: block;
-    height: .7px;
+    height: .8px;
     background-color: #ad9b6d;
     content: "";
-    width: 90%;
-    margin: 1% auto;
-    margin-top: 2rem; }
+    width: 94%;
+    margin: 2rem 0;
+    margin-top: 2.2rem; }
   .hero__logo {
     height: min-content;
     display: inline-block; }
@@ -275,20 +278,19 @@ body {
           color: #555; }
 
 .down__nav {
-  margin: 77vh 0;
-  background-color: rgba(173, 155, 109, 0.75);
+  margin: 77.5vh 0;
+  background-color: rgba(173, 155, 109, 0.35);
   width: min-content;
-  width: 100%;
-  text-align: center;
-  height: 11rem; }
+  width: 100%; }
   .down__nav--list {
+    text-align: center;
     list-style: none; }
     .down__nav--list li {
       display: inline-block;
-      margin: 0 9rem;
-      text-align: justify; }
+      margin: 0 9rem; }
     .down__nav--list a {
       text-decoration: none;
+      padding: 2rem 0;
       font-size: 2rem;
       transition: all .2s; }
       .down__nav--list a, .down__nav--list a:link, .down__nav--list a:visited {
@@ -300,13 +302,13 @@ body {
   min-height: 100vh;
   padding: 1rem 0 1rem 0; }
 
-.offer--header {
+.offer__header {
   font-weight: 700;
   font-size: 4rem;
   color: #ad9b6d;
   text-transform: uppercase;
   margin-bottom: 1rem; }
-  .offer--header:after {
+  .offer__header:after {
     display: block;
     height: 3px;
     background-color: #e8be63;
@@ -314,3 +316,34 @@ body {
     width: 25%;
     margin: 0 auto;
     margin-top: .5rem; }
+
+.about {
+  height: 100vh;
+  font-size: 1.5rem;
+  margin: 10rem 0;
+  padding: 2rem 4rem; }
+  .about__header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #ad9b6d;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+    .about__header:after {
+      display: block;
+      height: 3px;
+      background-color: #e8be63;
+      content: "";
+      width: 8%;
+      margin: 0 auto;
+      margin-top: .5rem; }
+  .about__content {
+    text-align: justify; }
+    .about__content--header {
+      display: inline;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #302c24; }
+  .about__picture {
+    width: 60rem;
+    float: right; }
