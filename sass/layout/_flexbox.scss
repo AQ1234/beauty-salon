@@ -5,13 +5,14 @@ display:-webkit-flex;
 display:flex;
 -webkit-justify-content:space-around;
 justify-content:space-around;
-padding: 8rem;
+padding: 8rem 3rem;
 
     &--flex-item {
 
         padding: 0 1rem;
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
+   
 }
 
 .offer__flex-container{

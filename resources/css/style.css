@@ -204,10 +204,10 @@ body {
   display: flex;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  padding: 8rem; }
+  padding: 8rem 3rem; }
   .about__flex-container--flex-item {
     padding: 0 1rem;
-    margin: 0 2rem; }
+    margin: 0 1rem; }
 
 .offer__flex-container {
   display: -webkit-flex;
@@ -348,10 +348,28 @@ body {
       width: 8%;
       margin: 0 auto;
       margin-top: .5rem; }
+    .about__header--2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 3rem;
+      color: #ad9b6d;
+      text-transform: uppercase;
+      margin-bottom: 2rem; }
+      .about__header--2:after {
+        display: block;
+        height: 1.5px;
+        background-color: #e8be63;
+        content: "";
+        width: 8%;
+        margin: 0 auto;
+        margin-top: 1.5rem; }
   .about__content {
     text-align: justify; }
   .about__picture {
     margin-top: 2rem; }
     .about__picture img {
-      width: 70rem;
+      width: 60rem;
       height: auto; }
+  .about--btn {
+    margin-top: 2rem;
+    text-align: center; }

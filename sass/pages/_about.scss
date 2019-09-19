@@ -23,6 +23,28 @@
             margin: 0 auto;
             margin-top: .5rem;
 
+        } 
+
+        &--2 {
+            text-align: center;
+            font-weight: 500;
+            font-size: 3rem;
+            color: $gold;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+    
+            &:after {
+                display: block;
+                height: 1.5px;
+                background-color: $second_gold;
+                content: "";
+                width: 8%;
+                margin: 0 auto;
+                margin-top: 1.5rem;
+    
+            } 
+
+
         }
     }
     &__content {
@@ -36,8 +58,14 @@
         margin-top: 2rem;
         img {
 
-            width: 70rem;
+            width: 60rem;
             height: auto;
     }
+}
+
+
+&--btn {
+    margin-top: 2rem;
+    text-align: center;
 }
 }
