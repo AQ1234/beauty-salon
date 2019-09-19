@@ -83,24 +83,6 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.offer__flex-container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-align-content: center;
-  align-content: center; }
-
-.offer__flex-item {
-  padding: 2% 2rem;
-  margin: 1rem 1.4rem;
-  height: 40rem;
-  text-align: center;
-  width: 25vw;
-  top: 50%; }
-
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -121,45 +103,45 @@ body {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(173, 155, 109, 0.15);
     border-radius: 55px; }
+    .card__side--picture {
+      background-size: cover;
+      height: 32rem;
+      background-blend-mode: screen;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      .card__side--picture--1 {
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/massageimage.jpg); }
+      .card__side--picture--2 {
+        background-image: linear-gradient(to right bottom, black, #ad9b6d), url(../img/offers-images/makeupimage.jpg); }
+      .card__side--picture--3 {
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/laser-treatments.jpg); }
+      .card__side--picture--4 {
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.4)), url(../img/offers-images/Cosmetic-spa.jpg); }
+      .card__side--picture--5 {
+        background-image: linear-gradient(to right bottom, rgba(173, 155, 109, 0.9), rgba(255, 255, 255, 0.5)), url(../img/offers-images/depilation.jpg); }
+      .card__side--picture--6 {
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(173, 155, 109, 0.2)), url(../img/offers-images/massageimage-2.jpg); }
     .card__side--front {
       background-color: #ad9b6d;
       background-image: url(./img/offers-images/alan-caishan-cU53ZFBr3lk-unsplash.jpg); }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back-1 {
+      .card__side--back--1 {
         background-image: linear-gradient(to right bottom, #88784d, #fff); }
-      .card__side--back-2 {
+      .card__side--back--2 {
         background-image: linear-gradient(to right bottom, #fff, #88784d); }
-      .card__side--back-3 {
+      .card__side--back--3 {
         background-image: linear-gradient(to right bottom, #fff, #88784d); }
-      .card__side--back-4 {
+      .card__side--back--4 {
         background-image: linear-gradient(to right bottom, #fff, #ad9b6d); }
-      .card__side--back-5 {
+      .card__side--back--5 {
         background-image: linear-gradient(to right bottom, #ad9b6d, #fff); }
-      .card__side--back-6 {
+      .card__side--back--6 {
         background-image: linear-gradient(to right bottom, #fff, #ad9b6d); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  .card--picture {
-    background-size: cover;
-    height: 32rem;
-    background-blend-mode: screen;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-    .card--picture--1 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/massageimage.jpg); }
-    .card--picture--2 {
-      background-image: linear-gradient(to right bottom, black, #ad9b6d), url(../img/offers-images/makeupimage.jpg); }
-    .card--picture--3 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/laser-treatments.jpg); }
-    .card--picture--4 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.4)), url(../img/offers-images/Cosmetic-spa.jpg); }
-    .card--picture--5 {
-      background-image: linear-gradient(to right bottom, rgba(173, 155, 109, 0.9), rgba(255, 255, 255, 0.5)), url(../img/offers-images/depilation.jpg); }
-    .card--picture--6 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(173, 155, 109, 0.2)), url(../img/offers-images/massageimage-2.jpg); }
   .card__heading {
     font-size: 2.2rem;
     font-weight: 500;
@@ -169,22 +151,22 @@ body {
     position: absolute;
     top: 80%;
     width: 100%; }
-  .card--heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
-    .card--heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card--heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card--heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card--heading-span--4 {
-      background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card--heading-span--5 {
-      background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
-    .card--heading-span--6 {
-      background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85)); }
+    .card__heading--span {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card__heading--span--1 {
+        background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6)); }
+      .card__heading--span--2 {
+        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
+      .card__heading--span--3 {
+        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
+      .card__heading--span--4 {
+        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
+      .card__heading--span--5 {
+        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
+      .card__heading--span--6 {
+        background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85)); }
   .card__details {
     padding: 0 2rem; }
     .card__details ul {
@@ -216,6 +198,24 @@ body {
     .card__price-box--price-value {
       font-size: 5rem;
       font-weight: 100; }
+
+.offer__flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  align-content: center; }
+
+.offer__flex-item {
+  padding: 2% 2rem;
+  margin: 1rem 1.4rem;
+  height: 40rem;
+  text-align: center;
+  width: 25vw;
+  top: 50%; }
 
 .home {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237, 237, 237, 0.4) 12%, rgba(236, 234, 234, 0.17) 7%, rgba(235, 232, 232, 0.17) 100%), url(../img/attractive-beautiful-beauty-638700-cut-3.png);
@@ -298,7 +298,7 @@ body {
       .down__nav--list a:hover {
         color: #fff; }
 
-.section-offer {
+.offer {
   min-height: 100vh;
   padding: 1rem 0 1rem 0; }
 
