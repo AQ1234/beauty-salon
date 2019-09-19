@@ -1,3 +1,19 @@
+
+.about__flex-container {
+
+display:-webkit-flex;
+display:flex;
+-webkit-justify-content:space-around;
+justify-content:space-around;
+padding: 8rem;
+
+    &--flex-item {
+
+        padding: 0 1rem;
+        margin: 0 2rem;
+    }
+}
+
 .offer__flex-container{
     display:-webkit-flex;
     display:flex;
@@ -7,23 +23,7 @@
     align-items:center;
     -webkit-align-content:center;
     align-content:center;
-  
 
-    &--1 {
-       
-    }
-    
-    &--2 {
-    }
-    
-    &--3 {
-       
-        
-    }
-    &--4 {
-      
-        
-    }
 
     }
 

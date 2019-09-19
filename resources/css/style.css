@@ -199,6 +199,16 @@ body {
       font-size: 5rem;
       font-weight: 100; }
 
+.about__flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  padding: 8rem; }
+  .about__flex-container--flex-item {
+    padding: 0 1rem;
+    margin: 0 2rem; }
+
 .offer__flex-container {
   display: -webkit-flex;
   display: flex;
@@ -320,8 +330,9 @@ body {
 .about {
   height: 100vh;
   font-size: 1.5rem;
-  margin: 10rem 0;
-  padding: 2rem 4rem; }
+  margin: 5rem 0;
+  padding: 2rem 2rem;
+  color: #302c24; }
   .about__header {
     text-align: center;
     font-weight: 700;
@@ -339,11 +350,8 @@ body {
       margin-top: .5rem; }
   .about__content {
     text-align: justify; }
-    .about__content--header {
-      display: inline;
-      font-size: 2rem;
-      font-weight: 600;
-      color: #302c24; }
   .about__picture {
-    width: 60rem;
-    float: right; }
+    margin-top: 2rem; }
+    .about__picture img {
+      width: 70rem;
+      height: auto; }
