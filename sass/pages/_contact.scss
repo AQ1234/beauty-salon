@@ -1,0 +1,22 @@
+.contact {
+
+    padding: 5rem 0 5rem 0;
+    font-size: 1.6rem;
+
+
+    &__map {
+        background-color: $bronze;
+        width: 60rem;
+        height: 35rem;
+        
+    }
+
+    &__content {
+       
+      text-align: justify;
+        &--header {
+            text-align: center;
+            padding: 2rem;
+        }
+    }
+}
