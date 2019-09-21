@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    margin-bottom: 5rem;
+    //margin-bottom: 5rem;
 
     &__primary {
         font-size: 5rem;
@@ -17,16 +17,15 @@
         color: $gold;
         margin-bottom: 1.5rem;
         background-color: beige;
-      
-        
+
         }
-        
+
         &__tertiary {
             text-align: center;
             color: $bronze-dark;
             margin-bottom: 1rem;
         }
-        
+
 }
 
 .hero {
@@ -36,7 +35,7 @@
     height: min-content;
     top: 5%;
     left: 5%;
-    
+
     &:after {
         display: block;
         height: .8px;
@@ -45,13 +44,13 @@
         width: 94%;
         margin: 2rem 0;
         margin-top: 2.2rem;
-        
+
     }
-    
+
     &__logo {
         height: min-content;
-     display: inline-block;
-        
+        display: inline-block;
+
         img {
             height: 8rem;
         }
@@ -94,28 +93,33 @@
 
 }
 
+// to lepiej żeby był footer!!
 .down__nav {
 
-    margin: 77.5vh 0; //Powiedz czy taki sposób "przyklejenia" nav może być
-    background-color: rgba($gold, .35);
-    width:min-content;
+    // margin: 77.5vh 0; //Powiedz czy taki sposób "przyklejenia" nav może być <-- BŁĄD!!
+    // bottom: 0;
+    
+    // width:min-content; // DRY!
     width: 100%;
+    background-color: rgba($gold, .35);
+    //height: 100%;
 
     &--list {
         text-align: center;
         list-style: none;
-       
 
         li {
-        
+
             display: inline-block;
             margin:0 9rem;
-            
+
+            &:last-child {
+                margin-bottom: 2rem;
+            }
         }
 
         a {
             text-decoration: none;
-            padding: 2rem 0;
             font-size: 2rem;
             transition: all .2s;
 
