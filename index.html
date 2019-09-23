@@ -16,6 +16,7 @@
 
   <!--HOME (BEM SEKCJA -> BOX w sekcji(hero) -> Co dzieje sie w boxie)-->
   <section class="home">
+
     <div class="hero">
       <div class="hero__logo">
         <img src="/resources/img/villalogo.png" alt="Villauroda">
@@ -30,8 +31,43 @@
         </ul>
       </nav>
     </div>
-    <!-- <h1 class="home__primary">VillaUroda</h1>
-        <h3 class="home__tertiary">klinika dermokosmetyczna</h3> -->
+
+
+    <div class="main-slideshow">
+
+      <div class="main-slideshow__slide fade">
+        <div class="main-slideshow__slide--image-number">1 / 3</div>
+        <img src="./resources/img/woman-1320810_1920-copy.jpg">
+        <div class="main-slideshow__slide--text"> Text</div>
+      </div>
+
+      <div class="main-slideshow__slide fade">
+        <div class="main-slideshow__slide--image-number">2 / 3</div>
+        <img src="./resources/img/attractive-beautiful-beauty-638700-cut-3.png">
+        <div class="main-slideshow__slide--text"> Two</div>
+      </div>
+
+      <div class="main-slideshow__slide fade">
+        <div class="main-slideshow__slide--image-number">3 / 3</div>
+        <img src="./resources/img/girl-4446528_1920-copy.jpg">
+        <div class="main-slideshow__slide--text"> Three</div>
+      </div>
+
+
+
+      <div class="main-slideshow__dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <a class="home--prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="home--next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+
+
     <nav class="down__nav">
       <ul class="down__nav--list">
         <li><a href="#">Adres:<br />Podleśna 11/1. Białystok<br /><br /></a></li>
@@ -74,7 +110,7 @@
       </div>
       <div class="about__flex-container--flex-item">
         <div class="about__picture">
-          <img src="/resources/img/about-image.png" alt="Villauroda">
+            <img src="./resources/img/about-image.png">
         </div>
       </div>
     </div>
@@ -284,8 +320,8 @@
           Telefon: <strong>(85) 742-74-67</strong><br /><br />
           Godziny otwarcia:<br /><br />
           <strong>pon.-pt.: 11:00 – 19:00<br />
-          sob.: 10:00 – 14:00</strong> <br /><br />
-        <strong>Dołącz na:</strong>
+            sob.: 10:00 – 14:00</strong> <br /><br />
+          <strong>Dołącz na:</strong>
         </div>
       </div>
       <div class="contact__flex-container--flex-item">
@@ -300,6 +336,7 @@
 
 
 
+  <script src="resources/js/script.js"></script>
 </body>
 
 </html>

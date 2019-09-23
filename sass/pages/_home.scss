@@ -1,8 +1,10 @@
 // Można było też zrobić HOME, HOME__BOX, HOME__BOX--logo itd...
+
+
 .home {
 
-
-    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237,237,237,0.4) 12%, rgba(236,234,234,0.17) 7%, rgba(235,232,232,0.17) 100%),url(../img/attractive-beautiful-beauty-638700-cut-3.png);
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237,237,237,0.4) 12%, rgba(236,234,234,0.17) 7%, rgba(235,232,232,0.17) 100%);
+  //  background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 18%, rgba(252, 251, 250, 0.7) 10%, rgba(245, 243, 243, 0.9) 5%, rgba(237,237,237,0.4) 12%, rgba(236,234,234,0.17) 7%, rgba(235,232,232,0.17) 100%),url(../img/attractive-beautiful-beauty-638700-cut-3.png);
     // background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(pexels-photo-814499-min.jpg);
     background-size: cover;
     background-position: center;
@@ -27,6 +29,41 @@
             margin-bottom: 1rem;
         }
         
+
+        &--prev, &--next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: &bronze-dark;
+            background-color: $bronze;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+    
+        &--prev {
+    
+    
+        }
+    
+        &--next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+    
+        }
+    
+        &--prev:hover, &--next:hover {
+            
+            background-color: rgba(148, 130, 92, 0.747);
+          }
+        
+
+
 }
 
 .hero {
@@ -92,14 +129,19 @@
         }
     }
 
+   
+
 }
 
 .down__nav {
 
-    margin: 77.5vh 0; //Powiedz czy taki sposób "przyklejenia" nav może być
+    position: absolute;
+    margin: 0 0; //Powiedz czy taki sposób "przyklejenia" nav może być
     background-color: rgba($gold, .35);
     width:min-content;
+    top: 87.6vh;
     width: 100%;
+    
 
     &--list {
         text-align: center;
@@ -134,3 +176,77 @@
     }
 
 }
+
+
+/* Slideshow container */
+.main-slideshow {
+    width: 98vw;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+  
+  /*Slide-Image*/
+    &__slide { display: none;
+      position: relative;
+  
+      img {vertical-align: middle;}
+  
+      &--text { 
+        padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+      width: 100%;
+      font-size: 60px;
+      text-align: center;
+      margin: 25% 0;
+        color: aqua; }
+  
+    }
+  /*Numbertext*/
+    &--numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10%;
+  
+    &__dots {
+      text-align: center;
+      position: absolute;
+   
+      }
+    }
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    z-index: 0;
+  -webkit-backface-visibility: hidden;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 7s;
+    animation-name: fade;
+    animation-duration: 7s;
+  
+   
+  }
+  
+  
+  
+  
+  
