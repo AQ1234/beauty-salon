@@ -15,11 +15,24 @@
     jak chcesz zrobić strone startowa wiztówkę to header dla niej bedzie inny-->
 
   <!--HOME (BEM SEKCJA -> BOX w sekcji(hero) -> Co dzieje sie w boxie)-->
+  <!-- <header>
+    <!--Gradient to nie jest dobry pomysł później zobaczysz dlaczego jak będziesz skalował
+        header zbuduj tak żeby był dostępny dla wszytskich podstron, strona główna może mieć
+        swój "header" jakby obok tej pani na głównej były linki nie było by pusto,
+        ale z drugiej strony czysta by  była strona, pomyśl o tym,
+        tak samo footer musi być uniwersalny dla wszytskich podstron.
+        Pamiętaj o zasadzie DRY.
+
+        Najczęściej logo jest odsyłączem do strony głównej, trzeba barać to pod uwagę bo to 
+        jak to nazywają doświadczenie użystkownika UX
+    
+  </header> -->
+
   <section class="home">
 
     <div class="hero">
       <div class="hero__logo">
-        <img src="/resources/img/villalogo.png" alt="Villauroda">
+        <a href="/"><img src="/resources/img/villalogo.png" alt="Villauroda"></a>
       </div>
       <nav class="hero__nav">
         <ul class="hero__nav--list">
@@ -31,6 +44,7 @@
         </ul>
       </nav>
     </div>
+
 
 
     <div class="main-slideshow">
@@ -68,16 +82,19 @@
 
 
 
-    <nav class="down__nav">
-      <ul class="down__nav--list">
-        <li><a href="#">Adres:<br />Podleśna 11/1. Białystok<br /><br /></a></li>
-        <li><a href="#">Telefon:<br />(85) 742-74-67<br /><br /></a></li>
-        <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
-        <li><a href="#">Dołącz na:<br /><br /> </a></li>
-      </ul>
-    </nav>
-
   </section>
+
+  <footer class="">
+    <nav class="down__nav">
+        <ul class="down__nav--list">
+          <li><a href="#">Adres:<br />Podleśna 11/1. Białystok<br /><br /></a></li>
+          <li><a href="#">Telefon:<br />(85) 742-74-67<br /><br /></a></li>
+          <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
+          <li><a href="#">Dołącz na: facebook, insta </a></li>
+        </ul>
+      </nav>
+  </footer>
+
   <section class="about">
     <h2 class="about__header">Villa Uroda</h2>
     <div class="about__flex-container">
@@ -308,7 +325,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section-->
   <section class="contact">
     <!--TO jest tylko propozycja , właściwie w headerze jest to samo ale bez mapki, więc czy warto robić całą sekcję?-->
     <div class="contact__flex-container">

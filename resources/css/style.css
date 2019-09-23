@@ -23,7 +23,6 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -316,8 +315,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
-  margin-bottom: 5rem; }
+  width: 100%; }
   .home__primary {
     font-size: 5rem;
     text-align: center;
@@ -391,7 +389,7 @@ body {
 
 .down__nav {
   position: absolute;
-  margin: 0 0;
+  margin: 0;
   background-color: rgba(173, 155, 109, 0.35);
   width: min-content;
   top: 87.6vh;
@@ -402,9 +400,10 @@ body {
     .down__nav--list li {
       display: inline-block;
       margin: 0 9rem; }
+      .down__nav--list li:last-child {
+        margin-bottom: 2rem; }
     .down__nav--list a {
       text-decoration: none;
-      padding: 2rem 0;
       font-size: 2rem;
       transition: all .2s; }
       .down__nav--list a, .down__nav--list a:link, .down__nav--list a:visited {
