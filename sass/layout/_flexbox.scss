@@ -1,59 +1,6 @@
 
-.about__flex-container {
-
-display:-webkit-flex;
-display:flex;
--webkit-justify-content:space-around;
-justify-content:space-around;
-align-items: center;
-padding: 2rem 3rem 8rem;
-
-    &--flex-item {
-
-        padding: 0 1rem;
-        margin: 0 1rem;
-    }
-   
-}
-
-.offer__flex-container {
-    display:-webkit-flex;
-    display:flex;
-    -webkit-justify-content:space-around;
-    justify-content:space-around;
-    -webkit-align-items:center;
-    align-items:center;
-    -webkit-align-content:center;
-    align-content:center;
 
 
-    &--flex-item {
-        padding: 2% 2rem;
-        margin: 1rem 1.4rem;
-        height: 40rem;
-        text-align: center;
-        width: 25vw;
-        top: 50%;
-        
-    }
 
-}
-
-.contact__flex-container {
-
-    display:-webkit-flex;
-    display:flex;
-    -webkit-justify-content:space-around;
-    justify-content:space-around;
-    align-items: center;
-    padding: 2rem 3rem 8rem;
-    
-        &--flex-item {
-    
-            padding: 0 1rem;
-            margin: 0 1rem;
-        }
-       
-    }
 
     

@@ -2,7 +2,7 @@
 
     height: 100vh;
     font-size: 1.5rem;
-    margin: 5rem 0;
+    margin: 6rem 0;
     padding: 2rem 2rem;
     color: $bronze-dark;
 
@@ -23,7 +23,7 @@
             margin: 0 auto;
             margin-top: .5rem;
 
-        } 
+        }
 
         &--2 {
             text-align: center;
@@ -32,7 +32,7 @@
             color: $gold;
             text-transform: uppercase;
             margin-bottom: 2rem;
-    
+
             &:after {
                 display: block;
                 height: 1.5px;
@@ -41,12 +41,13 @@
                 width: 8%;
                 margin: 0 auto;
                 margin-top: 1.5rem;
-    
-            } 
+
+            }
 
 
         }
     }
+
     &__content {
 
         text-align: justify;
@@ -56,16 +57,35 @@
     &__picture {
 
         margin-top: 5rem;
+
         img {
 
             width: 60rem;
             height: auto;
+        }
     }
-}
 
 
-&--btn {
-    margin-top: 2rem;
-    text-align: center;
-}
+    &--btn {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    &__flex-container {
+
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 3rem 8rem;
+
+        &--flex-item {
+
+            padding: 0 1rem;
+            margin: 0 1rem;
+        }
+
+    }
+
 }

@@ -1,3 +1,50 @@
+.head {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    background-color: rgba(#fff, .8);
+    //padding: 4rem 2rem 4rem 8rem;
+    z-index: 100;
 
+    &__logo {
 
+        img {
+            height: 8rem;
+        }
+        
+    }
 
+    &__nav {
+     
+        &--list {
+            list-style: none;
+            cursor: pointer;
+
+            li {
+                display: inline-block;
+            }
+
+            a {
+                margin-right: 4rem;
+                text-decoration: none;
+                font-size: 2rem;
+                transition: all .2s;
+
+                &,
+                &:link,
+                &:visited {
+                    color: $gold;
+                }
+
+                &:hover {
+                    color: $color-grey-dark-2;
+                }
+            }
+        }
+    }
+
+}
