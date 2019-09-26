@@ -2,9 +2,25 @@
 
     height: 100vh;
     font-size: 1.5rem;
-    margin: 6rem 0;
+    margin: 6rem 0 1rem;
     padding: 2rem 2rem;
     color: $bronze-dark;
+
+    &__container {
+
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem 3rem 8rem;
+
+        &--item {
+            flex-wrap: wrap;
+            padding: 0 1rem;
+        }
+
+    }
 
     &__header {
         text-align: center;
@@ -12,16 +28,16 @@
         font-size: 4rem;
         color: $gold;
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
 
         &:after {
             display: block;
             height: 3px;
-            background-color: $second_gold;
+            background-color: $gold;
             content: "";
             width: 8%;
             margin: 0 auto;
-            margin-top: .5rem;
+            margin-top: .2rem;
 
         }
 
@@ -51,41 +67,29 @@
     &__content {
 
         text-align: justify;
-
+        border-radius: 2rem;
+        border: 1px solid #ad9b6d;
+        padding: 1rem 1rem;
+        margin: 4rem .5rem;
     }
 
     &__picture {
 
-        margin-top: 5rem;
+        margin-top: 1rem;
 
         img {
 
-            width: 60rem;
+            width: 50rem;
             height: auto;
         }
     }
 
 
     &--btn {
-        margin-top: 2rem;
+        margin: 2rem 0;
         text-align: center;
     }
 
-    &__flex-container {
-
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2rem 3rem 8rem;
-
-        &--flex-item {
-
-            padding: 0 1rem;
-            margin: 0 1rem;
-        }
-
-    }
+   
 
 }
