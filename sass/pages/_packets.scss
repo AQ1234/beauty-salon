@@ -1,0 +1,93 @@
+.packets {
+
+    font-size: 1.5rem;
+    margin: 6rem 0 1rem;
+    padding: 2rem 2rem;
+    color: $bronze-dark;
+
+    &__container {
+
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5rem 2rem .5rem;
+        background-color: aqua;
+
+        &__item {
+            background-color: bisque;
+            width: 70%;
+            margin: 2rem;
+
+        }
+
+        &__item--2 {
+            background-color: bisque;
+            width: 70rem;
+            margin: 2rem;
+
+
+            &--image {
+
+                position: absolute;
+                background-image: url("../resources/img/packets/white-photo-verson-of-the-envelopes-1313361-639x449.jpg")
+            }
+
+        }
+
+    }
+
+    &__content {
+        color: $bronze-dark;
+
+        &--header {
+
+            color: $gold;
+
+        }
+    }
+
+
+    &__packageContainer {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        margin: 5rem;
+       
+
+        &--header {
+            margin: 2rem 0;
+            color: $gold;
+            text-align: center;
+        }
+
+        &__item {
+            background-color: rgba(255, 255, 255, 0.247);
+            width: 70%;
+            height: 100%;
+            margin: 0 2rem;
+            padding: 1rem;
+        }
+
+        &--list {
+            text-align: center;
+            list-style: none;
+            li {
+                border-bottom: 1px solid $gold; 
+
+            li:last-child {
+
+                border: none;
+            }   
+                
+            a {
+                margin: 1rem 0;
+
+            }
+
+            }
+        }
+    }
+}

@@ -45,6 +45,10 @@ body {
 .offer__center-text {
   text-align: center; }
 
+.border_radius {
+  border-radius: 2rem;
+  border: 1px solid #ad9b6d; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -369,12 +373,11 @@ body {
     border-radius: 2rem;
     border: 1px solid #ad9b6d;
     padding: 1rem 1rem;
-    margin: 4rem .5rem; }
+    margin: 2rem .5rem; }
   .about__picture {
     margin-top: 1rem; }
     .about__picture img {
-      width: 50rem;
-      height: auto; }
+      width: 50rem; }
   .about--btn {
     margin: 2rem 0;
     text-align: center; }
@@ -392,17 +395,13 @@ body {
     margin: 10rem 5rem;
     padding: 5rem 0; }
     .contact__flex-container--flex-item {
-      padding: 0 1rem;
-      margin: 0 1rem; }
+      width: 70%; }
   .contact__map {
     background-color: rgba(234, 172, 117, 0.5);
     width: 60rem;
     height: 35rem; }
   .contact__content {
-    width: 70rem;
-    text-align: justify;
-    border-radius: 2rem;
-    border: 1px solid #ad9b6d; }
+    text-align: justify; }
     .contact__content--header {
       text-align: center;
       padding: 2rem; }
@@ -530,3 +529,57 @@ body {
     width: 25%;
     margin: 0 auto;
     margin-top: .5rem; }
+
+.packets {
+  font-size: 1.5rem;
+  margin: 6rem 0 1rem;
+  padding: 2rem 2rem;
+  color: #302c24; }
+  .packets__container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 2rem .5rem;
+    background-color: aqua; }
+    .packets__container__item {
+      background-color: bisque;
+      width: 70%;
+      margin: 2rem; }
+    .packets__container__item--2 {
+      background-color: bisque;
+      width: 70rem;
+      margin: 2rem; }
+      .packets__container__item--2--image {
+        position: absolute;
+        background-image: url("../resources/img/packets/white-photo-verson-of-the-envelopes-1313361-639x449.jpg"); }
+  .packets__content {
+    color: #302c24; }
+    .packets__content--header {
+      color: #ad9b6d; }
+  .packets__packageContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 5rem; }
+    .packets__packageContainer--header {
+      margin: 2rem 0;
+      color: #ad9b6d;
+      text-align: center; }
+    .packets__packageContainer__item {
+      background-color: rgba(255, 255, 255, 0.247);
+      width: 70%;
+      height: 100%;
+      margin: 0 2rem;
+      padding: 1rem; }
+    .packets__packageContainer--list {
+      text-align: center;
+      list-style: none; }
+      .packets__packageContainer--list li {
+        border-bottom: 1px solid #ad9b6d; }
+        .packets__packageContainer--list li li:last-child {
+          border: none; }
+        .packets__packageContainer--list li a {
+          margin: 1rem 0; }
