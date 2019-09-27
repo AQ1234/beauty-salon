@@ -9,45 +9,46 @@
 
         display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        align-items: center;
-        padding: .5rem 2rem .5rem;
-        background-color: aqua;
+        -webkit-justify-content: center;
+        justify-content: center;
+        align-items: stretch;
+        -webkit-align-items: stretch;
+        margin: 0 10rem 10rem;
 
         &__item {
-            background-color: bisque;
-            width: 70%;
             margin: 2rem;
 
+            &--header {
+                text-align: center;
+                color: $gold;
+                margin: 5rem 0;
+
+            }
         }
 
         &__item--2 {
-            background-color: bisque;
-            width: 70rem;
             margin: 2rem;
 
+            &--header {
+                text-align: center;
+                color: $gold;
+                margin: 1rem 0;
 
-            &--image {
-
-                position: absolute;
-                background-image: url("../resources/img/packets/white-photo-verson-of-the-envelopes-1313361-639x449.jpg")
             }
 
+            &--image {
+                background-image: url(../img/packets/gifts-2998593_640.jpg);
+                background-position: center;
+                width: 100%;
+                height: 70%;
+            }
         }
-
     }
 
     &__content {
         color: $bronze-dark;
 
-        &--header {
-
-            color: $gold;
-
-        }
     }
-
 
     &__packageContainer {
         display: -webkit-flex;
@@ -55,39 +56,66 @@
         -webkit-justify-content: center;
         justify-content: center;
         margin: 5rem;
-       
+        text-align: center;
 
         &--header {
             margin: 2rem 0;
-            color: $gold;
             text-align: center;
+            color: $gold;
+            font-size: 4rem;
+
+            &:after {
+                display: block;
+                height: 2px;
+                background-color: #ad9b6d;
+                content: "";
+                width: 15%;
+                margin: 0 auto;
+                margin-top: 1rem;
+            }
+        }
+
+        &--price {
+            font-size: 3rem;
+            background-color: rgba($second_gold, .7);
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         &__item {
             background-color: rgba(255, 255, 255, 0.247);
-            width: 70%;
+            width: 45%;
             height: 100%;
-            margin: 0 2rem;
+            margin: 0 1.5rem;
             padding: 1rem;
+
+            &--image {
+                width: auto;
+                height: 200px;
+                background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(../img/packets/gift-553150_640.jpg);
+                background-size: cover;
+            }
         }
 
         &--list {
             text-align: center;
             list-style: none;
+
             li {
-                border-bottom: 1px solid $gold; 
+                border-bottom: 1.2px solid $gold;
 
-            li:last-child {
+                li:last-child {
 
-                border: none;
-            }   
-                
-            a {
-                margin: 1rem 0;
+                    border: none;
+                }
 
-            }
+                a {
+                    margin: 1rem 0;
+
+                }
 
             }
         }
+
     }
 }
