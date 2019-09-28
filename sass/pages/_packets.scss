@@ -84,7 +84,7 @@
 
         &__item {
             background-color: rgba(255, 255, 255, 0.247);
-            width: 45%;
+            width: 25%;
             height: 100%;
             margin: 0 1.5rem;
             padding: 1rem;
@@ -104,9 +104,9 @@
             li {
                 border-bottom: 1.2px solid $gold;
 
-                li:last-child {
+                &:last-child {
 
-                    border: none;
+                    border-bottom: 0px solid $gold;
                 }
 
                 a {

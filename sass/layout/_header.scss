@@ -1,7 +1,8 @@
 .head {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
+    height: auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -19,19 +20,30 @@
     }
 
     &__nav {
-     
+
         &--list {
             list-style: none;
             cursor: pointer;
-
-            li {
-                display: inline-block;
+            margin: 0;
+            padding: 0;
+            
+            
+           
+            & > li {
+                float: left;
+                border-right: 1px dotted $gold;
             }
 
+            & > li:first-child {
+                display: inline-block;
+                border-left: 1px dotted $gold;
+            }
+            
             a {
-                margin-right: 4rem;
+                display: block;
+                margin: 0 2rem;
                 text-decoration: none;
-                font-size: 2rem;
+                font-size: 2.2rem;
                 transition: all .2s;
 
                 &,
@@ -44,7 +56,31 @@
                     color: $color-grey-dark-2;
                 }
             }
+
+           & > li > ul {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               display: none;
+           }
+
+           & > li:hover > ul {
+           display: block;
         }
+
+           & > li > ul > li {
+                position: relative;
+                width: auto;
+                border-top: 1px dashed $gold; 
+           }
+
+       
+
+        }
+
+
+       
     }
 
 }
+
