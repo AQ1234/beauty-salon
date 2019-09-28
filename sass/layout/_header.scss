@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: space-around;
     top: 0;
-    background-color: rgba(#fff, .8);
-    //padding: 4rem 2rem 4rem 8rem;
+    background-color: rgba(#fff, .9);
+    padding: 4rem 2rem 2rem 8rem;
     z-index: 100;
 
     &__logo {
@@ -21,29 +21,31 @@
 
     &__nav {
 
+        text-align: center;
+
         &--list {
             list-style: none;
             cursor: pointer;
             margin: 0;
             padding: 0;
-            
-            
+            font-size: 2.2rem;
+
            
             & > li {
-                float: left;
-                border-right: 1px dotted $gold;
+                float: left; // tak było w toturialu oze byc?
+                width: 12rem;
+                height: 6rem;
+                margin: 0 .3rem;
+
+                &:first-child {
+                  
+                }
             }
 
-            & > li:first-child {
-                display: inline-block;
-                border-left: 1px dotted $gold;
-            }
-            
             a {
+                opacity: 1;
                 display: block;
-                margin: 0 2rem;
                 text-decoration: none;
-                font-size: 2.2rem;
                 transition: all .2s;
 
                 &,
@@ -61,26 +63,46 @@
                list-style: none;
                padding: 0;
                margin: 0;
+               width: 14rem;
+               background-color: rgba(#fff, .8);
+              
                display: none;
            }
 
            & > li:hover > ul {
-           display: block;
+               margin-top: .2rem;
+               display: block;
         }
 
            & > li > ul > li {
+                
+             //   background-color: rgba(#fff, 1);
                 position: relative;
-                width: auto;
+                z-index: 100;
                 border-top: 1px dashed $gold; 
+                
+            
+                
            }
 
-       
+           & > li > ul > li:first-child {
+                
+               border: none;
+               
+          }
 
+           & > li > ul > li > a {
+                
+            //   background-color: rgba(#fff, 1);
+               
+            
+               opacity: 1;
+               
+          }
         }
-
-
-       
     }
 
+    ul {
+    }
 }
 
