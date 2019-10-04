@@ -7,7 +7,7 @@
     position: relative;
 
     &__side {
-        height: 41rem;
+        height: 34rem;
         transition: all 1.1s ease;
         -webkit-transition: all 1.1s ease;
         -moz-transition: all 1.1s ease;
@@ -26,7 +26,7 @@
 
         &--picture {
             background-size: cover;
-            height: 32rem;
+            height: 26rem;
             background-blend-mode: screen;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
@@ -59,6 +59,35 @@
             }
              &--6 {
                 background-image: linear-gradient(to right bottom, rgba($color-white, .9), rgba($gold, .2)), url(../img/offers-images/massageimage-2.jpg);
+    
+            }
+            &--7 {
+               
+                background-image: linear-gradient(to right bottom, rgba($black, .9), rgba($color-white, .7)), url(../img/offers-images/cutera-xeo-laser-treatments-bend-or.jpg);
+               
+            }
+    
+            &--8 {
+                background-image: linear-gradient(to right bottom, rgba($black, 1), rgba($gold, 1)), url(../img/offers-images/makeupimage.jpg);
+    
+            }
+    
+            &--9 {
+                background-image: linear-gradient(to right bottom, rgba($black, .9), rgba($color-white, .7)),url(../img/offers-images/laser-treatments.jpg);
+    
+            }
+    
+            &--10 {
+                background-image: linear-gradient(to right bottom, rgba($color-white, .9), rgba($black, .4)), url(../img/offers-images/Cosmetic-spa.jpg);
+    
+            }
+    
+            &--11 {
+                background-image: linear-gradient(to right bottom, rgba($gold, .9), rgba($color-white, .5)), url(../img/offers-images/woman-660806_1920-copy.jpg) ;
+    
+            }
+             &--12 {
+                background-image: linear-gradient(to right bottom, rgba($color-white, .9), rgba($gold, .2)), url(../img/offers-images/SPA.jpg);
     
             }
         }
@@ -99,6 +128,30 @@
             }
 
             &--6 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+
+            }
+            &--7 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+
+            }
+            &--8 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+
+            }
+            &--9 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+
+            }
+            &--10 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+
+            }
+            &--11 {
+                background-image: linear-gradient(to right bottom, $color-white, $gold);
+
+            }
+            &--12 {
                 background-image: linear-gradient(to right bottom, $color-white, $gold);
 
             }
@@ -161,6 +214,33 @@
             &--6 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(247, 193, 146), .85), rgba($gold, .85));
             }
+
+            &--7 {
+                background-image: linear-gradient(to right bottom, rgba(rgb(248, 190, 138), .85), rgba($gold, .6));
+    
+            }
+    
+            &--8 {
+             background-image: linear-gradient(to right bottom, rgba(rgb(236, 178, 127), .85), rgba($gold, .6));
+    
+            }
+    
+            &--9 {
+    
+                background-image: linear-gradient(to right bottom,rgba(#EAAC75, .85), rgba($gold, .6));
+            }
+    
+            &--10 {
+                background-image: linear-gradient(to right bottom, rgba(rgb(236, 178, 127), .85), rgba($gold, .6));
+            }
+    
+            &--11 {
+                background-image: linear-gradient(to right bottom, rgba(#EAAC75, .85), rgba($gold, .6));
+            }
+    
+            &--12 {
+                background-image: linear-gradient(to right bottom, rgba(rgb(247, 193, 146), .85), rgba($gold, .85));
+            }
         }
 
     }
@@ -168,15 +248,15 @@
    
 
     &__details {
-        padding: 0 2rem;
-        
+        padding: .8rem 2rem 0;
+        text-align: center;
         ul {
             list-style: none;
-            width: 90%;
+            width: 110%;
             margin: 0 auto;
 
             li {
-                text-align: center;
+                
                 font-size: 1.5rem;
                 padding: .4rem;
 
