@@ -12,13 +12,24 @@
         display: flex;
         -webkit-justify-content: space-around;
         justify-content: space-around;
-        align-items: center;
-        padding: 0rem 3rem 8rem;
-
+        align-items: stretch;
+        margin: 0rem 5rem;
+        padding: 5rem 0 5rem 0;
         &--item {
             flex-wrap: wrap;
             padding: 0 1rem;
         }
+        &--picture {
+        
+                margin: 1.5rem 0;
+                width: 50rem;
+                height: 25rem;
+                border-radius: 2rem;
+                background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(/resources/img/about-image.png);
+                background-size: cover;
+                
+        }
+
 
     }
 
@@ -28,7 +39,7 @@
         font-size: 4rem;
         color: $gold;
         text-transform: uppercase;
-        margin-bottom: 0rem;
+        margin-bottom: 3rem;
 
         &:after {
             display: block;
@@ -43,7 +54,6 @@
 
         &--2 {
             text-align: center;
-            font-weight: 500;
             font-size: 3rem;
             color: $gold;
             text-transform: uppercase;
@@ -60,6 +70,11 @@
 
             }
 
+            &:hover {
+
+               color: $color-grey-dark-2;
+            }
+
 
         }
     }
@@ -73,15 +88,7 @@
         margin: 2rem .5rem;
     }
 
-    &__picture {
-
-        margin-top: 1rem;
-
-        img {
-
-            width: 50rem;
-        }
-    }
+ 
 
 
     &--btn {

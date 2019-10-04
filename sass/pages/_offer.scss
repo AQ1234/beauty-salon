@@ -13,22 +13,19 @@
         align-items:center;
         -webkit-align-content:center;
         align-content:center;
-    
+        margin: 0rem 5rem;
+        background-color: aqua;
     
         &--flex-item {
-            padding: 2% 2rem;
-            margin: 1rem 1.4rem;
+            padding: 2%;
+            margin: .5rem 2rem;
             height: 40rem;
             text-align: center;
             width: 25vw;
             top: 50%;
             
         }
-    
     }
-    
-
-
 }
 
 .offer__header {
@@ -36,7 +33,6 @@
     font-size: 4rem;
     color: $gold;
     text-transform: uppercase;
-    margin-bottom: 1rem;
 
     &:after {
             display: block;

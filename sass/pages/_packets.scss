@@ -13,10 +13,12 @@
         justify-content: center;
         align-items: stretch;
         -webkit-align-items: stretch;
-        margin: 5rem 10rem 10rem;
+        margin: 10rem 5rem;
+        padding: 5rem 0 5rem 0;
+        background-color: aqua;
 
         &__item {
-            margin: 2rem;
+            padding: 0 1rem;
 
             &--header {
                 text-align: center;
@@ -37,8 +39,9 @@
             }
 
             &--image {
-                background-image: url(../img/packets/gifts-2998593_640.jpg);
+                background-image: linear-gradient(to bottom right, rgba($gold , .3), rgba($color-white , .5)), url(../img/packets/gifts-2998593_640.jpg);
                 background-position: center;
+                border-radius: 2rem;
                 width: 100%;
                 height: 70%;
             }
@@ -57,6 +60,7 @@
         justify-content: center;
         margin: 5rem;
         text-align: center;
+        background-color: aqua;
 
         &--header {
             margin: 2rem 0;
@@ -92,6 +96,7 @@
             &--image {
                 width: auto;
                 height: 200px;
+                border-radius: 2rem;
                 background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(../img/packets/gift-553150_640.jpg);
                 background-size: cover;
             }

@@ -1,31 +1,35 @@
 .contact {
 
     &__flex-container {
-     background-color: bisque;
         display:-webkit-flex;
         display:flex;
         -webkit-justify-content:space-around;
         justify-content:space-around;
         align-items: center;
         margin: 10rem 5rem;
-        padding: 5rem 0;
-      //  padding: 10rem 3rem 8rem;
-        
+        padding: 5rem 0 5rem 0;
+         font-size: 1.6rem;
+        background-color: aqua;
             &--flex-item {
-             
-              width: 70%;
-                
-            }
+           width: 60%;
+                background-color: antiquewhite;
+                padding: 0 1rem;
+                &-2 {
+
+                  background-color: bisque;
+                }
+              }
+
            
         }    
 
-    padding: 5rem 0 5rem 0;
-    font-size: 1.6rem;
+    
 
 
     &__map {
         background-color: $bronze;
-        width: 60rem;
+        margin: auto;
+        width: 50rem;
         height: 35rem;
         
     }

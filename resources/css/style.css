@@ -25,7 +25,8 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.4;
+  margin: 0 2rem; }
 
 .u-center-text {
   text-align: center; }
@@ -41,6 +42,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem; }
+
+.u-margin-top-default {
+  margin: 6rem 0 3rem; }
 
 .offer__center-text {
   text-align: center; }
@@ -221,8 +225,8 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 4rem 2rem 2rem 8rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
   .head__logo img {
     height: 8rem; }
@@ -268,7 +272,6 @@ body {
         opacity: 1; }
 
 .mainFooter {
-  position: absolute;
   background-color: rgba(173, 155, 109, 0.75);
   width: 100%; }
   .mainFooter__logo {
@@ -327,8 +330,8 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 4rem 2rem 2rem 8rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
   .head__logo img {
     height: 8rem; }
@@ -390,18 +393,26 @@ body {
     display: flex;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    align-items: center;
-    padding: 0rem 3rem 8rem; }
+    align-items: stretch;
+    margin: 0rem 5rem;
+    padding: 5rem 0 5rem 0; }
     .about__container--item {
       flex-wrap: wrap;
       padding: 0 1rem; }
+    .about__container--picture {
+      margin: 1.5rem 0;
+      width: 50rem;
+      height: 25rem;
+      border-radius: 2rem;
+      background-image: linear-gradient(rgba(173, 155, 109, 0.1), rgba(255, 255, 255, 0.7)), url(/resources/img/about-image.png);
+      background-size: cover; }
   .about__header {
     text-align: center;
     font-weight: 700;
     font-size: 4rem;
     color: #ad9b6d;
     text-transform: uppercase;
-    margin-bottom: 0rem; }
+    margin-bottom: 3rem; }
     .about__header:after {
       display: block;
       height: 3px;
@@ -412,7 +423,6 @@ body {
       margin-top: .2rem; }
     .about__header--2 {
       text-align: center;
-      font-weight: 500;
       font-size: 3rem;
       color: #ad9b6d;
       text-transform: uppercase;
@@ -425,43 +435,46 @@ body {
         width: 8%;
         margin: 0 auto;
         margin-top: 1.5rem; }
+      .about__header--2:hover {
+        color: #555; }
   .about__content {
     text-align: justify;
     border-radius: 2rem;
     border: 1px solid #ad9b6d;
     padding: 1rem 1rem;
     margin: 2rem .5rem; }
-  .about__picture {
-    margin-top: 1rem; }
-    .about__picture img {
-      width: 50rem; }
   .about--btn {
     margin: 2rem 0;
     text-align: center; }
 
-.contact {
+.contact__flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rem 5rem;
   padding: 5rem 0 5rem 0;
-  font-size: 1.6rem; }
-  .contact__flex-container {
-    background-color: bisque;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10rem 5rem;
-    padding: 5rem 0; }
-    .contact__flex-container--flex-item {
-      width: 70%; }
-  .contact__map {
-    background-color: rgba(234, 172, 117, 0.5);
-    width: 60rem;
-    height: 35rem; }
-  .contact__content {
-    text-align: justify; }
-    .contact__content--header {
-      text-align: center;
-      padding: 2rem; }
+  font-size: 1.6rem;
+  background-color: aqua; }
+  .contact__flex-container--flex-item {
+    width: 60%;
+    background-color: antiquewhite;
+    padding: 0 1rem; }
+    .contact__flex-container--flex-item-2 {
+      background-color: bisque; }
+
+.contact__map {
+  background-color: rgba(234, 172, 117, 0.5);
+  margin: auto;
+  width: 50rem;
+  height: 35rem; }
+
+.contact__content {
+  text-align: justify; }
+  .contact__content--header {
+    text-align: center;
+    padding: 2rem; }
 
 .home {
   height: 100%;
@@ -563,10 +576,12 @@ body {
     -webkit-align-items: center;
     align-items: center;
     -webkit-align-content: center;
-    align-content: center; }
+    align-content: center;
+    margin: 0rem 5rem;
+    background-color: aqua; }
     .offer .offer__flex-container--flex-item {
-      padding: 2% 2rem;
-      margin: 1rem 1.4rem;
+      padding: 2%;
+      margin: .5rem 2rem;
       height: 40rem;
       text-align: center;
       width: 25vw;
@@ -576,8 +591,7 @@ body {
   font-weight: 700;
   font-size: 4rem;
   color: #ad9b6d;
-  text-transform: uppercase;
-  margin-bottom: 1rem; }
+  text-transform: uppercase; }
   .offer__header:after {
     display: block;
     height: 3px;
@@ -599,9 +613,11 @@ body {
     justify-content: center;
     align-items: stretch;
     -webkit-align-items: stretch;
-    margin: 5rem 10rem 10rem; }
+    margin: 10rem 5rem;
+    padding: 5rem 0 5rem 0;
+    background-color: aqua; }
     .packets__container__item {
-      margin: 2rem; }
+      padding: 0 1rem; }
       .packets__container__item--header {
         text-align: center;
         color: #ad9b6d;
@@ -613,8 +629,9 @@ body {
         color: #ad9b6d;
         margin: 1rem 0; }
       .packets__container__item--2--image {
-        background-image: url(../img/packets/gifts-2998593_640.jpg);
+        background-image: linear-gradient(to bottom right, rgba(173, 155, 109, 0.3), rgba(255, 255, 255, 0.5)), url(../img/packets/gifts-2998593_640.jpg);
         background-position: center;
+        border-radius: 2rem;
         width: 100%;
         height: 70%; }
   .packets__content {
@@ -625,7 +642,8 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
     margin: 5rem;
-    text-align: center; }
+    text-align: center;
+    background-color: aqua; }
     .packets__packageContainer--header {
       margin: 2rem 0;
       text-align: center;
@@ -653,6 +671,7 @@ body {
       .packets__packageContainer__item--image {
         width: auto;
         height: 200px;
+        border-radius: 2rem;
         background-image: linear-gradient(rgba(173, 155, 109, 0.1), rgba(255, 255, 255, 0.7)), url(../img/packets/gift-553150_640.jpg);
         background-size: cover; }
     .packets__packageContainer--list {
