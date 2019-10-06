@@ -6,17 +6,14 @@
         -webkit-justify-content:space-around;
         justify-content:space-around;
         align-items: center;
-        margin: 10rem 5rem;
+        margin: 7rem 6rem;
         padding: 5rem 0 5rem 0;
          font-size: 1.6rem;
-        background-color: aqua;
             &--flex-item {
            width: 60%;
-                background-color: antiquewhite;
                 padding: 0 1rem;
                 &-2 {
 
-                  background-color: bisque;
                 }
               }
 

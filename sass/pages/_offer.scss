@@ -1,8 +1,8 @@
 .offer {
 
-    height: 100vh;
-    margin: 6rem 0;
-    padding: 1rem 0 5rem 0;
+
+    margin: 4rem 0 0;
+    padding: 1rem 0 3rem 0;
 
     .offer__flex-container {
         display:-webkit-flex;
@@ -13,16 +13,14 @@
         align-items:center;
         -webkit-align-content:center;
         align-content:center;
-        margin: 0rem 5rem;
-        background-color: aqua;
+        margin: .4rem 5rem;
     
         &--flex-item {
             padding: 2%;
-            margin: .5rem 2rem;
-            height: 34rem;
+            margin: .3rem 1rem;
+            height: 31rem;
             text-align: center;
-            width: 25vw;
-            top: 50%;
+            width: 26vw;
             
         }
     }

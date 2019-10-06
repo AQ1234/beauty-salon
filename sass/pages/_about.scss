@@ -1,8 +1,7 @@
 .about {
 
-    height: 100vh;
     font-size: 1.5rem;
-    margin: 6rem 0 1rem;
+    margin: 3rem 0 1rem;
     padding: 2rem 2rem;
     color: $bronze-dark;
 
@@ -13,8 +12,8 @@
         -webkit-justify-content: space-around;
         justify-content: space-around;
         align-items: stretch;
-        margin: 0rem 5rem;
-        padding: 5rem 0 5rem 0;
+        margin: 0 5rem;
+        padding: 2rem 0 5rem 0;
         &--item {
             flex-wrap: wrap;
             padding: 0 1rem;
@@ -27,6 +26,17 @@
                 border-radius: 2rem;
                 background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(/resources/img/about-image.png);
                 background-size: cover;
+                background-position: center;
+
+               &-2 {
+                margin: 1.5rem 0;
+                width: 50rem;
+                height: 25rem;
+                border-radius: 2rem;
+                background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(/resources/img/about-image-2.png);
+                background-size: cover;
+                background-position: center;
+                }
                 
         }
 
@@ -39,7 +49,7 @@
         font-size: 4rem;
         color: $gold;
         text-transform: uppercase;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
 
         &:after {
             display: block;

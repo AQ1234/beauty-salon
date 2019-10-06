@@ -1,7 +1,7 @@
 .packets {
 
     font-size: 1.5rem;
-    margin: 6rem 0 3rem;
+    margin: 5rem 0;
     padding: 2rem 2rem;
     color: $bronze-dark;
 
@@ -11,26 +11,23 @@
         display: flex;
         -webkit-justify-content: center;
         justify-content: center;
-        align-items: stretch;
-        -webkit-align-items: stretch;
-        margin: 10rem 5rem;
-        padding: 5rem 0 5rem 0;
-        background-color: aqua;
+        margin: 3rem 5rem 5rem;
+        padding: 4rem 0 4rem 0;
 
         &__item {
             padding: 0 1rem;
-
+            width: 90%;
             &--header {
                 text-align: center;
                 color: $gold;
                 margin: 5rem 0;
-
+                font-size: 3rem;
             }
         }
 
         &__item--2 {
-            margin: 2rem;
-
+            margin: 0 2rem;
+            
             &--header {
                 text-align: center;
                 color: $gold;
@@ -60,10 +57,9 @@
         justify-content: center;
         margin: 5rem;
         text-align: center;
-        background-color: aqua;
 
         &--header {
-            margin: 2rem 0;
+            margin: 3rem 0;
             text-align: center;
             color: $gold;
             font-size: 4rem;
@@ -94,7 +90,6 @@
             padding: 1rem;
 
             &--image {
-                width: auto;
                 height: 200px;
                 border-radius: 2rem;
                 background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(../img/packets/gift-553150_640.jpg);
