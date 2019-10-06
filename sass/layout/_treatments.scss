@@ -1,0 +1,53 @@
+.treatments {
+
+    font-size: 1.5rem;
+    margin: 10rem 0 0;
+    padding: 2rem 2rem;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__mainHeader {
+
+        text-align: center;
+        color: $gold;
+        font-size: 3rem;
+    }
+
+    
+
+}
+
+.treatmentsContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 3rem 0 5rem;
+    text-align: center;
+    background-color: beige;
+
+
+ 
+
+    &__sidenav {
+
+        width: 31%;
+        background-color: aquamarine;
+
+       
+
+    }
+
+    &__treatments {
+        background-color: rgba(255, 255, 255, 0.247);
+        width: 100%;
+        height: 100%;
+        margin: 0 1.5rem;
+        padding: 1rem;
+        
+        background-color: aqua;
+    }
+
+
+}
