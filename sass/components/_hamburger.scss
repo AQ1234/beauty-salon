@@ -1,23 +1,24 @@
 .hamburger {
-    padding: 10px;
+    padding: 1rem;
     display: inline-block;
     cursor: pointer;
     background-color: transparent;
     border: 0;
     margin: 0;
+    height: 3.5rem;
   }
   
-  .hamburger, .navigation {
+  .hamburger, .treatments__navigation {
     transition: transform .3s .1s ease-in-out;
   }
   
   .hamburger--active {
-    transform: translatex(140px);
+    transform: translatex(17rem);
   }
   
   .hamburger__box {
-    width: 35px;
-    height: 24px;
+    width: 3.5rem;
+    height: 2.4rem;
     display: inline-block;
     position: relative;
   }
@@ -41,11 +42,11 @@
   } 
   
   .hamburger__inner::before {
-    top: -10px;
+    top: -1rem;
   }
   
   .hamburger__inner::after {
-    top: 10px;
+    top: 1rem;
   }
   
   .hamburger--active .hamburger__inner {
@@ -53,54 +54,12 @@
   }
   
   .hamburger--active .hamburger__inner:before {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(1rem) rotate(45deg);
   }
   
   .hamburger--active .hamburger__inner:after {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-1rem) rotate(-45deg);
   }
 
 
-  .navigation {
-    height: 100vh;
-    width: 200px;
-    position: absolute;
-    top: 20%;
-    left: 0;
-    transform: translateX(-190px);
-    -webkit-transform: translateX(-190px);
-    -moz-transform: translateX(-190px);
-    -ms-transform: translateX(-190px);
-    -o-transform: translateX(-190px);
-    transition: transform .3s .1s ease-in-out;
-    -webkit-transition: transform .3s .1s ease-in-out;
-    -moz-transition: transform .3s .1s ease-in-out;
-    -ms-transition: transform .3s .1s ease-in-out;
-    -o-transition: transform .3s .1s ease-in-out;
-
-    &--active {
-        transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        -o-transform: translateX(0px);
-    }
-    
-    &__lists {
-        margin-top: 50px;
-        list-style: none;
-       
-    
-    }
-    
-    &__item {
-        margin-bottom: 20px;
-    
-    a {
-        text-decoration: none;
-        color: $gold;
-    
-        }
-    }
-
-}     
+     
