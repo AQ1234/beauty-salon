@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*GRID*/
 @keyframes fade {
   0% {
@@ -572,7 +573,7 @@ body {
     padding: 1rem; }
 
 .bodyTreatments {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 3rem 0 1rem;
   padding: 2rem 2rem;
   color: #302c24; }
@@ -585,14 +586,18 @@ body {
     height: 8rem;
     background-size: cover;
     background-position: center;
-    background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .bodyTreatments__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .bodyTreatments__image--2 {
-      margin: auto;
-      width: 31rem;
-      height: 8rem;
-      background-size: cover;
-      background-position: center;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .bodyTreatments__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .bodyTreatments__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .bodyTreatments__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
 
 .article {
   margin: 1rem 0 1rem;
@@ -601,34 +606,41 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem 1rem;
-  counter-reset: sec; }
+  counter-reset: sec;
+  margin-bottom: 5rem; }
   .article__header {
     color: #ad9b6d; }
-  .article__content {
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    counter-increment: sec;
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    content: counter(sec);
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: none; }
+    .article__content--list li {
+      padding: .2rem  0; }
+  .article__content--intraceuticals {
+    padding: 1.5rem;
     font-size: 1.8rem;
     position: relative;
-    text-align: justify; }
-    .article__content:nth-child(odd) {
-      grid-column: 2; }
-      .article__content:nth-child(odd)::before {
-        left: 20%; }
-    .article__content:nth-child(even) {
-      grid-column: 1; }
-      .article__content:nth-child(even)::before {
-        right: 20%; }
-    .article__content::before {
-      counter-increment: sec;
-      z-index: -1;
-      font-weight: bold;
-      position: absolute;
-      font-size: 35rem;
-      top: -20%;
-      content: counter(sec);
-      color: black; }
-    .article__content::nth-child(odd)::before {
-      left: -20%; }
-    .article__content::nth-child(even)::before {
-      right: -20%; }
+    text-align: center;
+    width: 90%; }
 
 .about {
   font-size: 1.5rem;
