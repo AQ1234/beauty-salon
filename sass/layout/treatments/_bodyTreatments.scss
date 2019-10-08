@@ -123,3 +123,27 @@
     } 
 
 }
+
+.content {
+    display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        align-items: stretch;
+        margin: 0 5rem;
+        padding: 2rem 0;
+    
+    &__end {
+        text-align: justify;
+        margin: 5rem 2rem;
+        display: inline-block;
+    }
+
+    &__img {
+        width: 95rem;
+        height: 30rem;
+        background-size: cover;
+        background-image: url(/resources/img/offers-images/rozalia.jpg);
+        display: inline-block;
+    }
+}
