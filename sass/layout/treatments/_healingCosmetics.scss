@@ -1,0 +1,96 @@
+.healingCosmetics {
+    font-size: 1.6rem;
+    margin: 3rem 0 1rem;
+    padding: 2rem 2rem;
+    color: $bronze-dark;
+
+    &__header {
+
+        color: $gold-darker;
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        margin: auto;
+        width: 31rem;
+        height: 8rem;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        background-image: url(/resources/img/offers-images/offer-logos/phFormula123.png);
+       
+    }
+
+}
+
+
+
+.article {
+
+    margin: 1rem 0 1rem;
+    padding: 0rem 2rem;
+    color: $color-grey-dark-2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 1rem;
+    margin-bottom: 5rem;
+   
+    &__header {
+
+        color: $gold;
+    }
+    &:nth-child(odd) .article__content {
+        grid-column: 2;
+
+    }
+
+    &:nth-child(even) .article__content {
+        grid-column: 1;
+
+    }
+}
+
+.article__content {
+
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+   
+
+    &::before {
+     
+        z-index: -1;
+        font-weight: bold;
+        position: absolute;
+        font-size: 35rem;
+        top: -20%;
+        color: black;
+
+        
+
+    }
+
+    &--list {
+        padding: 1rem .5rem;
+        list-style: none;
+
+        li {
+           padding: .2rem  0;
+
+        }
+    }
+
+    &--intraceuticals {
+
+        padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    } 
+
+}
+

@@ -606,7 +606,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem 1rem;
-  counter-reset: sec;
   margin-bottom: 5rem; }
   .article__header {
     color: #ad9b6d; }
@@ -622,13 +621,254 @@ body {
   text-align: justify;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
   .article__content::before {
-    counter-increment: sec;
     z-index: -1;
     font-weight: bold;
     position: absolute;
     font-size: 35rem;
     top: -20%;
-    content: counter(sec);
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: none; }
+    .article__content--list li {
+      padding: .2rem  0; }
+  .article__content--treatments {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0 5rem;
+  padding: 2rem 0; }
+  .content__end {
+    text-align: justify;
+    margin: 5rem 2rem;
+    display: inline-block; }
+  .content__img {
+    width: 95rem;
+    height: 30rem;
+    background-size: cover;
+    background-image: url(/resources/img/offers-images/flower-1363863-640x480.jpg);
+    display: inline-block; }
+
+.healingCosmetics {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 2rem;
+  color: #302c24; }
+  .healingCosmetics__header {
+    color: #88784d;
+    margin-bottom: 2rem; }
+  .healingCosmetics__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    background-image: url(/resources/img/offers-images/offer-logos/phFormula123.png); }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 1rem .5rem;
+    list-style: none; }
+    .article__content--list li {
+      padding: .2rem  0; }
+  .article__content--intraceuticals {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    width: 90%; }
+
+.aestheticMedicine {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 2rem;
+  color: #302c24; }
+  .aestheticMedicine__header {
+    color: #88784d;
+    margin-bottom: 2rem; }
+  .aestheticMedicine__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .aestheticMedicine__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .aestheticMedicine__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .aestheticMedicine__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .aestheticMedicine__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .aestheticMedicine__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem; }
+  .article__content--aesthetic {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: left; }
+    .article__content--aesthetic a {
+      text-decoration: none;
+      color: #ad9b6d; }
+      .article__content--aesthetic a:hover, .article__content--aesthetic a:active, .article__content--aesthetic a:after {
+        color: #88784d; }
+
+.content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 2rem; }
+  .content__end {
+    text-align: justify;
+    margin: 5rem 2rem;
+    display: inline-block; }
+  .content--img {
+    background-color: aqua;
+    background-size: cover;
+    background-image: url(/resources/img/offers-images/gettyimages-802557220-612x612.jpg);
+    display: inline-block;
+    width: 50%;
+    height: 20rem;
+    display: inline-block;
+    margin: 0 2rem; }
+  .content--img-2 {
+    display: inline-block;
+    background-color: aqua;
+    height: 20rem;
+    background-size: cover;
+    background-image: url(/resources/img/offers-images/gettyimages-810288106-612x612.jpg);
+    display: inline-block;
+    width: 50%; }
+
+.skinCare {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 2rem;
+  color: #302c24; }
+  .skinCare__header {
+    color: #88784d;
+    margin-bottom: 2rem; }
+  .skinCare__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .skinCare__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .skinCare__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .skinCare__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .skinCare__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .skinCare__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
     color: black; }
   .article__content--list {
     padding: 2rem;

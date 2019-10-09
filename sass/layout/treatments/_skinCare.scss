@@ -1,4 +1,4 @@
-.bodyTreatments {
+.skinCare {
     font-size: 1.6rem;
     margin: 3rem 0 1rem;
     padding: 2rem 2rem;
@@ -111,12 +111,13 @@
         }
     }
 
-    &--treatments {
+    &--intraceuticals {
 
         padding: 1.5rem;
     font-size: 1.8rem;
     position: relative;
-    text-align: justify;
+    text-align: center;
+    width: 90%;
     } 
 
 }
@@ -140,8 +141,9 @@
         width: 95rem;
         height: 30rem;
         background-size: cover;
-        background-image: url(/resources/img/offers-images/flower-1363863-640x480.jpg);
+        background-image: url(/resources/img/offers-images/rozalia.jpg);
         display: inline-block;
     }
 }
+
 
