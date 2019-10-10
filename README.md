@@ -6,4 +6,8 @@ In this project I'm going to try make a new website decidated to beauty salon. B
 
 -Html file had 1000 lines of html's file.
 
+10 october 2019
+
+-Discovered comments in html file
+
 `msmikesm` it was your idea! 
