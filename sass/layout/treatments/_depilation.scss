@@ -1,13 +1,31 @@
-.bodyTreatments {
+.depilation {
     font-size: 1.6rem;
     margin: 3rem 0 1rem;
-    padding: 2rem 2rem;
+    padding: 2rem 3rem;
     color: $bronze-dark;
 
     &__header {
 
         color: $gold-darker;
         margin-bottom: 2rem;
+        margin-right: 2%;
+        font-size: 3rem;
+
+        &--2 {
+            color: $gold;
+            font-size: 3rem;
+            margin: 3rem 0;
+            
+
+        }
+
+        &--3 {
+            color: $gold;
+            font-size: 3rem;
+            margin: 3rem 0 0rem;
+            
+
+        }
     }
 
     &__image {
@@ -51,6 +69,7 @@
 
 
     }
+
     &__content {
         display: -webkit-flex;
             display: flex;
@@ -67,18 +86,24 @@
         }
     
         &--img {
-            width: 95rem;
-            height: 30rem;
+            margin: 2rem 3rem;
+            width: 50rem;
+            height: 25rem;
+            background-position: center;
             background-size: cover;
-            background-image: url(/resources/img/offers-images/pink-roses.jpg);
+            background-image: url(/resources/img/offers-images/depilation.jpg);
             display: inline-block;
+
+           
         }
     }
+    
 
 }
 
 .article {
 
+    
     margin: 1rem 0 1rem;
     padding: 0rem 2rem;
     color: $color-grey-dark-2;
@@ -88,9 +113,9 @@
     margin-bottom: 5rem;
    
     &__header {
-
-        color: $gold;
+        text-transform: uppercase;
         text-align: left;
+        color: $gold;
     }
     &:nth-child(odd) .article__content {
         grid-column: 2;
@@ -127,23 +152,43 @@
 
     &--list {
         padding: 2rem;
-        list-style: none;
+        list-style: square;
 
+       
         li {
            padding: .2rem  0;
 
         }
+
+        &--2 {
+            
+            color: $gold-darker;
+          
+        
+            li {
+                text-align:center;
+                list-style: square;
+  
+            }
+        
+            
+        }
     }
 
-    &--treatments {
+   
 
-        padding: 1.5rem;
+    &--depilation {
+
+        margin: auto;
+    padding: 1.5rem;
     font-size: 1.8rem;
     position: relative;
     text-align: justify;
     } 
 
 }
+
+
 
 
 

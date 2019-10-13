@@ -523,6 +523,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     width: 20rem;
     position: absolute;
+    z-index: 1;
     top: 22%;
     left: 0;
     transform: translateX(-210px);
@@ -598,6 +599,24 @@ body {
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
     .bodyTreatments__image--5 {
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .bodyTreatments__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .bodyTreatments__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .bodyTreatments__content--img {
+      width: 95rem;
+      height: 30rem;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/pink-roses.jpg);
+      display: inline-block; }
 
 .article {
   margin: 1rem 0 1rem;
@@ -608,7 +627,8 @@ body {
   grid-gap: 1rem 1rem;
   margin-bottom: 5rem; }
   .article__header {
-    color: #ad9b6d; }
+    color: #ad9b6d;
+    text-align: left; }
   .article:nth-child(odd) .article__content {
     grid-column: 2; }
   .article:nth-child(even) .article__content {
@@ -638,25 +658,6 @@ body {
     position: relative;
     text-align: justify; }
 
-.content {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  align-items: stretch;
-  margin: 0 5rem;
-  padding: 2rem 0; }
-  .content__end {
-    text-align: justify;
-    margin: 5rem 2rem;
-    display: inline-block; }
-  .content__img {
-    width: 95rem;
-    height: 30rem;
-    background-size: cover;
-    background-image: url(/resources/img/offers-images/flower-1363863-640x480.jpg);
-    display: inline-block; }
-
 .healingCosmetics {
   font-size: 1.6rem;
   margin: 3rem 0 1rem;
@@ -684,7 +685,8 @@ body {
   grid-gap: 1rem 1rem;
   margin-bottom: 5rem; }
   .article__header {
-    color: #ad9b6d; }
+    color: #ad9b6d;
+    text-align: left; }
   .article:nth-child(odd) .article__content {
     grid-column: 2; }
   .article:nth-child(even) .article__content {
@@ -751,7 +753,8 @@ body {
   grid-gap: 1rem 1rem;
   margin-bottom: 5rem; }
   .article__header {
-    color: #ad9b6d; }
+    color: #ad9b6d;
+    text-align: left; }
   .article:nth-child(odd) .article__content {
     grid-column: 2; }
   .article:nth-child(even) .article__content {
@@ -851,7 +854,8 @@ body {
   grid-gap: 1rem 1rem;
   margin-bottom: 5rem; }
   .article__header {
-    color: #ad9b6d; }
+    color: #ad9b6d;
+    text-align: left; }
   .article:nth-child(odd) .article__content {
     grid-column: 2; }
   .article:nth-child(even) .article__content {
@@ -900,6 +904,841 @@ body {
     background-size: cover;
     background-image: url(/resources/img/offers-images/rozalia.jpg);
     display: inline-block; }
+
+.massage {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .massage__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%; }
+    .massage__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+  .massage__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .massage__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .massage__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .massage__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .massage__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .massage__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .massage__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .massage__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .massage__content--img {
+      margin: 1rem 23%;
+      width: 70rem;
+      height: 30rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
+      display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: none; }
+    .article__content--list li {
+      padding: .2rem  0; }
+  .article__content--massages {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.handsAndFeet {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .handsAndFeet__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%; }
+    .handsAndFeet__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+  .handsAndFeet__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .handsAndFeet__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .handsAndFeet__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .handsAndFeet__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .handsAndFeet__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .handsAndFeet__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .handsAndFeet__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .handsAndFeet__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .handsAndFeet__content--img {
+      margin: 2rem 3rem;
+      width: 50rem;
+      height: 30rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/laser-treatments.jpg);
+      display: inline-block; }
+      .handsAndFeet__content--img--2 {
+        margin: 2rem 3rem;
+        width: 50rem;
+        height: 30rem;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/resources/img/offers-images/pexels-photo-939835.jpeg);
+        display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+  .article__content--handsAndFeet {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.trychology {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .trychology__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%; }
+    .trychology__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+    .trychology__header--3 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0 0rem; }
+  .trychology__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .trychology__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .trychology__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .trychology__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .trychology__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .trychology__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .trychology__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .trychology__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .trychology__content--img {
+      margin: 2rem 3rem;
+      width: 50rem;
+      height: 30rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/laser-treatments.jpg);
+      display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+    .article__content--list--2 {
+      color: #88784d; }
+      .article__content--list--2 li {
+        text-align: center;
+        list-style: square; }
+  .article__content--trychology {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.carboxytherapy {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .carboxytherapy__header {
+    color: #88784d;
+    margin-bottom: 1rem;
+    margin-right: 2%;
+    font-size: 3rem; }
+    .carboxytherapy__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 1rem 0; }
+    .carboxytherapy__header--3 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0 0rem; }
+  .carboxytherapy__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .carboxytherapy__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .carboxytherapy__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .carboxytherapy__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .carboxytherapy__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .carboxytherapy__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .carboxytherapy__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .carboxytherapy__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .carboxytherapy__content--img {
+      margin: 2rem 3rem;
+      width: 50rem;
+      height: 30rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/laser-treatments.jpg);
+      display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+    .article__content--list--2 {
+      color: #88784d; }
+      .article__content--list--2 li {
+        text-align: center;
+        list-style: square; }
+  .article__content--carboxytherapy {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.laserTreatments {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .laserTreatments__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%;
+    font-size: 3rem; }
+    .laserTreatments__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+    .laserTreatments__header--3 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0 0rem; }
+  .laserTreatments__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .laserTreatments__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .laserTreatments__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .laserTreatments__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .laserTreatments__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .laserTreatments__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .laserTreatments__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .laserTreatments__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .laserTreatments__content--img {
+      margin: 2rem 3rem;
+      width: 50rem;
+      height: 30rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/laser-treatments.jpg);
+      display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+    .article__content--list--2 {
+      color: #88784d; }
+      .article__content--list--2 li {
+        text-align: center;
+        list-style: square; }
+  .article__content--laserTreatments {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.depilation {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .depilation__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%;
+    font-size: 3rem; }
+    .depilation__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+    .depilation__header--3 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0 0rem; }
+  .depilation__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .depilation__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .depilation__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .depilation__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .depilation__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .depilation__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .depilation__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .depilation__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .depilation__content--img {
+      margin: 2rem 3rem;
+      width: 50rem;
+      height: 25rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/depilation.jpg);
+      display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+    .article__content--list--2 {
+      color: #88784d; }
+      .article__content--list--2 li {
+        text-align: center;
+        list-style: square; }
+  .article__content--depilation {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.makeup {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .makeup__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%;
+    font-size: 3rem; }
+    .makeup__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+    .makeup__header--3 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0 0rem; }
+  .makeup__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .makeup__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .makeup__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .makeup__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .makeup__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .makeup__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .makeup__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .makeup__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .makeup__content--img {
+      margin: 2rem 2rem;
+      width: 50rem;
+      height: 25rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/woman-660806_1920-copy.jpg);
+      display: inline-block; }
+      .makeup__content--img--2 {
+        margin: 2rem 2rem;
+        width: 50rem;
+        height: 25rem;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/resources/img/offers-images/manicure-870857_640.jpg);
+        display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+    .article__content--list--2 {
+      color: #88784d; }
+      .article__content--list--2 li {
+        text-align: center;
+        list-style: square; }
+  .article__content--makeup {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
+
+.daySpa {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 3rem;
+  color: #302c24; }
+  .daySpa__header {
+    color: #88784d;
+    margin-bottom: 2rem;
+    margin-right: 2%;
+    font-size: 3rem; }
+    .daySpa__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
+    .daySpa__header--3 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0 0rem; }
+  .daySpa__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .daySpa__image--1 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+    .daySpa__image--2 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+    .daySpa__image--3 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+    .daySpa__image--4 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+    .daySpa__image--5 {
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+  .daySpa__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 5rem;
+    padding: 2rem 0; }
+    .daySpa__content__end {
+      text-align: justify;
+      margin: 5rem 2rem;
+      display: inline-block; }
+    .daySpa__content--img {
+      margin: 2rem 2rem;
+      width: 50rem;
+      height: 25rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/resources/img/offers-images/relaxation-686392_640.jpg);
+      display: inline-block; }
+      .daySpa__content--img--2 {
+        margin: 2rem 2rem;
+        width: 50rem;
+        height: 25rem;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
+        display: inline-block; }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ad9b6d; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem  0; }
+    .article__content--list--2 {
+      color: #88784d; }
+      .article__content--list--2 li {
+        text-align: center;
+        list-style: square; }
+  .article__content--daySpa {
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify; }
 
 .about {
   font-size: 1.5rem;

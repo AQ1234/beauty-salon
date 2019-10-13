@@ -1,13 +1,22 @@
-.bodyTreatments {
+.massage {
     font-size: 1.6rem;
     margin: 3rem 0 1rem;
-    padding: 2rem 2rem;
+    padding: 2rem 3rem;
     color: $bronze-dark;
 
     &__header {
 
         color: $gold-darker;
         margin-bottom: 2rem;
+        margin-right: 2%;
+
+        &--2 {
+            color: $gold;
+            font-size: 3rem;
+            margin: 3rem 0;
+            
+
+        }
     }
 
     &__image {
@@ -51,6 +60,7 @@
 
 
     }
+
     &__content {
         display: -webkit-flex;
             display: flex;
@@ -67,18 +77,22 @@
         }
     
         &--img {
-            width: 95rem;
+            margin: 1rem 23%;
+            width: 70rem;
             height: 30rem;
+            background-position: center;
             background-size: cover;
-            background-image: url(/resources/img/offers-images/pink-roses.jpg);
+            background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
             display: inline-block;
         }
     }
+    
 
 }
 
 .article {
 
+    
     margin: 1rem 0 1rem;
     padding: 0rem 2rem;
     color: $color-grey-dark-2;
@@ -88,9 +102,9 @@
     margin-bottom: 5rem;
    
     &__header {
-
-        color: $gold;
+        text-transform: uppercase;
         text-align: left;
+        color: $gold;
     }
     &:nth-child(odd) .article__content {
         grid-column: 2;
@@ -135,15 +149,15 @@
         }
     }
 
-    &--treatments {
+    &--massages {
 
-        padding: 1.5rem;
+        margin: auto;
+    padding: 1.5rem;
     font-size: 1.8rem;
     position: relative;
     text-align: justify;
     } 
 
 }
-
 
 

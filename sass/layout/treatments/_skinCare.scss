@@ -67,6 +67,7 @@
     &__header {
 
         color: $gold;
+        text-align: left;
     }
     &:nth-child(odd) .article__content {
         grid-column: 2;

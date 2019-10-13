@@ -30,6 +30,7 @@
         background-color: rgba($color-white, 0.8);
         width: 20rem;
         position: absolute;
+        z-index: 1;
         top: 22%;
         left: 0;
         transform: translateX(-210px);
@@ -49,12 +50,12 @@
             -moz-transform: translateX(0rem);
             -ms-transform: translateX(0rem);
             -o-transform: translateX(0rem);
+           
         }
         
         &--list {
             margin-top: 4.5rem;
             list-style: none;
-           
         
         }
         
