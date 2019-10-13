@@ -581,6 +581,10 @@ body {
   .bodyTreatments__header {
     color: #88784d;
     margin-bottom: 2rem; }
+    .bodyTreatments__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
   .bodyTreatments__image {
     margin: auto;
     width: 31rem;
@@ -725,6 +729,10 @@ body {
   .aestheticMedicine__header {
     color: #88784d;
     margin-bottom: 2rem; }
+    .aestheticMedicine__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
   .aestheticMedicine__image {
     margin: auto;
     width: 31rem;
@@ -755,6 +763,11 @@ body {
   .article__header {
     color: #ad9b6d;
     text-align: left; }
+    .article__header--2 {
+      text-align: center;
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
   .article:nth-child(odd) .article__content {
     grid-column: 2; }
   .article:nth-child(even) .article__content {
@@ -778,6 +791,8 @@ body {
     list-style: square; }
     .article__content--list li {
       padding: .2rem; }
+    .article__content--list--2 {
+      text-align: center; }
   .article__content--aesthetic {
     padding: 1.5rem;
     font-size: 1.8rem;
@@ -826,6 +841,10 @@ body {
   .skinCare__header {
     color: #88784d;
     margin-bottom: 2rem; }
+    .skinCare__header--2 {
+      color: #ad9b6d;
+      font-size: 3rem;
+      margin: 3rem 0; }
   .skinCare__image {
     margin: auto;
     width: 31rem;
@@ -835,15 +854,18 @@ body {
     margin-bottom: 3rem;
     margin-top: 3rem; }
     .skinCare__image--1 {
+      padding: .7rem .6rem .4rem;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .skinCare__image--2 {
+      padding: .8rem .8rem 1.2rem;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
     .skinCare__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intra-1.jpg); }
     .skinCare__image--4 {
+      padding: 1.1rem 0;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
     .skinCare__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/ellabache-logo.jpg); }
 
 .article {
   margin: 1rem 0 1rem;
@@ -920,15 +942,18 @@ body {
       margin: 3rem 0; }
   .massage__image {
     margin: auto;
-    width: 31rem;
+    width: 29rem;
     height: 8rem;
     background-size: cover;
     background-position: center;
     margin-bottom: 3rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    display: inline-block; }
     .massage__image--1 {
+      display: inline-block;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .massage__image--2 {
+      display: inline-block;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
     .massage__image--3 {
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
@@ -1692,6 +1717,10 @@ body {
         background-size: cover;
         background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
         display: inline-block; }
+
+strong-number {
+  color: #302c24;
+  cursor: pointer; }
 
 .article {
   margin: 1rem 0 1rem;

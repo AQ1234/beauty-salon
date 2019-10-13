@@ -8,6 +8,14 @@
 
         color: $gold-darker;
         margin-bottom: 2rem;
+
+        &--2 {
+            color: $gold;
+            font-size: 3rem;
+            margin: 3rem 0;
+            
+
+        }
     }
 
     &__image {
