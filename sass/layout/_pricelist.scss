@@ -1,0 +1,118 @@
+.pricelist {
+
+    font-size: 1.5rem;
+    margin: 10rem 0 0;
+    padding: 2rem 2rem;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__mainHeader {
+
+        text-align: center;
+        color: $gold;
+        font-size: 3rem;
+
+
+        &::after {
+
+            display: block;
+            height: 3px;
+            background-color: $gold;
+            content: "";
+            width: 10%;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+    }
+
+    &__navigation {
+        background-color: rgba($color-white, 0.8);
+        width: 20rem;
+        position: absolute;
+        z-index: 1;
+        top: 22%;
+        left: 0;
+        transform: translateX(-210px);
+        -webkit-transform: translateX(-210px);
+        -moz-transform: translateX(-210px);
+        -ms-transform: translateX(-210px);
+        -o-transform: translateX(-210px);
+        transition: transform .3s .1s ease-in-out;
+        -webkit-transition: transform .3s .1s ease-in-out;
+        -moz-transition: transform .3s .1s ease-in-out;
+        -ms-transition: transform .3s .1s ease-in-out;
+        -o-transition: transform .3s .1s ease-in-out;
+    
+        &--active {
+            transform: translateX(0rem);
+            -webkit-transform: translateX(0rem);
+            -moz-transform: translateX(0rem);
+            -ms-transform: translateX(0rem);
+            -o-transform: translateX(0rem);
+           
+        }
+        
+        &--list {
+            margin-top: 4.5rem;
+            list-style: none;
+        
+        }
+        
+        li {
+            margin: 1rem;
+    
+            &:not(:last-child) {
+              border-bottom: 1px solid $gold;
+              width: 90%;
+            }
+        a {
+            text-decoration: none;
+            color: $gold;
+            font-size: 2.2rem;
+        
+            &:hover {
+    
+              color: $color-grey-dark-2;
+            }
+            }
+        }
+    
+    }  
+
+
+}
+
+.pricelistContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 3rem 0 5rem;
+    text-align: center;
+
+
+ 
+
+    &__sidenav {
+
+        width: 31%;
+        background-color: aquamarine;
+
+       
+
+    }
+
+    &__pricelist {
+        width: 100%;
+        height: 100%;
+        margin: 0 1.5rem;
+        padding: 1rem;
+
+    
+    }
+
+   
+
+
+}

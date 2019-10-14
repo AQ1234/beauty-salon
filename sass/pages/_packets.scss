@@ -95,6 +95,14 @@
                 border-radius: 2rem;
                 background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(../img/packets/gift-553150_640.jpg);
                 background-size: cover;
+
+                 &--2 {
+                    height: 200px;
+                    border-radius: 2rem;
+                    background-image: linear-gradient(rgba($gold, 0.1), rgba($color-white, 0.7)), url(../img/packets/white-photo-verson-of-the-envelopes-1313361-639x449.jpg);
+                    background-size: cover;
+
+                 }
             }
         }
 
