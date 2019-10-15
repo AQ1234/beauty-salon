@@ -116,3 +116,44 @@
 
 
 }
+
+.article__content {
+
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+   
+
+    &::before {
+        z-index: -1;
+        font-weight: bold;
+        position: absolute;
+        font-size: 35rem;
+        top: -20%;
+        color: black;
+
+        
+
+    }
+
+   
+}
+.price--list {
+    margin: 2rem 1rem;
+    padding: 2rem 0;
+    list-style: none;
+
+    li {
+       padding: 1rem;
+       border-bottom: 1px solid $gold;
+    }
+
+
+    &--2 {
+        font-size: 1rem;
+        text-align: center;
+
+    }
+}

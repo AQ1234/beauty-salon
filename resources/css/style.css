@@ -54,6 +54,16 @@ body {
   border-radius: 2rem;
   padding: .5rem;
   border: 1px solid #ad9b6d; }
+  .border_radius--price {
+    padding: .5rem;
+    border: 2px solid #ad9b6d; }
+
+.price {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #ad9b6d;
+  display: inline-block;
+  float: right; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -285,7 +295,8 @@ body {
   background-color: transparent;
   border: 0;
   margin: 0;
-  height: 3.5rem; }
+  height: 3.5rem;
+  position: fixed; }
 
 .hamburger, .treatments__navigation {
   transition: transform .3s .1s ease-in-out; }
@@ -645,6 +656,31 @@ body {
     height: 100%;
     margin: 0 1.5rem;
     padding: 1rem; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+
+.price--list {
+  margin: 2rem 1rem;
+  padding: 2rem 0;
+  list-style: none; }
+  .price--list li {
+    padding: 1rem;
+    border-bottom: 1px solid #ad9b6d; }
+  .price--list--2 {
+    font-size: 1rem;
+    text-align: center; }
 
 .bodyTreatments {
   font-size: 1.6rem;
