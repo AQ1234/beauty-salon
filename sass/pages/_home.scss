@@ -1,17 +1,18 @@
 .home {
-  height: 100%;
   z-index: 50;
 }
 
 .down__nav {
   position: absolute;
+  width: 97%;
   bottom: 0;
   background-color: rgba($gold, .35);
-  width: 100%;
+ 
 
   &--list {
     text-align: center;
     list-style: none;
+    width: 98%;
 
     li {
       display: inline-block;
@@ -49,24 +50,15 @@
   /*Slide-Image*/
   &__slide {
      display: none;
-     width: 100%;
 
-
-     &--1 {
-       background-image: url("../resources/img/attractive-beautiful-beauty-638700-cut-3.png");
-       
-     }
-
-     &--2 {
-      background-image: url("../resources/img/woman-1320810_1920-copy.png");
-    }
-
-    &--3 {
-      background-image: url("../resources/img/woman-660806_1920-copy.jpg");
-    }
+     background-color: aqua;
 
      img {
-       width: 100%;
+
+    background-size: cover;
+    width: 100%;
+       height: 100vh;
+      
     //   // vertical-align: middle;
     //   //position: relative;
      }
@@ -140,15 +132,3 @@
 
   
 }
-
-// .one {
-//   background-image: url("../img/woman-1320810_1920-copy.jpg");
-// }
-
-// .two {
-//   background-image: url("../img/attractive-beautiful-beauty-638700-cut-3.png");
-// }
-
-// .three {
-//   background-image: url("../img/woman-660806_1920-copy.jpg");
-// }
