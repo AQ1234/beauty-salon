@@ -295,8 +295,7 @@ body {
   background-color: transparent;
   border: 0;
   margin: 0;
-  height: 3.5rem;
-  position: fixed; }
+  height: 3.5rem; }
 
 .hamburger, .treatments__navigation {
   transition: transform .3s .1s ease-in-out; }
@@ -589,8 +588,14 @@ body {
   margin: 10rem 0 0;
   padding: 2rem 2rem;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
+  .pricelist__header {
+    color: #ad9b6d;
+    font-size: 2.7rem; }
+  .pricelist a {
+    text-decoration: none;
+    color: #ad9b6d;
+    font-size: 2rem; }
   .pricelist__mainHeader {
     text-align: center;
     color: #ad9b6d;
@@ -630,7 +635,8 @@ body {
       margin-top: 4.5rem;
       list-style: none; }
     .pricelist__navigation li {
-      margin: 1rem; }
+      margin: 1rem;
+      text-align: center; }
       .pricelist__navigation li:not(:last-child) {
         border-bottom: 1px solid #ad9b6d;
         width: 90%; }
@@ -1877,6 +1883,66 @@ strong-number {
     font-size: 1.8rem;
     position: relative;
     text-align: justify; }
+
+.eyeStylization {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  padding: 2rem 2rem;
+  color: #302c24; }
+  .eyeStylization__header {
+    color: #ad9b6d;
+    font-size: 3rem;
+    margin: 3rem 0; }
+  .eyeStylization__image {
+    margin: auto;
+    width: 31rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    background-image: url(/resources/img/offers-images/offer-logos/phFormula123.png); }
+
+.article {
+  margin: 1rem 0 1rem;
+  padding: 0rem 2rem;
+  color: #555;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-bottom: 5rem; }
+  .article__header {
+    color: #ad9b6d;
+    text-align: left; }
+  .article:nth-child(odd) .article__content {
+    grid-column: 2; }
+  .article:nth-child(even) .article__content {
+    grid-column: 1; }
+
+.article__content {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 1rem .5rem;
+    list-style: none; }
+    .article__content--list li {
+      padding: .2rem  0; }
+  .article__content--eyeStylization {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    width: 90%; }
 
 .about {
   font-size: 1.5rem;

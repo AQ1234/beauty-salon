@@ -5,7 +5,17 @@
     padding: 2rem 2rem;
     background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
     background-size: cover;
-    background-attachment: fixed;
+
+    &__header {
+        color: $gold;
+        font-size: 2.7rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $gold;
+        font-size: 2rem;
+    }
 
     &__mainHeader {
 
@@ -26,6 +36,7 @@
         }
     }
 
+   
     &__navigation {
         background-color: rgba($color-white, 0.8);
         width: 20rem;
@@ -61,6 +72,7 @@
         
         li {
             margin: 1rem;
+            text-align: center;
     
             &:not(:last-child) {
               border-bottom: 1px solid $gold;

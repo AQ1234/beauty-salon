@@ -46,10 +46,16 @@
 
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.treatments__navigation');
+const nav2 = document.querySelector('.pricelist__navigation');
 
 const handleClick = () => {
   hamburger.classList.toggle('hamburger--active');
   nav.classList.toggle('treatments__navigation--active');
+nav2.classList.toggle('pricelist__navigation--active'); //nawet nie wiem jaki dać warunek
 }
+
+
+
+
 
 hamburger.addEventListener('click', handleClick);
