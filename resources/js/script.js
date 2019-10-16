@@ -3,23 +3,28 @@ showSlides(slideIndex);
 
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("main-slideshow__slide");
-  var dots = document.getElementsByClassName("main-slideshow__dots--dot");
-  
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 20000); // Change image every 2 seconds
+    var i;
+    var slides = document.getElementsByClassName("main-slideshow__slide");
+    var dots = document.getElementsByClassName("main-slideshow__dots--dot");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+
+    if (slideIndex > slides.length) {slideIndex = 1}
+
+    //! PAWEŁ SPRAWDŹ CONSOLE ZROZUMIESZ ;P
+
+    console.log(dots);
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    //! TU MASZ BŁĄD I RESZTY CI NIE WCZYTUJE
+    // slides[slideIndex-1].style.display = "block";
+    // dots[slideIndex-1].className += " active";
+    // setTimeout(showSlides, 20000); // Change image every 2 seconds
 }
 
 // let photo = document.getElementById("phot");
@@ -54,7 +59,26 @@ function showSlides(n) {
 // nav2.classList.toggle('pricelist__navigation--active'); //nawet nie wiem jaki dać warunek, bo chcę by hamburger był jeden zgodnie z zasadą DRY xD
 // }
 
+// MUSI BYĆ ID
+// TU MASZ FUNKCJE KTÓRA BEDZIE UKRYWAŁA I POKAZYWAŁA HAMBURGERA
+const hamburgerShow = () => {
+    const elements = {
+        treatments: document.getElementById("treat"),
+        priceList: document.getElementById("priceList"),
+        ham: document.getElementById("hamb")
+    };
 
+    if(elements.treatments || elements.priceList) {
+        elements.ham.style.display = "inline block";
+    } else {
+        elements.ham.style.display = "none";
+    }
+
+    //! TEST
+    console.log(elements.ham.style);
+}
+
+hamburgerShow();
 
 
 
