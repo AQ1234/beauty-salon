@@ -29,10 +29,10 @@
             margin: 0;
             padding: 0;
             font-size: 2.2rem;
-
+            display: inline-block;
            
             & > li {
-                float: left; // tak było w toturialu oze byc?
+                float: left;
                 width: 12rem;
                 height: 6rem;
                 margin: 0 .3rem;
@@ -62,10 +62,10 @@
            & > li > ul {
                list-style: none;
                padding: 0;
-               margin: 0;
-               width: 14rem;
-               background-color: rgba(#fff, .8);
-              
+               margin: 0 ;
+               margin-left: -2rem;
+               width: 16rem;
+               background-color: rgba(#fff, .6);
                display: none;
            }
 

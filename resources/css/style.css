@@ -365,7 +365,8 @@ body {
       cursor: pointer;
       margin: 0;
       padding: 0;
-      font-size: 2.2rem; }
+      font-size: 2.2rem;
+      display: inline-block; }
       .head__nav--list > li {
         float: left;
         width: 12rem;
@@ -384,8 +385,9 @@ body {
         list-style: none;
         padding: 0;
         margin: 0;
-        width: 14rem;
-        background-color: rgba(255, 255, 255, 0.8);
+        margin-left: -2rem;
+        width: 16rem;
+        background-color: rgba(255, 255, 255, 0.6);
         display: none; }
       .head__nav--list > li:hover > ul {
         margin-top: .2rem;
@@ -470,7 +472,8 @@ body {
       cursor: pointer;
       margin: 0;
       padding: 0;
-      font-size: 2.2rem; }
+      font-size: 2.2rem;
+      display: inline-block; }
       .head__nav--list > li {
         float: left;
         width: 12rem;
@@ -489,8 +492,9 @@ body {
         list-style: none;
         padding: 0;
         margin: 0;
-        width: 14rem;
-        background-color: rgba(255, 255, 255, 0.8);
+        margin-left: -2rem;
+        width: 16rem;
+        background-color: rgba(255, 255, 255, 0.6);
         display: none; }
       .head__nav--list > li:hover > ul {
         margin-top: .2rem;
@@ -2077,9 +2081,9 @@ strong-number {
     display: none;
     width: 100%; }
     .main-slideshow__slide--1 {
-      background-image: url("../resources/img/woman-1320810_1920-copy.png"); }
-    .main-slideshow__slide--2 {
       background-image: url("../resources/img/attractive-beautiful-beauty-638700-cut-3.png"); }
+    .main-slideshow__slide--2 {
+      background-image: url("../resources/img/woman-1320810_1920-copy.png"); }
     .main-slideshow__slide--3 {
       background-image: url("../resources/img/woman-660806_1920-copy.jpg"); }
     .main-slideshow__slide img {
