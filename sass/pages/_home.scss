@@ -4,7 +4,7 @@
 
 .down__nav {
   position: absolute;
-  width: 97%;
+  width: 98%;
   bottom: 0;
   background-color: rgba($gold, .35);
  
@@ -51,8 +51,6 @@
   &__slide {
      display: none;
 
-     background-color: aqua;
-
      img {
 
     background-size: cover;
@@ -68,8 +66,8 @@
       font-size: 50px;
       padding: 8px 12px;
       position: absolute;
-      left: 45%;
-      top: 50%;
+      left: 10%;
+      top: 20%;
     }
 
   }
