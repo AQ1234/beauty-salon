@@ -22,8 +22,8 @@
     &__nav {
 
         text-align: center;
-
         &--list {
+            
             list-style: none;
             cursor: pointer;
             margin: 0;
@@ -46,7 +46,7 @@
                 opacity: 1;
                 display: block;
                 text-decoration: none;
-                transition: all .2s;
+                
 
                 &,
                 &:link,
@@ -56,31 +56,45 @@
 
                 &:hover {
                     color: $color-grey-dark-2;
+                    
                 }
             }
 
+        & ul {
+           
+        }
+        &:hover ul {
+            
+
+        }
+
            & > li > ul {
-               list-style: none;
-               padding: 0;
-               margin: 0 ;
-               margin-left: -.5rem;
-               width: 16rem;
-               background-color: rgba(#fff, .6);
-               display: none;
+            max-height: 0;
+            transition: max-height .25s ease-out;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            margin: 0 ;
+            margin-left: -.5rem;
+            width: 16rem;
+            background-color: rgba(#fff, .6);
+              
+               
            }
 
            & > li:hover > ul {
+            max-height: 500px;
+            transition: max-height .6s ease-in;
                margin-top: .2rem;
                display: block;
         }
 
            & > li > ul > li {
-                
              //   background-color: rgba(#fff, 1);
                 position: relative;
                 z-index: 100;
                 border-top: 1px dashed $gold; 
-                
+              
             
                 
            }
@@ -94,7 +108,7 @@
            & > li > ul > li > a {
                 
             //   background-color: rgba(#fff, 1);
-               
+           
             
                opacity: 1;
                
