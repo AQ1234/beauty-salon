@@ -76,6 +76,7 @@
             padding: 0;
             margin: 0 ;
             margin-left: -.5rem;
+            margin-top: .2rem;
             width: 16rem;
             background-color: rgba(#fff, .6);
               
@@ -85,9 +86,10 @@
            & > li:hover > ul {
             max-height: 500px;
             transition: max-height .6s ease-in;
-               margin-top: .2rem;
                display: block;
         }
+
+     
 
            & > li > ul > li {
              //   background-color: rgba(#fff, 1);
@@ -98,6 +100,8 @@
             
                 
            }
+
+           
 
            & > li > ul > li:first-child {
                 

@@ -1,11 +1,18 @@
+
+.hamburgerNavIcon {
+  position: absolute;
+  left: 4rem;
+  margin-top: 10rem;
+}
+
 .hamburger {
-    padding: 1rem;
-    display: inline-block;
+    
     cursor: pointer;
     background-color: transparent;
     border: 0;
     margin: 0;
-    height: 3.5rem;
+   
+   
   }
   
   .hamburger, .treatments__navigation {
