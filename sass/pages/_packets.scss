@@ -1,3 +1,7 @@
+#packets-2 {
+    -webkit-animation: pulsate-fwd 7s ease-in-out 4s forwards;
+    animation: pulsate-fwd 7s ease-in-out 4s forwards;
+}
 .packets {
 
     font-size: 1.5rem;
@@ -7,6 +11,7 @@
 
     &__container {
 
+      
         display: -webkit-flex;
         display: flex;
         -webkit-justify-content: center;
@@ -15,6 +20,7 @@
         padding: 4rem 0 4rem 0;
 
         &__item {
+            animation: moveInBottom 1.5s ease-in-out;
             padding: 0 1rem;
             width: 90%;
             &--header {
@@ -22,13 +28,17 @@
                 color: $gold;
                 margin: 5rem 0;
                 font-size: 3rem;
+    
+
             }
         }
 
         &__item--2 {
             margin: 0 2rem;
+           
             
             &--header {
+                animation: moveInLeft 1.5s ease-in-out;
                 text-align: center;
                 color: $gold;
                 margin: 1rem 0;
@@ -57,13 +67,14 @@
         justify-content: center;
         margin: 5rem;
         text-align: center;
-        
+        animation: moveInBottom 1.5s ease-in-out;
 
         &--header {
             margin: 3rem 0;
             text-align: center;
             color: $gold;
             font-size: 4rem;
+            animation: moveInLeft 1.5s ease-in-out;
 
             &:after {
                 display: block;

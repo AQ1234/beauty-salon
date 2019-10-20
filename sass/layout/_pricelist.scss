@@ -1,5 +1,5 @@
 .pricelist {
-
+    
     font-size: 1.5rem;
     margin: 10rem 0 0;
     padding: 2rem 2rem;
@@ -7,6 +7,7 @@
     background-size: cover;
 
     &__header {
+        animation: moveInRight 1.4s ease;
         color: $gold;
         font-size: 2.7rem;
     }
@@ -153,6 +154,7 @@
    
 }
 .price--list {
+    animation: moveInBottom 1.3s ease-out;
     margin: 2rem 1rem;
     padding: 2rem 0;
     list-style: none;

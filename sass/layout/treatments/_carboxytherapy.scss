@@ -12,6 +12,7 @@
         font-size: 3rem;
 
         &--2 {
+            animation: moveInLeft 1s ease-in;
             color: $gold;
             font-size: 3rem;
             margin: 1rem 0;
@@ -151,6 +152,7 @@
     }
 
     &--list {
+        animation: fadeIn 2s ease-in-out;
         padding: 2rem;
         list-style: square;
 

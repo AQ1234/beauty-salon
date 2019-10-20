@@ -13,7 +13,7 @@
             color: $gold;
             font-size: 3rem;
             margin: 3rem 0;
-            
+            animation: moveInLeft 1s ease-in-out;
 
         }
     }
@@ -75,6 +75,7 @@
         }
     
         &--img {
+            animation: moveInBottom 1.2s ease-in-out;
             width: 95rem;
             height: 30rem;
             background-size: cover;
@@ -113,6 +114,8 @@
 
 .article__content {
 
+
+   
     padding: 1.5rem;
     font-size: 1.8rem;
     position: relative;

@@ -174,7 +174,7 @@
     }
 
     &--img {
-        background-color: aqua;
+      animation: moveInLeft 1s ease-in-out;
      
         background-size: cover;
         background-image: url(/resources/img/offers-images/gettyimages-802557220-612x612.jpg);
@@ -186,6 +186,8 @@
     }
 
     &--img-2 {
+        
+      animation: moveInRight 1s ease-in-out;
         display: inline-block;
         background-color: aqua;
        height: 20rem;

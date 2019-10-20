@@ -6,6 +6,7 @@
     width: 100%;
 
     &__logo {
+      animation: moveInLeft 1s ease-in-out;
       padding: 1rem 2rem;
       text-align: center;
   
@@ -26,6 +27,7 @@
          
         //First item
           &--nav-list {
+            animation: fadeIn 2s ease;
             text-align: center;
             list-style: none;
       
@@ -57,6 +59,7 @@
           
       // second item
           &--nav-links {
+            animation: moveInRight 1s ease-in-out;
             font-size: 2rem;
             text-align: center;
             list-style: none;

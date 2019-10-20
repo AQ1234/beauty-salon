@@ -12,6 +12,8 @@
         font-size: 3rem;
 
         &--2 {
+
+            animation: moveInBottom 1s ease-in;
             color: $gold;
             font-size: 3rem;
             margin: 3rem 0;

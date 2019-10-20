@@ -12,6 +12,8 @@
         font-size: 3rem;
 
         &--2 {
+
+            animation: moveInBottom .9s ease;
             color: $gold;
             font-size: 3rem;
             margin: 3rem 0;
@@ -86,6 +88,8 @@
         }
     
         &--img {
+
+            animation: moveInLeft 1s ease-in-out;
             margin: 2rem 2rem;
             width: 50rem;
             height: 25rem;
@@ -95,6 +99,8 @@
             display: inline-block;
 
             &--2 {
+                
+            animation: moveInRight 1s ease-in-out;
                 margin: 2rem 2rem;
                 width: 50rem;
                 height: 25rem;

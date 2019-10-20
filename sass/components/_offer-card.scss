@@ -22,7 +22,7 @@
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($gold, .15);
         border-radius: 55px;
-
+       
 
         &--picture {
             background-size: cover;
@@ -30,7 +30,7 @@
             background-blend-mode: screen;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-           
+            animation: fadeIn 1.5s ease-in-out;
             
             &--1 {
                
@@ -201,59 +201,66 @@
             padding: 1rem 1.5rem;
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
-    
+            
             &--1 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(248, 190, 138), .85), rgba($gold, .6));
-    
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--2 {
              background-image: linear-gradient(to right bottom, rgba(rgb(236, 178, 127), .85), rgba($gold, .6));
-    
+             animation: fadeIn 2s ease-in-out;
             }
     
             &--3 {
-    
+                animation: fadeIn 2s ease-in-out;
                 background-image: linear-gradient(to right bottom,rgba(#EAAC75, .85), rgba($gold, .6));
             }
     
             &--4 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(236, 178, 127), .85), rgba($gold, .6));
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--5 {
                 background-image: linear-gradient(to right bottom, rgba(#EAAC75, .85), rgba($gold, .6));
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--6 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(247, 193, 146), .85), rgba($gold, .85));
+                animation: fadeIn 2s ease-in-out;
             }
 
             &--7 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(248, 190, 138), .85), rgba($gold, .6));
-    
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--8 {
              background-image: linear-gradient(to right bottom, rgba(rgb(236, 178, 127), .85), rgba($gold, .6));
-    
+             animation: fadeIn 2s ease-in-out;
             }
     
             &--9 {
     
                 background-image: linear-gradient(to right bottom,rgba(#EAAC75, .85), rgba($gold, .6));
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--10 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(236, 178, 127), .85), rgba($gold, .6));
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--11 {
                 background-image: linear-gradient(to right bottom, rgba(#EAAC75, .85), rgba($gold, .6));
+                animation: fadeIn 2s ease-in-out;
             }
     
             &--12 {
                 background-image: linear-gradient(to right bottom, rgba(rgb(247, 193, 146), .85), rgba($gold, .85));
+                animation: fadeIn 2s ease-in-out;
             }
         }
 

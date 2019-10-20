@@ -17,6 +17,9 @@
     li {
       display: inline-block;
       margin: 0 9rem;
+      animation-name: moveInBottom;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
 
       &:last-child {
         margin-bottom: 2rem;
@@ -75,7 +78,9 @@
       position: absolute;
       left: 50%;
       top: 20%;
-
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
 
 
 
@@ -86,6 +91,9 @@
         position: absolute;
         left: 5%;
         top: 20%;
+        animation-name: moveInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
 
       }
       &--3 {

@@ -9,6 +9,7 @@
 
     &__mainHeader {
 
+        animation: moveInBottom 1s ease-in;
         text-align: center;
         color: $gold;
         font-size: 3rem;
@@ -114,5 +115,66 @@
 
    
 
+
+}
+
+.article__content {
+
+    animation: moveInBottom 1.5s ease-in-out;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+   
+
+    &::before {
+        z-index: -1;
+        font-weight: bold;
+        position: absolute;
+        font-size: 35rem;
+        top: -20%;
+        color: black;
+
+        
+
+    }
+
+    &--list {
+        padding: 2rem;
+        list-style: square;
+
+        li {
+           padding: .2rem;
+        }
+
+
+        &--2 {
+            text-align: center;
+
+        }
+    }
+
+    &--aesthetic {
+
+        padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: left;
+   
+
+    a {
+        text-decoration: none;
+        color: $gold;
+
+        &:hover,
+        &:active,
+        &:after {
+
+            color: $gold-darker;
+        }
+    }
+
+    } 
 
 }

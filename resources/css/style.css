@@ -1,5 +1,43 @@
 @charset "UTF-8";
 /*GRID*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem); }
+  80% {
+    transform: translateX(0.8rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes fade {
   0% {
     opacity: .1; }
@@ -11,6 +49,49 @@
     opacity: .1; }
   50% {
     opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: .1; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: .1; }
+  to {
+    opacity: 1; } }
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    filter: blur(0);
+    opacity: 1; } }
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 *,
 *::after,
@@ -136,7 +217,8 @@ body {
       height: 26rem;
       background-blend-mode: screen;
       border-top-left-radius: 3px;
-      border-top-right-radius: 3px; }
+      border-top-right-radius: 3px;
+      animation: fadeIn 1.5s ease-in-out; }
       .card__side--picture--1 {
         background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.7)), url(../img/offers-images/massageimage.jpg);
         background-position: center;
@@ -232,29 +314,41 @@ body {
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone; }
       .card__heading--span--1 {
-        background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--2 {
-        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--3 {
+        animation: fadeIn 2s ease-in-out;
         background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
       .card__heading--span--4 {
-        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--5 {
-        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--6 {
-        background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85)); }
+        background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--7 {
-        background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(248, 190, 138, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--8 {
-        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--9 {
-        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--10 {
-        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(236, 178, 127, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--11 {
-        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6)); }
+        background-image: linear-gradient(to right bottom, rgba(234, 172, 117, 0.85), rgba(173, 155, 109, 0.6));
+        animation: fadeIn 2s ease-in-out; }
       .card__heading--span--12 {
-        background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85)); }
+        background-image: linear-gradient(to right bottom, rgba(247, 193, 146, 0.85), rgba(173, 155, 109, 0.85));
+        animation: fadeIn 2s ease-in-out; }
   .card__details {
     padding: .8rem 2rem 0;
     text-align: center; }
@@ -291,7 +385,8 @@ body {
 .hamburgerNavIcon {
   position: absolute;
   left: 4rem;
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  animation: moveInBottom 1s ease-in; }
 
 .hamburger {
   cursor: pointer;
@@ -358,11 +453,16 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
-  .head__logo img {
-    height: 8rem; }
+  .head__logo {
+    animation-name: moveInLogo;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-out; }
+    .head__logo img {
+      height: 8rem; }
   .head__nav {
     text-align: center; }
     .head__nav--list {
+      animation: focus-in-expand 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       list-style: none;
       cursor: pointer;
       margin: 0;
@@ -410,6 +510,7 @@ body {
   background-color: rgba(173, 155, 109, 0.75);
   width: 100%; }
   .mainFooter__logo {
+    animation: moveInLeft 1s ease-in-out;
     padding: 1rem 2rem;
     text-align: center; }
   .mainFooter__container {
@@ -423,6 +524,7 @@ body {
       margin: 0 1rem;
       padding: 0 1rem; }
       .mainFooter__container__item--nav-list {
+        animation: fadeIn 2s ease;
         text-align: center;
         list-style: none; }
         .mainFooter__container__item--nav-list li {
@@ -437,6 +539,7 @@ body {
           .mainFooter__container__item--nav-list a:hover {
             color: #fff; }
       .mainFooter__container__item--nav-links {
+        animation: moveInRight 1s ease-in-out;
         font-size: 2rem;
         text-align: center;
         list-style: none; }
@@ -468,11 +571,16 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
-  .head__logo img {
-    height: 8rem; }
+  .head__logo {
+    animation-name: moveInLogo;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-out; }
+    .head__logo img {
+      height: 8rem; }
   .head__nav {
     text-align: center; }
     .head__nav--list {
+      animation: focus-in-expand 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       list-style: none;
       cursor: pointer;
       margin: 0;
@@ -530,6 +638,7 @@ body {
   background-size: cover;
   background-attachment: fixed; }
   .treatments__mainHeader {
+    animation: moveInBottom 1s ease-in;
     text-align: center;
     color: #ad9b6d;
     font-size: 3rem; }
@@ -595,6 +704,38 @@ body {
     margin: 0 1.5rem;
     padding: 1rem; }
 
+.article__content {
+  animation: moveInBottom 1.5s ease-in-out;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: justify;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .article__content::before {
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    font-size: 35rem;
+    top: -20%;
+    color: black; }
+  .article__content--list {
+    padding: 2rem;
+    list-style: square; }
+    .article__content--list li {
+      padding: .2rem; }
+    .article__content--list--2 {
+      text-align: center; }
+  .article__content--aesthetic {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: left; }
+    .article__content--aesthetic a {
+      text-decoration: none;
+      color: #ad9b6d; }
+      .article__content--aesthetic a:hover, .article__content--aesthetic a:active, .article__content--aesthetic a:after {
+        color: #88784d; }
+
 .pricelist {
   font-size: 1.5rem;
   margin: 10rem 0 0;
@@ -602,6 +743,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
   background-size: cover; }
   .pricelist__header {
+    animation: moveInRight 1.4s ease;
     color: #ad9b6d;
     font-size: 2.7rem; }
   .pricelist a {
@@ -690,6 +832,7 @@ body {
     color: black; }
 
 .price--list {
+  animation: moveInBottom 1.3s ease-out;
   margin: 2rem 1rem;
   padding: 2rem 0;
   list-style: none; }
@@ -711,7 +854,8 @@ body {
     .bodyTreatments__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      animation: moveInLeft 1s ease-in-out; }
   .bodyTreatments__image {
     margin: auto;
     width: 31rem;
@@ -743,6 +887,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .bodyTreatments__content--img {
+      animation: moveInBottom 1.2s ease-in-out;
       width: 95rem;
       height: 30rem;
       background-size: cover;
@@ -943,7 +1088,7 @@ body {
     margin: 5rem 2rem;
     display: inline-block; }
   .content--img {
-    background-color: aqua;
+    animation: moveInLeft 1s ease-in-out;
     background-size: cover;
     background-image: url(/resources/img/offers-images/gettyimages-802557220-612x612.jpg);
     display: inline-block;
@@ -952,6 +1097,7 @@ body {
     display: inline-block;
     margin: 0 2rem; }
   .content--img-2 {
+    animation: moveInRight 1s ease-in-out;
     display: inline-block;
     background-color: aqua;
     height: 20rem;
@@ -971,7 +1117,8 @@ body {
     .skinCare__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      animation: moveInLeft 1s ease; }
   .skinCare__image {
     margin: auto;
     width: 31rem;
@@ -1066,7 +1213,8 @@ body {
     .massage__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      animation: moveInBottom 1s ease-in-out; }
   .massage__image {
     margin: auto;
     width: 29rem;
@@ -1107,7 +1255,8 @@ body {
       background-position: center;
       background-size: cover;
       background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
-      display: inline-block; }
+      display: inline-block;
+      animation: moveInLeft 1s ease-in-out; }
 
 .article {
   margin: 1rem 0 1rem;
@@ -1152,6 +1301,7 @@ body {
     text-align: justify; }
 
 .handsAndFeet {
+  animation: fade .8s ease;
   font-size: 1.6rem;
   margin: 3rem 0 1rem;
   padding: 2rem 3rem;
@@ -1163,7 +1313,8 @@ body {
     .handsAndFeet__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      animation: moveInRight 1s ease-in; }
   .handsAndFeet__image {
     margin: auto;
     width: 31rem;
@@ -1195,6 +1346,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .handsAndFeet__content--img {
+      animation: moveInLeft 1.3s ease-in;
       margin: 2rem 3rem;
       width: 50rem;
       height: 30rem;
@@ -1203,6 +1355,7 @@ body {
       background-image: url(/resources/img/offers-images/gettyimages-155317037-612x612.jpg);
       display: inline-block; }
       .handsAndFeet__content--img--2 {
+        animation: moveInRight 1.3s ease-in;
         margin: 2rem 3rem;
         width: 50rem;
         height: 30rem;
@@ -1261,8 +1414,10 @@ body {
   .trychology__header {
     color: #88784d;
     margin-bottom: 2rem;
-    margin-right: 2%; }
+    margin-right: 2%;
+    animation: moveInRight 1s ease-out; }
     .trychology__header--2 {
+      animation: moveInBottom 0.9s ease-in-out;
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0; }
@@ -1301,6 +1456,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .trychology__content--img {
+      animation: moveInBottom 1.2s ease-in;
       margin: 2rem 3rem;
       width: 50rem;
       height: 30rem;
@@ -1367,6 +1523,7 @@ body {
     margin-right: 2%;
     font-size: 3rem; }
     .carboxytherapy__header--2 {
+      animation: moveInLeft 1s ease-in;
       color: #ad9b6d;
       font-size: 3rem;
       margin: 1rem 0; }
@@ -1444,6 +1601,7 @@ body {
     top: -20%;
     color: black; }
   .article__content--list {
+    animation: fadeIn 2s ease-in-out;
     padding: 2rem;
     list-style: square; }
     .article__content--list li {
@@ -1471,6 +1629,7 @@ body {
     margin-right: 2%;
     font-size: 3rem; }
     .laserTreatments__header--2 {
+      animation: moveInBottom 1s ease-in;
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0; }
@@ -1575,6 +1734,7 @@ body {
     margin-right: 2%;
     font-size: 3rem; }
     .depilation__header--2 {
+      animation: moveInLeft 1s ease;
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0; }
@@ -1613,6 +1773,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .depilation__content--img {
+      animation: moveInBotom 1.2s ease;
       margin: 2rem 3rem;
       width: 50rem;
       height: 25rem;
@@ -1679,6 +1840,7 @@ body {
     margin-right: 2%;
     font-size: 3rem; }
     .makeup__header--2 {
+      animation: moveInBottom .9s ease;
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0; }
@@ -1717,6 +1879,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .makeup__content--img {
+      animation: moveInLeft 1s ease-in-out;
       margin: 2rem 2rem;
       width: 50rem;
       height: 25rem;
@@ -1725,6 +1888,7 @@ body {
       background-image: url(/resources/img/offers-images/woman-660806_1920-copy.jpg);
       display: inline-block; }
       .makeup__content--img--2 {
+        animation: moveInRight 1s ease-in-out;
         margin: 2rem 2rem;
         width: 50rem;
         height: 25rem;
@@ -1793,7 +1957,8 @@ body {
     .daySpa__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      animation: moveInLeft 1s ease-in-out; }
     .daySpa__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
@@ -1829,6 +1994,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .daySpa__content--img {
+      animation: moveInBottom 1s ease-in-out;
       margin: 2rem 2rem;
       width: 50rem;
       height: 25rem;
@@ -1837,6 +2003,7 @@ body {
       background-image: url(/resources/img/offers-images/relaxation-686392_640.jpg);
       display: inline-block; }
       .daySpa__content--img--2 {
+        animation: moveInBottom 1s ease-in-out;
         margin: 2rem 2rem;
         width: 50rem;
         height: 25rem;
@@ -1958,7 +2125,7 @@ strong-number {
 
 .about {
   font-size: 1.5rem;
-  margin: 3rem 0 1rem;
+  margin: 3rem 0 .5rem;
   padding: 2rem 2rem;
   color: #302c24; }
   .about__container {
@@ -1968,11 +2135,12 @@ strong-number {
     justify-content: space-around;
     align-items: stretch;
     margin: 0 5rem;
-    padding: 2rem 0 5rem 0; }
+    padding: 1.5rem 0 4rem 0; }
     .about__container--item {
       flex-wrap: wrap;
       padding: 0 1rem; }
     .about__container--picture {
+      animation: moveInRight 1.2s ease-out;
       margin: 1.5rem 0;
       width: 50rem;
       height: 25rem;
@@ -1981,6 +2149,7 @@ strong-number {
       background-size: cover;
       background-position: center; }
       .about__container--picture-2 {
+        animation: moveInRight 1.2s ease-out;
         margin: 1.5rem 0;
         width: 50rem;
         height: 25rem;
@@ -1989,12 +2158,13 @@ strong-number {
         background-size: cover;
         background-position: center; }
   .about__header {
+    animation: moveInLeft 1s ease;
     text-align: center;
     font-weight: 700;
     font-size: 4rem;
     color: #ad9b6d;
     text-transform: uppercase;
-    margin-bottom: 1rem; }
+    margin-bottom: 0rem; }
     .about__header:after {
       display: block;
       height: 3px;
@@ -2004,6 +2174,7 @@ strong-number {
       margin: 0 auto;
       margin-top: .2rem; }
     .about__header--2 {
+      animation: moveInBottom 1.2s ease-in-out;
       text-align: center;
       font-size: 3rem;
       color: #ad9b6d;
@@ -2020,12 +2191,16 @@ strong-number {
       .about__header--2:hover {
         color: #555; }
   .about__content {
+    animation: fadeIn 1.6s ease-in;
     text-align: justify;
     border-radius: 2rem;
     border: 1px solid #ad9b6d;
     padding: 1rem 1rem;
     margin: 2rem .5rem; }
+    .about__content--header {
+      color: #88784d; }
   .about--btn {
+    animation: moveInBottom .9s ease;
     margin: 2rem 0;
     text-align: center; }
 
@@ -2040,7 +2215,10 @@ strong-number {
   font-size: 1.6rem; }
   .contact__flex-container--flex-item {
     width: 60%;
+    animation: moveInBottom 1s ease-in;
     padding: 0 1rem; }
+    .contact__flex-container--flex-item-2 {
+      animation: fadeIn 1.5s ease; }
 
 .contact__map {
   background-color: rgba(234, 172, 117, 0.5);
@@ -2068,7 +2246,10 @@ strong-number {
     width: 98%; }
     .down__nav--list li {
       display: inline-block;
-      margin: 0 9rem; }
+      margin: 0 9rem;
+      animation-name: moveInBottom;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out; }
       .down__nav--list li:last-child {
         margin-bottom: 2rem; }
     .down__nav--list a {
@@ -2099,14 +2280,20 @@ strong-number {
       padding: 8px 12px;
       position: absolute;
       left: 50%;
-      top: 20%; }
+      top: 20%;
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-out; }
       .main-slideshow__slide--text--2 {
         color: #88784d;
         font-size: 50px;
         padding: 8px 12px;
         position: absolute;
         left: 5%;
-        top: 20%; }
+        top: 20%;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out; }
       .main-slideshow__slide--text--3 {
         color: #88784d;
         font-size: 50px;
@@ -2174,6 +2361,7 @@ strong-number {
       width: 26vw; }
 
 .offer__header {
+  animation: moveInRight 1.2s ease-in-out;
   font-weight: 700;
   font-size: 4rem;
   color: #ad9b6d;
@@ -2186,6 +2374,10 @@ strong-number {
     width: 25%;
     margin: 0 auto;
     margin-top: .5rem; }
+
+#packets-2 {
+  -webkit-animation: pulsate-fwd 7s ease-in-out 4s forwards;
+  animation: pulsate-fwd 7s ease-in-out 4s forwards; }
 
 .packets {
   font-size: 1.5rem;
@@ -2200,6 +2392,7 @@ strong-number {
     margin: 3rem 5rem 5rem;
     padding: 4rem 0 4rem 0; }
     .packets__container__item {
+      animation: moveInBottom 1.5s ease-in-out;
       padding: 0 1rem;
       width: 90%; }
       .packets__container__item--header {
@@ -2210,6 +2403,7 @@ strong-number {
     .packets__container__item--2 {
       margin: 0 2rem; }
       .packets__container__item--2--header {
+        animation: moveInLeft 1.5s ease-in-out;
         text-align: center;
         color: #ad9b6d;
         margin: 1rem 0; }
@@ -2227,12 +2421,14 @@ strong-number {
     -webkit-justify-content: center;
     justify-content: center;
     margin: 5rem;
-    text-align: center; }
+    text-align: center;
+    animation: moveInBottom 1.5s ease-in-out; }
     .packets__packageContainer--header {
       margin: 3rem 0;
       text-align: center;
       color: #ad9b6d;
-      font-size: 4rem; }
+      font-size: 4rem;
+      animation: moveInLeft 1.5s ease-in-out; }
       .packets__packageContainer--header:after {
         display: block;
         height: 2px;

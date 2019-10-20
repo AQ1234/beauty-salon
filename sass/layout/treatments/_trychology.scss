@@ -6,11 +6,14 @@
 
     &__header {
 
+       
         color: $gold-darker;
         margin-bottom: 2rem;
         margin-right: 2%;
+        animation: moveInRight 1s ease-out;
 
         &--2 {
+            animation: moveInBottom 0.9s ease-in-out;
             color: $gold;
             font-size: 3rem;
             margin: 3rem 0;
@@ -85,6 +88,7 @@
         }
     
         &--img {
+            animation: moveInBottom 1.2s ease-in;
             margin: 2rem 3rem;
             width: 50rem;
             height: 30rem;

@@ -27,6 +27,7 @@
 }
 
 .offer__header {
+    animation: moveInRight 1.2s ease-in-out;
     font-weight: 700;
     font-size: 4rem;
     color: $gold;

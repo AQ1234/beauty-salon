@@ -11,9 +11,10 @@
          font-size: 1.6rem;
             &--flex-item {
            width: 60%;
+           animation: moveInBottom 1s ease-in;
                 padding: 0 1rem;
                 &-2 {
-
+                    animation: fadeIn 1.5s ease;
                 }
               }
 

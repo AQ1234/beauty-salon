@@ -1,7 +1,7 @@
 .about {
 
     font-size: 1.5rem;
-    margin: 3rem 0 1rem;
+    margin: 3rem 0 .5rem;
     padding: 2rem 2rem;
     color: $bronze-dark;
 
@@ -13,13 +13,16 @@
         justify-content: space-around;
         align-items: stretch;
         margin: 0 5rem;
-        padding: 2rem 0 5rem 0;
+        padding: 1.5rem 0 4rem 0;
+        
         &--item {
             flex-wrap: wrap;
             padding: 0 1rem;
+           
         }
         &--picture {
         
+            animation: moveInRight 1.2s ease-out;
                 margin: 1.5rem 0;
                 width: 50rem;
                 height: 25rem;
@@ -29,6 +32,8 @@
                 background-position: center;
 
                &-2 {
+                   
+            animation: moveInRight 1.2s ease-out;
                 margin: 1.5rem 0;
                 width: 50rem;
                 height: 25rem;
@@ -44,12 +49,14 @@
     }
 
     &__header {
+
+        animation: moveInLeft 1s ease;
         text-align: center;
         font-weight: 700;
         font-size: 4rem;
         color: $gold;
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
 
         &:after {
             display: block;
@@ -63,6 +70,8 @@
         }
 
         &--2 {
+            
+            animation: moveInBottom 1.2s ease-in-out;
             text-align: center;
             font-size: 3rem;
             color: $gold;
@@ -91,17 +100,24 @@
 
     &__content {
 
+        animation: fadeIn 1.6s ease-in;
         text-align: justify;
         border-radius: 2rem;
         border: 1px solid #ad9b6d;
         padding: 1rem 1rem;
         margin: 2rem .5rem;
+
+        &--header {
+
+            color: $gold-darker;
+        }
     }
 
  
 
 
     &--btn {
+        animation: moveInBottom .9s ease;
         margin: 2rem 0;
         text-align: center;
     }
