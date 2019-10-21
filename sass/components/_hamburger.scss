@@ -4,6 +4,7 @@
   left: 4rem;
   margin-top: 10rem;
   animation: moveInBottom 1s ease-in;
+  background-color: blue($color: #000000);
 }
 
 .hamburger {
@@ -17,6 +18,10 @@
   }
   
   .hamburger, .treatments__navigation {
+    transition: transform .3s .1s ease-in-out;
+  }
+
+  .hamburger, .pricelist__navigation {
     transition: transform .3s .1s ease-in-out;
   }
   

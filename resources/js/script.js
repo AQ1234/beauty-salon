@@ -1,3 +1,4 @@
+//Slide
 var slideIndex = 0;
 showSlides(slideIndex);
 
@@ -25,36 +26,18 @@ function showSlides(n) {
 /* Hamburger menu  */
 
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.treatments__navigation');
-//const nav2 = document.querySelector('.pricelist__navigation');
+const nav = document.querySelector('#slidebar');
+const nav2 = document.querySelector('#slidebar');
 
 const handleClick = () => {
   hamburger.classList.toggle('hamburger--active');
   nav.classList.toggle('treatments__navigation--active');
- // nav2.classList.toggle('pricelist__navigation--active')
+  nav.classList.toggle('pricelist__navigation--active');
 }
-
-// MUSI BYĆ ID
-// TU MASZ FUNKCJE KTÓRA BEDZIE UKRYWAŁA I POKAZYWAŁA HAMBURGERA
-// const hamburgerShow = () => {
-//     const elements = {
-//         treatments: document.getElementById("treat"),
-//         priceList: document.getElementById("priceList"),
-//         ham: document.getElementById("hamb")
-//     };
-
-//     if(elements.treatments || elements.priceList) {
-//         elements.ham.style.display = "inline block";
-//     } else {
-//         elements.ham.style.display = "none";
-//     }
-
-//     //! TEST
-//     console.log(elements.ham.style);
-// }
-
-// hamburgerShow();
-
 
 
 hamburger.addEventListener('click', handleClick);
+
+
+
+

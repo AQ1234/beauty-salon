@@ -386,7 +386,8 @@ body {
   position: absolute;
   left: 4rem;
   margin-top: 10rem;
-  animation: moveInBottom 1s ease-in; }
+  animation: moveInBottom 1s ease-in;
+  background-color: 0; }
 
 .hamburger {
   cursor: pointer;
@@ -395,6 +396,9 @@ body {
   margin: 0; }
 
 .hamburger, .treatments__navigation {
+  transition: transform .3s .1s ease-in-out; }
+
+.hamburger, .pricelist__navigation {
   transition: transform .3s .1s ease-in-out; }
 
 .hamburger--active {
@@ -558,6 +562,12 @@ body {
     font-size: 1.5rem;
     text-align: center;
     padding: 2rem 0 1rem; }
+
+#phone {
+  width: 2rem; }
+
+#fb {
+  width: 2rem; }
 
 .head {
   position: fixed;
@@ -735,6 +745,30 @@ body {
       color: #ad9b6d; }
       .article__content--aesthetic a:hover, .article__content--aesthetic a:active, .article__content--aesthetic a:after {
         color: #88784d; }
+
+#slidebar__navigation {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  left: 0;
+  transform: translateX(-210px);
+  -webkit-transform: translateX(-210px);
+  -moz-transform: translateX(-210px);
+  -ms-transform: translateX(-210px);
+  -o-transform: translateX(-210px);
+  transition: transform .3s .1s ease-in-out;
+  -webkit-transition: transform .3s .1s ease-in-out;
+  -moz-transition: transform .3s .1s ease-in-out;
+  -ms-transition: transform .3s .1s ease-in-out;
+  -o-transition: transform .3s .1s ease-in-out; }
+  #slidebar__navigation--active {
+    transform: translateX(0rem);
+    -webkit-transform: translateX(0rem);
+    -moz-transform: translateX(0rem);
+    -ms-transform: translateX(0rem);
+    -o-transform: translateX(0rem); }
 
 .pricelist {
   font-size: 1.5rem;
