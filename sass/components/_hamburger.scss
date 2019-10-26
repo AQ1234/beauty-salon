@@ -1,10 +1,18 @@
 
 .hamburgerNavIcon {
+  
   position: absolute;
   left: 4rem;
-  margin-top: 8rem;
+  margin-top: 7.5rem;
   animation: moveInBottom 1s ease-in;
   background-color: blue($color: #000000);
+
+  @include respond(phone) {
+
+    left: 85%;
+    margin-top: 6.5rem;
+  }
+
 }
 
 .hamburger {
@@ -17,6 +25,8 @@
     position: -webkit-sticky;
     position: sticky;
    
+   
+    
   }
   
   .hamburger, .treatments__navigation {
@@ -29,6 +39,11 @@
   
   .hamburger--active {
     transform: translatex(17rem);
+
+    @include respond(phone) {
+
+      transform: translatex(0);
+    }
   }
   
   .hamburger__box {
@@ -36,6 +51,17 @@
     height: 2.4rem;
     display: inline-block;
     position: relative;
+
+
+    @include respond(phone) {
+
+      width: 4rem;
+      height: 2.4rem;
+      background-color: $gold;
+      border-radius: .4rem;
+      padding: .2rem;
+      border: 1px solid $gold;
+    }
     
   }
 
@@ -46,6 +72,13 @@
     top: 50%;
     transform: translateY(-40%);
     transition: background-color .1s .2s ease-in-out;
+
+    @include respond(phone) {
+
+      width: 85%;
+      left: 5%;
+    }
+
   }
   
   .hamburger__inner::before,

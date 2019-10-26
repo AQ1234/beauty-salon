@@ -45,13 +45,45 @@
         -moz-transition: transform .3s .1s ease-in-out;
         -ms-transition: transform .3s .1s ease-in-out;
         -o-transition: transform .3s .1s ease-in-out;
-    
+
+        @include respond(phone) {
+
+           transform: translateX(-98%);
+            -webkit-transform: translateX(-98%);
+            -moz-transform: translateX(-98%);
+            -ms-transform: translateX(-98%);
+            -o-transform: translateX(-98%);
+            background-color: rgba($color-white, 15);
+            top: 20%;
+            width:65%;
+            left: 1%;
+        }
+
+
+        @include respond(phone) {
+
+
+            background-color: rgba($color-white, 15);
+            
+        }
+     
         &--active {
             transform: translateX(0rem);
             -webkit-transform: translateX(0rem);
             -moz-transform: translateX(0rem);
             -ms-transform: translateX(0rem);
             -o-transform: translateX(0rem);
+
+            @include respond(phone) {
+
+
+                transform: translateX(0rem);
+            -webkit-transform: translateX(0rem);
+            -moz-transform: translateX(0rem);
+            -ms-transform: translateX(0rem);
+            -o-transform: translateX(0rem);
+                
+            }
            
         }
         
