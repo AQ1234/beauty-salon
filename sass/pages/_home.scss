@@ -12,11 +12,11 @@
   &--list {
     text-align: center;
     list-style: none;
-    width: 98%;
 
     li {
+      
       display: inline-block;
-      margin: 0 9rem;
+      margin: 0 6.3rem;
       animation-name: moveInBottom;
       animation-duration: 1.5s;
       animation-timing-function: ease-out;
@@ -24,12 +24,27 @@
       &:last-child {
         margin-bottom: 2rem;
       }
+
+      @include respond(tab-port) {
+        margin:0 2.5rem;
+    }
+    @include respond(tab-land) {
+
+      margin: 0 4rem;
+    }
+    @include respond(phone) {
+      margin: .5rem;
+  }
     }
 
     a {
       text-decoration: none;
       font-size: 2rem;
       transition: all .2s;
+
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+    }
 
       &,
       &:link,
@@ -73,7 +88,7 @@
 
     &--text {
       color: $gold;
-      font-size: 50px;
+      font-size: 5rem;
       padding: 8px 12px;
       position: absolute;
       left: 50%;
@@ -82,7 +97,14 @@
       animation-duration: 2s;
       animation-timing-function: ease-out;
 
-
+      @include respond(tab-land) { // width < 1200?
+        font-size: 4.5rem;
+        
+    }
+    @include respond(tab-port) { // width < 1200?
+      font-size: 4.2rem;
+      
+  }
 
       &--2 {
         color: $gold-darker;
@@ -94,6 +116,16 @@
         animation-name: moveInLeft;
       animation-duration: 2s;
       animation-timing-function: ease-out;
+
+      @include respond(tab-land) { // width < 1200?
+        font-size: 4.5rem;
+        
+    }
+
+    @include respond(tab-port) { // width < 1200?
+      font-size: 4.2rem;
+      
+  }
 
       }
       &--3 {

@@ -1,6 +1,6 @@
 .massage {
     font-size: 1.6rem;
-    margin: 3rem 0 1rem;
+    margin: 3rem 3rem 1rem 1rem;
     padding: 2rem 3rem;
     color: $bronze-dark;
 
@@ -17,6 +17,15 @@
             animation: moveInBottom 1s ease-in-out;
             
 
+        }
+    }
+
+
+    & .price {
+
+        @include respond(phone) {
+
+            
         }
     }
 

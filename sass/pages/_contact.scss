@@ -1,4 +1,5 @@
 .contact {
+    height: 60vh;
 
     &__flex-container {
         display:-webkit-flex;
@@ -9,26 +10,48 @@
         margin: 7rem 6rem;
         padding: 5rem 0 5rem 0;
          font-size: 1.6rem;
-            &--flex-item {
+
+         @include respond(tab-port) {
+           flex-direction: column;
+            margin: 6rem 3rem;
+        }
+         
+         &--flex-item {
            width: 60%;
            animation: moveInBottom 1s ease-in;
-                padding: 0 1rem;
-                &-2 {
-                    animation: fadeIn 1.5s ease;
-                }
+             padding: 0 1rem;
+             margin: 1rem;
+
+            
+
+
+             @include respond(tab-port) {
+                width: 100%;
+             }
               }
 
-           
-        }    
+
+        &--flex-item-2 {
+            width: 35%;
+                margin: 1rem;
+                animation: fadeIn 1.5s ease;
+        } 
+     }    
 
     
 
 
     &__map {
         background-color: $bronze;
-        margin: auto;
         width: 50rem;
         height: 35rem;
+
+        @include respond(tab-port) {
+           margin: 0;
+            width: 40rem;
+            height: 30rem;
+
+        }
         
     }
 
@@ -38,6 +61,12 @@
         &--header {
             text-align: center;
             padding: 2rem;
+                animation: moveInLeft 2.5s ease;
+                font-weight: 600;
+                color: $gold;
+                text-transform: uppercase;
+                margin-bottom: 0rem;
+  
         }
     }
 }

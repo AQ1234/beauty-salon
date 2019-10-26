@@ -10,7 +10,23 @@
 html {
     font-family: sans-serif;
     // This defines what 1rem is
-    font-size: 62.5%;
+    font-size: 62.5%; //1em = 10px;
+
+@include respond(tab-land) { //<1200
+
+        font-size: 56%;
+    }
+
+    @include respond(tab-port) { //<900
+
+        font-size: 50%;
+    }
+    
+    @include respond(big-desktop) {
+
+        font-size: 75%;
+    }
+    
 }
 
 body {
@@ -18,6 +34,11 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.4;
-    margin: 0 2rem;
+    padding: 0 2rem;
+
+    @include respond(tab-port) { 
+
+        padding: 0 0;
+    }
     
 }

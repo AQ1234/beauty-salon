@@ -79,6 +79,10 @@
               border-bottom: 1px solid $gold;
               width: 90%;
             }
+
+       
+
+        }    
         a {
             text-decoration: none;
             color: $gold;
@@ -93,8 +97,104 @@
     
     }  
 
-
-}
+    .pricelist--2 {
+    
+        font-size: 1.5rem;
+        margin: 1rem 0 0;
+        padding: 2rem 2rem;
+        background-image: linear-gradient(to bottom, rgba(255,255,255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
+        background-size: cover;
+    
+        &__header {
+            animation: moveInRight 1.4s ease;
+            color: $gold;
+            font-size: 2.7rem;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $gold;
+            font-size: 2rem;
+        }
+    
+        &__mainHeader {
+    
+            text-align: center;
+            color: $gold;
+            font-size: 3rem;
+    
+    
+            &::after {
+    
+                display: block;
+                height: 3px;
+                background-color: $gold;
+                content: "";
+                width: 10%;
+                margin: 0 auto;
+                margin-top: 1rem;
+            }
+        }
+    
+       
+        &__navigation {
+            background-color: rgba($color-white, 0.8);
+            width: 20rem;
+            position: absolute;
+            z-index: 1;
+            top: 22%;
+            left: 0;
+            transform: translateX(-210px);
+            -webkit-transform: translateX(-210px);
+            -moz-transform: translateX(-210px);
+            -ms-transform: translateX(-210px);
+            -o-transform: translateX(-210px);
+            transition: transform .3s .1s ease-in-out;
+            -webkit-transition: transform .3s .1s ease-in-out;
+            -moz-transition: transform .3s .1s ease-in-out;
+            -ms-transition: transform .3s .1s ease-in-out;
+            -o-transition: transform .3s .1s ease-in-out;
+        
+            &--active {
+                transform: translateX(0rem);
+                -webkit-transform: translateX(0rem);
+                -moz-transform: translateX(0rem);
+                -ms-transform: translateX(0rem);
+                -o-transform: translateX(0rem);
+               
+            }
+            
+            &--list {
+                margin-top: 4.5rem;
+                list-style: none;
+            
+            }
+            
+            li {
+                margin: 1rem;
+                text-align: center;
+        
+                &:not(:last-child) {
+                  border-bottom: 1px solid $gold;
+                  width: 90%;
+                }
+    
+           
+    
+            }    
+            a {
+                text-decoration: none;
+                color: $gold;
+                font-size: 2.2rem;
+            
+                &:hover {
+        
+                  color: $color-grey-dark-2;
+                }
+                }
+            }
+        
+        }  
 
 .pricelistContainer {
     display: -webkit-flex;
@@ -158,10 +258,23 @@
     margin: 2rem 1rem;
     padding: 2rem 0;
     list-style: none;
+    
 
     li {
-       padding: 1rem;
+       padding: 1rem 1rem 1rem 0rem;
        border-bottom: 1px solid $gold;
+       
+       & strong {
+       
+            
+            word-spacing: -1.5px;
+            
+            
+      
+
+       }
+
+       
     }
 
 
@@ -169,5 +282,41 @@
         font-size: 1rem;
         text-align: center;
 
+    }
+}
+
+.massage .price--list {
+    margin: 2rem 0rem;
+    
+    li {
+        padding: 1rem 0 1rem 0;
+        border-bottom: 1px solid $gold;
+        
+        @include respond(phone) {
+
+            border-bottom: none;
+            
+        }
+        & strong {
+        
+             word-spacing: -1.5px;
+             
+        }
+      
+
+}
+}
+
+
+
+.massage .price {
+    
+  
+    text-align: right;
+    margin-right: -2rem;
+   
+    @include respond(phone) {
+        height: auto;
+        
     }
 }

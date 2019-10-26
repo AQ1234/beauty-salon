@@ -4,11 +4,13 @@
   
     background-color: rgba($gold, .75);
     width: 100%;
-
+    
     &__logo {
       animation: moveInLeft 1s ease-in-out;
       padding: 1rem 2rem;
       text-align: center;
+
+      
   
   }
 
@@ -24,6 +26,8 @@
       //    background-color: aqua;
           margin: 0 1rem;
           padding: 0 1rem;
+
+
          
         //First item
           &--nav-list {
@@ -36,6 +40,8 @@
               display: inline-block;
               margin: 0 3rem;
               // border-bottom: 3px solid $color-white;
+
+            
         
             }
         

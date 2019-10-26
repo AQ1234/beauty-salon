@@ -1,7 +1,7 @@
 .carboxytherapy {
     font-size: 1.6rem;
-    margin: 3rem 0 1rem;
-    padding: 2rem 3rem;
+    margin: 3rem 3rem 1rem -3rem;
+    padding: 2rem 2rem;
     color: $bronze-dark;
 
     &__header {
@@ -10,6 +10,13 @@
         margin-bottom: 1rem;
         margin-right: 2%;
         font-size: 3rem;
+
+        @include respond(phone) {
+
+            font-size: 2.5;
+            margin-right: 0;
+            letter-spacing: -1px;
+        }
 
         &--2 {
             animation: moveInLeft 1s ease-in;
