@@ -1,6 +1,5 @@
 .offer {
 
-
     margin: 4rem 0 0;
     padding: 1rem 0 3rem 0;
 
@@ -22,6 +21,11 @@
             text-align: center;
             width: 26vw;
             
+
+            @include respond(tab-small) {
+
+                width: 50vw;
+            }
         }
     }
 }
@@ -32,6 +36,11 @@
     font-size: 4rem;
     color: $gold;
     text-transform: uppercase;
+
+    @include respond(phone) {
+
+        margin-top: 15rem;
+    }
 
     &:after {
             display: block;

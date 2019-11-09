@@ -4,6 +4,10 @@
     padding: 2rem 3rem;
     color: $bronze-dark;
 
+    @include respond(phone) {
+        margin: 3rem 0rem  1rem 0rem;
+        }
+
     &__header {
 
         color: $gold-darker;
@@ -103,32 +107,7 @@
 
 }
 
-.article {
 
-    
-    margin: 1rem 0 1rem;
-    padding: 0rem 2rem;
-    color: $color-grey-dark-2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem 1rem;
-    margin-bottom: 5rem;
-   
-    &__header {
-        text-transform: uppercase;
-        text-align: left;
-        color: $gold;
-    }
-    &:nth-child(odd) .article__content {
-        grid-column: 2;
-
-    }
-
-    &:nth-child(even) .article__content {
-        grid-column: 1;
-
-    }
-}
 
 .article__content {
 
@@ -138,6 +117,11 @@
     text-align: justify;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
    
+
+    // @include respond(phone) {
+
+    //     min-width: 378.813px;
+    // }
 
     &::before {
     

@@ -7,6 +7,12 @@
     background-size: cover;
     background-attachment: fixed;
 
+    @include respond(phone) {
+   
+        background-color: $gold;
+    }
+
+
     &__mainHeader {
 
         animation: moveInBottom 1s ease-in;
@@ -48,11 +54,11 @@
 
         @include respond(phone) {
 
-           transform: translateX(-98%);
-            -webkit-transform: translateX(-98%);
-            -moz-transform: translateX(-98%);
-            -ms-transform: translateX(-98%);
-            -o-transform: translateX(-98%);
+           transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            -moz-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            -o-transform: translateX(-100%);
             background-color: rgba($color-white, 15);
             top: 20%;
             width:65%;
@@ -125,6 +131,8 @@
     margin: 3rem 0 5rem;
     text-align: center;
 
+    
+
 
  
 
@@ -143,6 +151,11 @@
         margin: 0 1.5rem;
         padding: 1rem;
 
+        @include respond(phone) {
+
+            
+          
+        }
     
     }
 
@@ -159,6 +172,12 @@
     position: relative;
     text-align: justify;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+    @include respond(phone) {
+
+           
+          
+    }
    
 
     &::before {

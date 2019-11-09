@@ -12,6 +12,13 @@
     padding: 2rem 2rem 1rem 4rem;
     z-index: 100;
 
+
+
+    @include respond(phone) {
+      flex-direction: column;
+       padding: 2rem 0 1rem;
+    }
+
     &__logo {
         animation-name: moveInLogo;
         animation-duration: 1.6s;
@@ -25,6 +32,10 @@
                 height: 6rem;
 
             }
+            @include respond(tab-port) {
+              height: 5rem;
+
+          }
             @include respond(phone) {
                 height: 4rem;
 
@@ -39,33 +50,51 @@
 
         text-align: center;
         
+        
+        @include respond(phone) {
+
+            opacity: 1;
+           }
+        
         &--list {
-          
-           animation:focus-in-expand 1.3s cubic-bezier(.25,.46,.45,.94) both;
+           animation:focus-in-expand 2s cubic-bezier(.25,.46,.45,.94) both;
             list-style: none;
             cursor: pointer;
             margin: 0;
             padding: 0;
-
-          
+         
+            @include respond(tab-port) {
+              margin-right: 2rem;
+              
+          }
+         
            
+            
             & > li {
+           
                 font-size: 2.2rem;
                 float: left;
-                width: 14rem;
+                width: 13.5rem;
                 height: 6rem;
                 margin: 1rem .3rem 0;
 
                 @include respond(tab-land) {
-                    width: 11rem;
+                    width: 10rem;
                     
                 }
 
+                @include respond(tab-port) {
+
+                  margin: 1rem .1rem 0;
+                }
+
+               
                 @include respond(phone) {
                     width: 8rem;
-                    display: block;
                 }
-               
+                @include respond(phone-small) {
+                  margin: 1rem .1rem 0;
+              }
 
                 &:first-child {
                   
@@ -77,6 +106,10 @@
                 display: block;
                 text-decoration: none;
                 
+              @include respond(phone-small) {
+
+                font-size: 90%;
+              }
 
                 &,
                 &:link,
@@ -90,13 +123,7 @@
                 }
             }
 
-        & ul {
-           
-        }
-        &:hover ul {
-            
-
-        }
+       
 
            & > li > ul {
             max-height: 0;
@@ -108,7 +135,7 @@
             margin-left: -.5rem;
             margin-top: .2rem;
             width: 16rem;
-            background-color: rgba(#fff, .6);
+            background-color: rgba(#fff, .9);
               
                
            }
@@ -150,7 +177,145 @@
         }
     }
 
-    ul {
+    &NavIcon {
+
+        width: 0rem;
+       
+        background-color: $gold;
+        opacity: 0;
+
+        @include respond(phone) {
+          width: 50rem;
+            opacity: 1;
+        }
+        @include respond(phone-small) {
+          width: 40rem;
+            opacity: 1;
+        }
     }
+
+    &Menu {
+
+      
+       
+        
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+      margin-left: 45rem;
+        position: -webkit-sticky;
+        position: sticky;
+       
+       @include respond(phone) {
+
+        opacity: 1;
+       }
+
+       @include respond(phone-small) {
+
+        margin-left: 35rem;
+       }
+        
+      }
+      
+      &Menu, .treatments__navigation {
+        transition: transform .3s .1s ease-in-out;
+      }
+    
+      &Menu, .pricelist__navigation {
+        transition: transform .3s .1s ease-in-out;
+      }
+      
+      &Menu--active {
+        transform: translatex(17rem);
+    
+        @include respond(phone) {
+    
+          transform: translatex(0);
+        }
+      }
+      
+      &Menu__box {
+
+       
+       // width: 3.5rem;
+       // height: 2.4rem;
+        display: inline-block;
+        position: relative;
+    
+    
+        @include respond(phone) {
+    
+          width: 4rem;
+          height: 2.4rem;
+          background-color: $gold;
+          border-radius: .4rem;
+          padding: .2rem;
+          border: 1px solid $gold;
+        }
+        
+      }
+    
+      &Menu__inner {
+        @include hamburger-line;
+        
+        left: 0;
+        top: 50%;
+        transform: translateY(-40%);
+        transition: background-color .1s .2s ease-in-out;
+    
+        @include respond(phone) {
+    
+          width: 85%;
+          left: 5%;
+        }
+    
+      }
+      
+      &Menu__inner::before,
+      &Menu__inner::after {
+        @include hamburger-line;
+        
+        content: '';
+        left: 0;
+        transition: transform .2s .2s ease-in-out;
+      } 
+      
+      &Menu__inner::before {
+        top: -1rem;
+      }
+      
+      &Menu__inner::after {
+        top: 1rem;
+      }
+      
+      &Menu--active &Menu__inner {
+        background-color: transparent;
+      }
+      
+      &Menu--active &Menu__inner:before {
+        transform: translateY(1rem) rotate(45deg);
+      }
+      
+      &Menu--active &Menu__inner:after {
+        transform: translateY(-1rem) rotate(-45deg);
+      }
+ 
 }
 
+.sign {
+
+
+    background-color: $gold;
+    width: 3rem;
+    height: 1rem;
+    margin: 60%;
+    
+    display: none;
+    z-index: 9999;
+
+    @include respond(phone) {
+
+        display: block;
+    }
+}

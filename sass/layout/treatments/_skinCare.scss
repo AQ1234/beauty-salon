@@ -4,16 +4,33 @@
     padding: 2rem 2rem;
     color: $bronze-dark;
 
+    @include respond(phone) {
+
+        padding: 1rem;  
+        margin: 2.5rem .5rem 1rem -.5rem;
+    }
+
     &__header {
 
         color: $gold-darker;
         margin-bottom: 2rem;
+
+        @include respond(phone) {
+
+            padding: 1rem;  
+            margin: 2.5rem .5rem 1rem -.5rem;
+        }
         
         &--2 {
             color: $gold;
             font-size: 3rem;
             margin: 3rem 0;
             animation: moveInLeft 1s ease;
+
+            @include respond(phone) {
+
+                margin: 2rem 0;
+            }
 
         }
     }
@@ -64,31 +81,6 @@
 
 }
 
-.article {
-
-    margin: 1rem 0 1rem;
-    padding: 0rem 2rem;
-    color: $color-grey-dark-2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem 1rem;
-    margin-bottom: 5rem;
-   
-    &__header {
-
-        color: $gold;
-        text-align: left;
-    }
-    &:nth-child(odd) .article__content {
-        grid-column: 2;
-
-    }
-
-    &:nth-child(even) .article__content {
-        grid-column: 1;
-
-    }
-}
 
 .article__content {
 
@@ -98,7 +90,7 @@
     text-align: justify;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
    
-
+   
     &::before {
     
         z-index: -1;
@@ -133,28 +125,41 @@
 
 }
 
-.content {
-    display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        align-items: stretch;
-        margin: 0 5rem;
-        padding: 2rem 0;
-    
-    &__end {
-        text-align: justify;
-        margin: 5rem 2rem;
-        display: inline-block;
-    }
+// .content {
+//     display: -webkit-flex;
+//         display: flex;
+//         -webkit-justify-content: space-around;
+//         justify-content: space-around;
+//         align-items: stretch;
+//         margin: 0 5rem;
+//         padding: 2rem 0;
 
-    &__img {
-        width: 95rem;
-        height: 30rem;
-        background-size: cover;
-        background-image: url(/resources/img/offers-images/rozalia.jpg);
-        display: inline-block;
-    }
-}
+//         @include respond(phone) {
+//            flex-direction: column ;
+
+//         }
+    
+//     &__end {
+//         text-align: justify;
+//         margin: 5rem 2rem;
+//         display: inline-block;
+
+        
+//     }
+
+//     &__img--skinCare {
+//         width: 95rem;
+//         height: 30rem;
+//         background-size: cover;
+//         background-image: url(/resources/img/offers-images/rozalia.jpg);
+//         display: block;
+
+
+//         @include respond(phone) {
+//             display: none;
+
+//         }
+//     }
+// }
 
 

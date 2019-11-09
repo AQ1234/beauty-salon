@@ -10,8 +10,16 @@
       padding: 1rem 2rem;
       text-align: center;
 
-      
+      @include respond(phone) {
+
+        padding: 1rem .7rem;
+        
+      }
   
+      img {
+
+        width: 50%;
+      }
   }
 
     &__container {
@@ -20,13 +28,13 @@
         -webkit-justify-content: space-between;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 3rem 2rem;
+        padding: 1rem 3rem 1rem;
 
         &__item {
       //    background-color: aqua;
           margin: 0 1rem;
           padding: 0 1rem;
-
+       
 
          
         //First item
@@ -34,21 +42,41 @@
             animation: fadeIn 2s ease;
             text-align: center;
             list-style: none;
-      
+           
+            @include respond(phone) {
+              margin: 2rem 5rem 2rem 2rem;
+              
+            }
+            @include respond(phone-small) {
+              margin: 1rem;
+             
+            }
             li {
-      
+             
               display: inline-block;
-              margin: 0 3rem;
+              margin: 0 3.5rem;
               // border-bottom: 3px solid $color-white;
 
-            
+            @include respond(tab-land) {
+              margin: 0 2rem;
+              
+            }
+            @include respond(phone) {
+              margin: 1.5rem;
+              border-bottom: 2px dotted $color-white;
+              display: block;
+             min-width: 17rem;
+            }
+          
         
             }
         
             a {
+              text-align: justify;
               text-decoration: none;
               font-size: 2rem;
               transition: all .2s;
+       
         
               &,
               &:link,
@@ -70,11 +98,14 @@
             text-align: center;
             list-style: none;
 
-           
+           @include respond(phone) {
+
+            margin-bottom: 15rem;
+           }
             li {
       
               display: inline-block;
-              margin: 0 3rem;
+              margin: 2rem 3rem;
               // border-bottom: 3px solid $color-white;
         
             }
@@ -104,6 +135,11 @@
     text-align: center;
     padding: 2rem 0 1rem;
 
+
+    @include respond(phone) {
+
+      padding: .5rem;
+    }
     }
 }
 

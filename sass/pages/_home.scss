@@ -1,40 +1,64 @@
 .home {
   z-index: 50;
+
+  @include respond(phone-small) {
+
+    height: 50vh;
+  }
+
 }
 
 .down__nav {
   position: absolute;
-  width: 97.4%;
+  width: 97.8%;
   bottom: 0;
   background-color: rgba($gold, .35);
- 
+  height: 12rem;
+
+  @include respond(phone) {
+
+    display: none;
+  }
 
   &--list {
     text-align: center;
     list-style: none;
 
+
+    @include respond(phone) {
+
+      display: none;
+    }
+
+
+
     li {
-      
+
       display: inline-block;
       margin: 0 6.3rem;
       animation-name: moveInBottom;
       animation-duration: 1.5s;
       animation-timing-function: ease-out;
 
+      @include respond(tab-port) {
+        margin: 0 1rem;
+      }
+
+      @include respond(tab-land) {
+
+        margin: 0 2rem;
+      }
+
+      @include respond(phone) {
+        margin: .5rem;
+      }
+
+
       &:last-child {
         margin-bottom: 2rem;
       }
 
-      @include respond(tab-port) {
-        margin:0 2.5rem;
-    }
-    @include respond(tab-land) {
 
-      margin: 0 4rem;
-    }
-    @include respond(phone) {
-      margin: .5rem;
-  }
     }
 
     a {
@@ -43,8 +67,8 @@
       transition: all .2s;
 
       @include respond(tab-port) {
-        font-size: 1.5rem;
-    }
+        font-size: 1.7rem;
+      }
 
       &,
       &:link,
@@ -65,26 +89,62 @@
 .main-slideshow {
   height: 100%;
 
+  @include respond(phone) {
+
+    opacity: 0;
+
+  }
+
+  @include respond(phone-small) {
+
+    
+  }
+
   /*Slide-Image*/
   &__slide {
-     display: none;
+    display: none;
 
-     img {
+    &--img {
+      background-image: url(/resources/img/OSCYRO0.jpg);
+      background-size: cover;
+      //   width: 100%;
+      height: 100vh;
 
-    background-size: cover;
-    width: 100%;
-       height: 100vh;
-      
-    //   // vertical-align: middle;
-    //   //position: relative;
-     }
-     
-     h4 {
+      @include respond(phone) {
+        height: 45vh;
+
+      }
+
+      @include respond(phone-small) {
+        background-image: none;
+        height: 15vh;
+      }
+
+      &--2 {
+        background-image: url(/resources/img//OSCYQT0.jpg);
+        background-size: cover;
+        // width: 100%;
+        height: 100vh;
+
+        @include respond(phone) {
+          background-image: url(/resources/img/OSCYQT0x1.jpg);
+          height: 45vh;
+        }
+
+        @include respond(phone-small) {
+          background-image: none;
+          height: 35vh;
+        }
+
+      }
+    }
+
+    h4 {
 
       color: #555;
-     }
+    }
 
-     
+
 
     &--text {
       color: $gold;
@@ -97,14 +157,27 @@
       animation-duration: 2s;
       animation-timing-function: ease-out;
 
-      @include respond(tab-land) { // width < 1200?
+      @include respond(tab-land) {
+        // width < 1200?
         font-size: 4.5rem;
+
+      }
+
+
+      @include respond(tab-port) {
+        // width < 1200?
+        font-size: 3.5rem;
+        left: 2%;
+        top: 63%;
+      }
+
+      @include respond(phone-small) {
         
-    }
-    @include respond(tab-port) { // width < 1200?
-      font-size: 4.2rem;
-      
-  }
+        width: auto;
+        font-size: 3.5rem;
+        left: 13%;
+        top:15%;
+      }
 
       &--2 {
         color: $gold-darker;
@@ -114,20 +187,31 @@
         left: 5%;
         top: 20%;
         animation-name: moveInLeft;
-      animation-duration: 2s;
-      animation-timing-function: ease-out;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
 
-      @include respond(tab-land) { // width < 1200?
-        font-size: 4.5rem;
+        @include respond(tab-land) {
+          // width < 1200?
+          font-size: 4.5rem;
+
+        }
+
+        @include respond(tab-port) {
+          // width < 1200?
+          font-size: 4.2rem;
+          left: 2.6%;
+        }
+        @include respond(phone-small) {
         
-    }
-
-    @include respond(tab-port) { // width < 1200?
-      font-size: 4.2rem;
+          width: auto;
+          font-size: 3.5rem;
+          left: 13%;
+          top:15%;
+        }
       
-  }
 
       }
+
       &--3 {
         color: $gold-darker;
         font-size: 50px;
@@ -150,7 +234,7 @@
     position: absolute;
     top: 10%;
 
-    
+
   }
 
   &__dots {
@@ -186,7 +270,7 @@
 }
 
 .test {
-  
+
   background-repeat: no-repeat;
   margin-top: 4rem;
   height: 100vh;
@@ -198,5 +282,5 @@
 
   }
 
-  
+
 }

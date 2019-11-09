@@ -28,6 +28,54 @@
     
 }
 
+.article {
+
+    margin: 1rem 0 1rem;
+    padding: 0rem;
+    color: $color-grey-dark-2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 1rem;
+    margin-bottom: 5rem;
+   
+    @include respond(phone) {
+        grid-template-columns: none;
+        grid-gap: none;
+        margin-bottom: 1rem;
+        padding: 0 .7rem;
+    }
+
+    &__header {
+        color: $gold;
+        text-align: left;
+
+        &--2 {
+            text-align: center;
+            color: $gold;
+            font-size: 3rem;
+            margin: 3rem 0;
+            
+        }
+    }
+    &:nth-child(odd) .article__content {
+        grid-column: 2;
+
+        @include respond(phone) {
+            grid-column: none;
+
+        }
+    }
+
+    &:nth-child(even) .article__content {
+        grid-column: 1;
+
+        @include respond(phone) {
+            grid-column: none;
+
+        }
+    }
+}
+
 
 .price {
 

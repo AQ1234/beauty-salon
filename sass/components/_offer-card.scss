@@ -31,6 +31,11 @@
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
             animation: fadeIn 1.5s ease-in-out;
+
+          @include respond(tab-small) {
+
+            height: 0;
+          }
             
             &--1 {
                
@@ -321,6 +326,12 @@
         &--price-value {
             font-size: 5rem;
             font-weight: 100;
+
+
+            @include respond(tab-port) {
+
+                font-size: 3rem;
+            }
     
         }
     }
