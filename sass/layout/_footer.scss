@@ -18,7 +18,12 @@
   
       img {
 
-        width: 50%;
+        width: 30rem;
+        @include respond(phone-small) {
+
+        width: 25rem;
+        }
+
       }
   }
 

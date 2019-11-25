@@ -1,5 +1,5 @@
 .contact {
-    height: 60vh;
+    height: 65vh;
 
     &__flex-container {
         display:-webkit-flex;
@@ -71,3 +71,27 @@
     }
 }
 
+
+
+.mapouter{
+
+    position:relative;
+    text-align:right;
+    height:350px;
+    width:500px;
+
+
+    @include respond(phone) {
+
+        
+    }
+}
+
+
+.gmap_canvas {
+    
+    overflow:hidden;
+    background:none!important;
+    height:350px;
+    width:500px;
+}

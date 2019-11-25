@@ -1,6 +1,11 @@
 #packets-2 {
     -webkit-animation: pulsate-fwd 7s ease-in-out 4s forwards;
     animation: pulsate-fwd 7s ease-in-out 4s forwards;
+
+    @include respond(phone) {
+
+        animation: none;
+    }
 }
 .packets {
 
@@ -9,8 +14,13 @@
     padding: 2rem 2rem;
     color: $bronze-dark;
 
-    @include respond(phone) { //<1200
+    @include respond(tab-land) {
 
+        font-size: 1.8rem;
+    }
+
+    @include respond(phone) { //<1200
+        font-size: 2rem;
         margin: 1rem;
     }
 
@@ -37,14 +47,18 @@
             animation: moveInBottom 1.5s ease-in-out;
             padding: 0 1rem;
             width: 100%;
-
-
             
             &--header {
                 text-align: center;
                 color: $gold;
                 margin: 5rem 0;
                 font-size: 3rem;
+
+
+                @include respond(phone) {
+
+
+                }
     
             }
         }
@@ -110,6 +124,7 @@
             @include respond(phone) {
 
                 margin: 2rem 0;
+                margin-top: 15rem;
             }
 
             &:after {
