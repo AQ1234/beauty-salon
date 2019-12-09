@@ -27,6 +27,11 @@ html {
         font-size: 45%;
     }
 
+    @include respond(offer-break) {
+
+        font-size: 70%;
+    }
+
     @include respond(big-desktop) {
 
         font-size: 75%;

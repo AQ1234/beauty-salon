@@ -106,6 +106,12 @@
         }
     }
     
+iframe {
+
+    @include respond(phone) {
+    width: 90%;
+    }
+}
 
 }
 

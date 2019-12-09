@@ -1,23 +1,23 @@
 //Slide
 
-showSlides = () => {
+// showSlides = () => {
    
-  let slides = document.getElementsByClassName("main-slideshow__slide");
+//   let slides = document.getElementsByClassName("main-slideshow__slide");
 
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
     
       
-  }
-  slideIndex++;
+//   }
+//   slideIndex++;
 
-  if (slideIndex > slides.length) {slideIndex = 1}
+//   if (slideIndex > slides.length) {slideIndex = 1}
 
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 20000); // Change image every 20 seconds
-}
-let slideIndex = 0;
-showSlides();
+//   slides[slideIndex-1].style.display = "block";
+//   setTimeout(showSlides, 20000); // Change image every 20 seconds
+// }
+// let slideIndex = 0;
+// showSlides();
 
 
 /* Hamburger menu  */
@@ -65,10 +65,10 @@ if(window.innerWidth <= 600) {
 head.style.opacity === "1";
   }
 }
-
 }
 
 
+//Menu treatments
 function treatmentsApper() {
   var listTreat = document.getElementById('listTreatments');
 
@@ -90,6 +90,8 @@ function treatmentsApper() {
 
 }
 
+
+//Menu packets 
 function packetsApper() {
 var listPack = document.getElementById('listPackets');
 

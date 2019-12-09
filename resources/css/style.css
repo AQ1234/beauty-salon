@@ -133,6 +133,9 @@ html {
   @media (max-width: 42em) {
     html {
       font-size: 45%; } }
+  @media (max-width: 62.5em) {
+    html {
+      font-size: 70%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -457,6 +460,12 @@ body {
         .card__price-box--price-value {
           font-size: 3rem; } }
 
+.first {
+  display: inline; }
+  @media (max-width: 75em) {
+    .first {
+      display: none; } }
+
 .hamburgerNavIcon {
   position: absolute;
   left: 4rem;
@@ -474,7 +483,8 @@ body {
   border: 0;
   margin: 0;
   position: -webkit-sticky;
-  position: sticky; }
+  position: sticky;
+  z-index: 9999; }
 
 .hamburger, .treatments__navigation {
   transition: transform .3s .1s ease-in-out; }
@@ -559,14 +569,15 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
   @media (max-width: 37.5em) {
     .head {
       flex-direction: column;
       padding: 2rem 0 1rem;
-      background-color: rgba(255, 255, 255, 0); } }
+      background-color: rgba(255, 255, 255, 0.5);
+      height: 200px; } }
   .head__logo {
     animation-name: moveInLogo;
     animation-duration: 1.6s;
@@ -872,14 +883,15 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
   @media (max-width: 37.5em) {
     .head {
       flex-direction: column;
       padding: 2rem 0 1rem;
-      background-color: rgba(255, 255, 255, 0); } }
+      background-color: rgba(255, 255, 255, 0.5);
+      height: 200px; } }
   .head__logo {
     animation-name: moveInLogo;
     animation-duration: 1.6s;
@@ -1170,10 +1182,16 @@ body {
       .treatments__navigation li:not(:last-child) {
         border-bottom: 1px solid #ad9b6d;
         width: 90%; }
+      @media (max-width: 42em) {
+        .treatments__navigation li {
+          height: 5rem; } }
       .treatments__navigation li a {
         text-decoration: none;
         color: #ad9b6d;
         font-size: 2.2rem; }
+        @media (max-width: 42em) {
+          .treatments__navigation li a {
+            font-size: 3.5rem; } }
         .treatments__navigation li a:hover {
           color: #555; }
 
@@ -1434,6 +1452,9 @@ body {
   .price--list li {
     padding: 1rem 1rem 1rem 0rem;
     border-bottom: 1px solid #ad9b6d; }
+    @media (max-width: 56.25em) {
+      .price--list li {
+        padding: 1rem 0rem; } }
     .price--list li strong {
       word-spacing: -1.5px; }
   .price--list--2 {
@@ -1538,7 +1559,7 @@ body {
 
 .healingCosmetics {
   font-size: 1.6rem;
-  margin: 3rem 0 1rem;
+  margin: 4rem 0 1rem;
   padding: 2rem 2rem;
   color: #302c24; }
   .healingCosmetics__header {
@@ -1581,7 +1602,7 @@ body {
 
 .aestheticMedicine {
   font-size: 1.6rem;
-  margin: 3rem -1rem  1rem 0rem;
+  margin: 9rem -1rem  1rem 1rem;
   padding: 2rem 2rem;
   color: #302c24; }
   .aestheticMedicine__header {
@@ -1680,7 +1701,7 @@ body {
 
 .skinCare {
   font-size: 1.6rem;
-  margin: 3rem 1rem 1rem -1rem;
+  margin: 8rem 1rem 1rem -1rem;
   padding: 2rem 2rem;
   color: #302c24; }
   @media (max-width: 37.5em) {
@@ -1751,7 +1772,7 @@ body {
 
 .massage {
   font-size: 1.6rem;
-  margin: 3rem 3rem 1rem 1rem;
+  margin: 8rem 2rem 1rem 0rem;
   padding: 2rem 3rem;
   color: #302c24; }
   .massage__header {
@@ -1837,7 +1858,7 @@ body {
 .handsAndFeet {
   animation: fade .8s ease;
   font-size: 1.6rem;
-  margin: 3rem 2rem  1rem -2rem;
+  margin: 8rem 2rem  1rem -2rem;
   padding: 2rem 2rem;
   color: #302c24; }
   @media (max-width: 37.5em) {
@@ -1997,6 +2018,9 @@ body {
           margin: 2rem -2rem 2rem -2rem;
           width: 35rem;
           height: 25rem; } }
+  @media (max-width: 37.5em) {
+    .trychology iframe {
+      width: 90%; } }
 
 .article__content {
   padding: 1.5rem;
@@ -2030,7 +2054,7 @@ body {
 
 .carboxytherapy {
   font-size: 1.6rem;
-  margin: 3rem 3rem 1rem -3rem;
+  margin: 8rem 3rem 1rem -3rem;
   padding: 2rem 2rem;
   color: #302c24; }
   @media (max-width: 37.5em) {
@@ -2127,7 +2151,7 @@ body {
 
 .laserTreatments {
   font-size: 1.6rem;
-  margin: 3rem 3rem 1rem -3rem;
+  margin: 9rem 3rem 1rem;
   padding: 2rem 3rem;
   color: #302c24; }
   @media (max-width: 37.5em) {
@@ -2312,7 +2336,7 @@ body {
 
 .makeup {
   font-size: 1.6rem;
-  margin: 3rem 0 1rem;
+  margin: 9rem 0 1rem;
   padding: 2rem 3rem;
   color: #302c24; }
   .makeup__header {
@@ -2419,7 +2443,7 @@ body {
 
 .daySpa {
   font-size: 1.6rem;
-  margin: 3rem 0 1rem;
+  margin: 9rem 0 1rem;
   padding: 2rem 3rem;
   color: #302c24; }
   .daySpa__header {
@@ -2530,7 +2554,7 @@ strong-number {
 
 .eyeStylization {
   font-size: 1.6rem;
-  margin: 3rem 0 1rem;
+  margin: 9rem 0 1rem;
   padding: 2rem 2rem;
   color: #302c24; }
   .eyeStylization__header {
@@ -2574,7 +2598,7 @@ strong-number {
 
 .others {
   font-size: 1.6rem;
-  margin: 3rem 0;
+  margin: 10rem 0 3rem;
   padding: 2rem 3rem;
   color: #302c24; }
 
@@ -2716,7 +2740,13 @@ strong-number {
         margin: 0; } }
 
 .contact {
-  height: 65vh; }
+  height: 55vh; }
+  @media (max-width: 56.25em) {
+    .contact {
+      height: 79vh; } }
+  @media (max-width: 37.5em) {
+    .contact {
+      height: 60vh; } }
   .contact__flex-container {
     display: -webkit-flex;
     display: flex;
@@ -2729,28 +2759,35 @@ strong-number {
     @media (max-width: 56.25em) {
       .contact__flex-container {
         flex-direction: column;
-        margin: 6rem 3rem; } }
+        margin: 5rem 3rem; } }
     .contact__flex-container--flex-item {
-      width: 60%;
+      width: 100%;
       animation: moveInBottom 1s ease-in;
       padding: 0 1rem;
       margin: 1rem; }
       @media (max-width: 56.25em) {
         .contact__flex-container--flex-item {
-          width: 100%; } }
+          width: 80%; } }
+      @media (max-width: 37.5em) {
+        .contact__flex-container--flex-item {
+          margin-top: 2rem; } }
     .contact__flex-container--flex-item-2 {
-      width: 35%;
+      width: 40%;
       margin: 1rem;
       animation: fadeIn 1.5s ease; }
   .contact__map {
-    background-color: rgba(234, 172, 117, 0.5);
     width: 50rem;
-    height: 35rem; }
+    height: 35rem;
+    margin-left: 1rem; }
     @media (max-width: 56.25em) {
       .contact__map {
-        margin: 0;
+        margin-left: .3rem;
         width: 40rem;
         height: 30rem; } }
+    @media (max-width: 37.5em) {
+      .contact__map {
+        width: 25rem;
+        height: 20rem; } }
   .contact__content {
     text-align: justify; }
     .contact__content--header {
@@ -2767,12 +2804,43 @@ strong-number {
   text-align: right;
   height: 350px;
   width: 500px; }
+  @media (max-width: 75em) {
+    .mapouter {
+      width: 450px; } }
+  @media (max-width: 56.25em) {
+    .mapouter {
+      margin-top: 1rem;
+      right: 5%; } }
+  @media (max-width: 42em) {
+    .mapouter {
+      right: 9rem; } }
+  @media (max-width: 37.5em) {
+    .mapouter {
+      height: 200px;
+      width: 300px;
+      right: 15rem; } }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 350px;
   width: 500px; }
+  @media (max-width: 75em) {
+    .gmap_canvas {
+      width: 470px; } }
+  @media (max-width: 56.25em) {
+    .gmap_canvas {
+      height: 250px;
+      width: 400px; } }
+  @media (max-width: 37.5em) {
+    .gmap_canvas {
+      height: 220px;
+      width: 350px; } }
+
+@media (max-width: 37.5em) {
+  iframe {
+    height: 200px;
+    width: 300px; } }
 
 .home {
   z-index: 50; }
@@ -2995,6 +3063,56 @@ strong-number {
     width: 25%;
     margin: 0 auto;
     margin-top: .5rem; }
+
+.mobileOffer {
+  margin: 4rem 0 0;
+  padding: 1rem 0 3rem 0; }
+  .mobileOffer h2 {
+    margin: .7rem .3rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #88784d; }
+  .mobileOfferDetails--ul {
+    padding-left: 3rem;
+    margin: 1.5rem 0rem;
+    text-align: left; }
+    .mobileOfferDetails--ul li {
+      font-size: 1.5rem;
+      border-bottom: 1.5px dotted #ad9b6d;
+      width: 90%; }
+  .mobileOffer p {
+    color: #ad9b6d;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem; }
+  .mobileOffer a {
+    text-align: center;
+    padding: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem; }
+  .mobileOfferCenter {
+    text-align: center; }
+  .mobileOffer__flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 2rem 0; }
+    @media (max-width: 42em) {
+      .mobileOffer__flex-container {
+        margin: 0;
+        flex-direction: column;
+        align-items: center; } }
+    .mobileOffer__flex-container--flex-item {
+      height: 100%;
+      margin: 0 1rem; }
+      @media (max-width: 62.5em) {
+        .mobileOffer__flex-container--flex-item {
+          width: 48vw; } }
+      @media (max-width: 42em) {
+        .mobileOffer__flex-container--flex-item {
+          margin-bottom: 2rem; } }
 
 #packets-2 {
   -webkit-animation: pulsate-fwd 7s ease-in-out 4s forwards;

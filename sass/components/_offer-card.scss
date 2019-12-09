@@ -338,3 +338,14 @@
    
    
 }
+
+.first {
+
+    display: inline;
+
+
+    @include respond(tab-land) {
+
+        display: none;
+    }
+}

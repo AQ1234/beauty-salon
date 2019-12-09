@@ -1,0 +1,80 @@
+.mobileOffer {
+
+    
+  
+    h2 {
+        margin: .7rem .3rem;
+        text-align: center;
+        font-size: 2.5rem;
+        color: $gold-darker;
+    
+    }
+
+
+    &Details--ul {
+        padding-left: 3rem;
+        margin: 1.5rem 0rem;
+        text-align: left;
+
+        li {
+            font-size: 1.5rem;
+            border-bottom: 1.5px dotted $gold;
+            width: 90%;
+        }
+    }
+
+    
+    
+    p {
+        color: $gold;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+
+    a {
+        text-align: center;
+        padding: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        
+    }
+    &Center {
+
+        text-align: center;
+    }
+
+    margin: 4rem 0 0;
+    padding: 1rem 0 3rem 0;
+
+    &__flex-container {
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+    -webkit-justify-content:center;
+    justify-content:center;
+    margin: 2rem 0;
+    
+        @include respond(tab-small) {
+
+            margin: 0;
+           flex-direction: column;
+            align-items: center;
+        }
+
+
+        &--flex-item {
+            height: 100%;
+            margin: 0 1rem;
+            @include respond(offer-break) {
+
+                width: 48vw;
+            }
+            @include respond(tab-small) {
+
+               margin-bottom: 2rem;
+            }
+        }
+    }
+}
+

@@ -292,6 +292,12 @@
        padding: 1rem 1rem 1rem 0rem;
        border-bottom: 1px solid $gold;
        
+       @include respond(tab-port) {
+       padding: 1rem 0rem;
+
+       }     
+
+
        & strong {
        
             

@@ -54,6 +54,11 @@ ORDER: Base + typograpty > layout >prices and offers > components
     @media (max-width: 56.25em) { @content }; //<1200
   }
 
+  @if $breakpoint == offer-break {
+    @media (max-width: 62.50em) { @content };
+
+  }
+
   @if $breakpoint == tab-land {
     @media (max-width: 75em) { @content };
   }
