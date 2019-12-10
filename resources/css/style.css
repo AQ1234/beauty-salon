@@ -431,6 +431,11 @@ body {
       list-style: none;
       width: 110%;
       margin: 0 auto; }
+      .card__details ul--text {
+        display: inline; }
+        @media (max-width: 75em) {
+          .card__details ul--text {
+            display: none; } }
       .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
@@ -459,12 +464,6 @@ body {
       @media (max-width: 56.25em) {
         .card__price-box--price-value {
           font-size: 3rem; } }
-
-.first {
-  display: inline; }
-  @media (max-width: 75em) {
-    .first {
-      display: none; } }
 
 .hamburgerNavIcon {
   position: absolute;

@@ -1,23 +1,23 @@
 //Slide
 
-// showSlides = () => {
+showSlides = () => {
    
-//   let slides = document.getElementsByClassName("main-slideshow__slide");
+  let slides = document.getElementsByClassName("main-slideshow__slide");
 
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     
       
-//   }
-//   slideIndex++;
+  }
+  slideIndex++;
 
-//   if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex > slides.length) {slideIndex = 1}
 
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 20000); // Change image every 20 seconds
-// }
-// let slideIndex = 0;
-// showSlides();
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 20000); // Change image every 20 seconds
+}
+let slideIndex = 0;
+showSlides();
 
 
 /* Hamburger menu  */
@@ -32,15 +32,10 @@ nav.classList.toggle('treatments__navigation--active');
 nav.classList.toggle('pricelist__navigation--active');
 }
 
-
 hamburger.addEventListener('click', handleClick);
 
 
-
-
-// const sign = document.querySelector('.sign');
-// const list = document.querySelector('.head__nav--list');
-
+//Apear and Disapear menu in mobile
 signClick = () => {
 
 document.toggle('.head__nav--list').style.display = "block";
@@ -67,6 +62,7 @@ head.style.opacity === "1";
 }
 }
 
+/*Dropdownlist appear*/ 
 
 //Menu treatments
 function treatmentsApper() {
@@ -87,7 +83,6 @@ function treatmentsApper() {
       listTreat.style.opacity === "1";
         }
      }
-
 }
 
 
@@ -110,6 +105,5 @@ if (listPack.style.opacity === "0") {
     listPack.style.opacity === "1";
       }
    }
-
 }
 
