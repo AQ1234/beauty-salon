@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 /*
   >=600 phone
@@ -218,6 +217,14 @@ body {
   color: #ad9b6d;
   display: inline-block;
   float: right; }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
