@@ -124,6 +124,9 @@ ORDER: Base + typograpty > layout >prices and offers > components
 html {
   font-family: sans-serif;
   font-size: 62.5%; }
+  @media (max-width: 62.5em) {
+    html {
+      font-size: 70%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56%; } }
@@ -133,9 +136,6 @@ html {
   @media (max-width: 42em) {
     html {
       font-size: 45%; } }
-  @media (max-width: 62.5em) {
-    html {
-      font-size: 70%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -225,6 +225,18 @@ body {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor; }
+  .icon-facebook2 {
+    width: 1.2em;
+    height: 1.2em; }
+    .icon-facebook2--down {
+      width: 2.1rem;
+      height: 2.1rem;
+      fill: #555;
+      margin-top: 1rem; }
+      .icon-facebook2--down:hover {
+        fill: #3b5998; }
+    .icon-facebook2:hover {
+      fill: #3b5998; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -583,7 +595,7 @@ body {
     .head {
       flex-direction: column;
       padding: 2rem 0 1rem;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.3);
       height: 200px; } }
   .head__logo {
     animation-name: moveInLogo;
@@ -611,7 +623,7 @@ body {
         display: block;
         text-align: center;
         width: 12%;
-        background-color: rgba(255, 255, 255, 0.7); } }
+        background-color: rgba(255, 255, 255, 0.9); } }
     @media (max-width: 30em) {
       .head__nav {
         margin-left: 30rem; } }
@@ -858,7 +870,7 @@ body {
             margin-bottom: 15rem; } }
         .mainFooter__container__item--nav-links li {
           display: inline-block;
-          margin: 2rem 3rem; }
+          margin: .8rem 3rem 2rem; }
         .mainFooter__container__item--nav-links a {
           text-decoration: none;
           font-size: 2rem;
@@ -897,7 +909,7 @@ body {
     .head {
       flex-direction: column;
       padding: 2rem 0 1rem;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.3);
       height: 200px; } }
   .head__logo {
     animation-name: moveInLogo;
@@ -925,7 +937,7 @@ body {
         display: block;
         text-align: center;
         width: 12%;
-        background-color: rgba(255, 255, 255, 0.7); } }
+        background-color: rgba(255, 255, 255, 0.9); } }
     @media (max-width: 30em) {
       .head__nav {
         margin-left: 30rem; } }
@@ -2857,7 +2869,7 @@ strong-number {
 
 .down__nav {
   position: absolute;
-  width: 97.8%;
+  width: 99.0%;
   bottom: 0;
   background-color: rgba(173, 155, 109, 0.35);
   height: 12rem; }
@@ -3072,26 +3084,41 @@ strong-number {
     margin-top: .5rem; }
 
 .mobileOffer {
+  font-size: 5rem;
   margin: 4rem 0 0;
   padding: 1rem 0 3rem 0; }
   .mobileOffer h2 {
-    margin: .7rem .3rem;
+    margin: 5rem .3rem .7rem;
     text-align: center;
     font-size: 2.5rem;
     color: #88784d; }
+    @media (max-width: 37.5em) {
+      .mobileOffer h2 {
+        margin-top: 8rem; } }
+  .mobileOffer .mobileOffer__flex-container h2 {
+    margin: 2rem .3rem .7rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #88784d; }
+    @media (max-width: 37.5em) {
+      .mobileOffer .mobileOffer__flex-container h2 {
+        margin-top: 8rem; } }
   .mobileOfferDetails--ul {
     padding-left: 3rem;
-    margin: 1.5rem 0rem;
-    text-align: left; }
+    margin: 1.5rem 0rem; }
     .mobileOfferDetails--ul li {
-      font-size: 1.5rem;
+      text-align: justify;
+      font-size: 2.2rem;
       border-bottom: 1.5px dotted #ad9b6d;
       width: 90%; }
+      @media (max-width: 42em) {
+        .mobileOfferDetails--ul li {
+          text-align: left; } }
   .mobileOffer p {
     color: #ad9b6d;
     text-align: center;
     font-weight: 600;
-    font-size: 1.8rem; }
+    font-size: 2.2rem; }
   .mobileOffer a {
     text-align: center;
     padding: 5rem;
@@ -3112,7 +3139,6 @@ strong-number {
         flex-direction: column;
         align-items: center; } }
     .mobileOffer__flex-container--flex-item {
-      height: 100%;
       margin: 0 1rem; }
       @media (max-width: 62.5em) {
         .mobileOffer__flex-container--flex-item {

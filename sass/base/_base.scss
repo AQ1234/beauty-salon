@@ -12,7 +12,13 @@ html {
     // This defines what 1rem is
     font-size: 62.5%; //1em = 10px;
 
-@include respond(tab-land) { //<1200
+   
+
+    @include respond(offer-break) {
+
+        font-size: 70%;
+    }
+    @include respond(tab-land) { //<1200
 
         font-size: 56%;
     }
@@ -27,11 +33,9 @@ html {
         font-size: 45%;
     }
 
-    @include respond(offer-break) {
+   
 
-        font-size: 70%;
-    }
-
+   
     @include respond(big-desktop) {
 
         font-size: 75%;
