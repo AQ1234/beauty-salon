@@ -36,10 +36,6 @@ hamburger.addEventListener('click', handleClick);
 
 
 //Apear and Disapear menu in mobile
-signClick = () => {
-
-document.toggle('.head__nav--list').style.display = "block";
-}
 
 function headNavAppear() {
 
@@ -54,13 +50,18 @@ head.style.opacity = "1";
 } else {
 setTimeout(() => {
 head.style.opacity = "0";
-},100);
+},200);
 
-if(window.innerWidth <= 600) {
-head.style.opacity === "1";
+  }
+
+  window.onresize = function () {
+  if(window.innerWidth >= 601) {
+    head.style.opacity = "1";
   }
 }
 }
+
+
 
 /*Dropdownlist appear*/ 
 

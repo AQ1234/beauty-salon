@@ -1,8 +1,6 @@
 .mobileOffer {
 
-    
-  font-size: 5rem;
-    h2 {
+    &__header {
         margin: 5rem .3rem .7rem;
         text-align: center;
         font-size: 2.5rem;
@@ -12,7 +10,6 @@
 
             margin-top: 8rem;
         }
-       
     }
 
     .mobileOffer__flex-container  h2 {
@@ -23,16 +20,14 @@
     
         @include respond(phone) {
 
-            margin-top: 8rem;
+            margin-top: 2rem;
         }
-       
     }
 
-
     &Details--ul {
+       
         padding-left: 3rem;
         margin: 1.5rem 0rem;
-       // text-align: left;
        
         li {
             text-align: justify;
@@ -40,28 +35,23 @@
             border-bottom: 1.5px dotted $gold;
             width: 90%;
 
-
             @include respond(tab-small) {
 
                 text-align: left;
             }
         }
     }
-
-    
     
     p {
         color: $gold;
         text-align: center;
         font-weight: 600;
         font-size: 2.2rem;
+
     }
 
     a {
         text-align: center;
-        padding: 5rem;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
         
     }
     &Center {
@@ -81,8 +71,6 @@
     justify-content:center;
     margin: 2rem 0;
 
-
-    
         @include respond(tab-small) {
 
             margin: 0;
@@ -90,18 +78,23 @@
             align-items: center;
         }
 
-
         &--flex-item {
-          //  min-height: 20rem;
-            //height: 100%;
+
             margin: 0 1rem;
             @include respond(offer-break) {
 
                 width: 48vw;
             }
+
             @include respond(tab-small) {
 
                margin-bottom: 2rem;
+               width: 65vw;
+            }
+
+            &--price {
+
+                margin-top: 4rem;
             }
         }
     }

@@ -614,12 +614,16 @@ body {
           height: 4rem;
           margin-left: 3rem; } }
   .head__nav {
-    text-align: center; }
+    text-align: center;
+    opacity: 1; }
+    @media (max-width: 42em) {
+      .head__nav {
+        opacity: 1; } }
     @media (max-width: 37.5em) {
       .head__nav {
         margin-top: .8rem;
         margin-left: 40rem;
-        opacity: 1;
+        opacity: 0;
         display: block;
         text-align: center;
         width: 12%;
@@ -928,12 +932,16 @@ body {
           height: 4rem;
           margin-left: 3rem; } }
   .head__nav {
-    text-align: center; }
+    text-align: center;
+    opacity: 1; }
+    @media (max-width: 42em) {
+      .head__nav {
+        opacity: 1; } }
     @media (max-width: 37.5em) {
       .head__nav {
         margin-top: .8rem;
         margin-left: 40rem;
-        opacity: 1;
+        opacity: 0;
         display: block;
         text-align: center;
         width: 12%;
@@ -3084,16 +3092,15 @@ strong-number {
     margin-top: .5rem; }
 
 .mobileOffer {
-  font-size: 5rem;
   margin: 4rem 0 0;
   padding: 1rem 0 3rem 0; }
-  .mobileOffer h2 {
+  .mobileOffer__header {
     margin: 5rem .3rem .7rem;
     text-align: center;
     font-size: 2.5rem;
     color: #88784d; }
     @media (max-width: 37.5em) {
-      .mobileOffer h2 {
+      .mobileOffer__header {
         margin-top: 8rem; } }
   .mobileOffer .mobileOffer__flex-container h2 {
     margin: 2rem .3rem .7rem;
@@ -3102,7 +3109,7 @@ strong-number {
     color: #88784d; }
     @media (max-width: 37.5em) {
       .mobileOffer .mobileOffer__flex-container h2 {
-        margin-top: 8rem; } }
+        margin-top: 2rem; } }
   .mobileOfferDetails--ul {
     padding-left: 3rem;
     margin: 1.5rem 0rem; }
@@ -3120,10 +3127,7 @@ strong-number {
     font-weight: 600;
     font-size: 2.2rem; }
   .mobileOffer a {
-    text-align: center;
-    padding: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem; }
+    text-align: center; }
   .mobileOfferCenter {
     text-align: center; }
   .mobileOffer__flex-container {
@@ -3145,7 +3149,10 @@ strong-number {
           width: 48vw; } }
       @media (max-width: 42em) {
         .mobileOffer__flex-container--flex-item {
-          margin-bottom: 2rem; } }
+          margin-bottom: 2rem;
+          width: 65vw; } }
+      .mobileOffer__flex-container--flex-item--price {
+        margin-top: 4rem; }
 
 #packets-2 {
   -webkit-animation: pulsate-fwd 7s ease-in-out 4s forwards;

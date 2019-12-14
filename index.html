@@ -19,14 +19,14 @@
         <a href="/index.html"><img src="./resources/img/villalogo.png" alt="Villauroda"></a>
       </div>
 
-      <div class="headNavIcon border_radius">
-          <button class="headMenu" id="head" onclick="headNavAppear()">
+      <div class="headNavIcon border_radius" onclick="headNavAppear()">
+          <button class="headMenu" id="head">
             <span class="headMenu__box">
               <span class="headMenu__inner"></span>
             </span>
           </button>
         </div>
-      <div class="head__nav" id="headList">
+      <div class="head__nav" id="headList" >
         <ul class="head__nav--list">
           <li><a href="#">O nas</a></li>
           <li onclick="treatmentsApper()"><a href="#">Zabiegi</a>
@@ -501,7 +501,7 @@
 
     <!--Section Mobile Offer -->
 
-   <section class="mobileOffer">
+    <section class="mobileOffer">
       <div class="offer__center-text">
         <h2 class="mobileOffer__header u-margin-top-default">
           Oferta zabiegów
@@ -509,7 +509,7 @@
       </div>
       <div class="mobileOffer__flex-container">   
         <div class="mobileOffer__flex-container--flex-item border_radius">
-          <h2>Zabiegi na ciało</h2>
+          <h2 class="mobileOffer--header">Zabiegi na ciało</h2 cl>
           <ul class="mobileOfferDetails--ul">
               <li>Gold & Pearls Ceremony</li>
               <li>Zabieg Cynamonowy</li>
@@ -519,20 +519,22 @@
             <p>Tylko 100zł</p>
             <div class="mobileOfferCenter">
             <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
-          </div>
+        </div>
         </div>   
         <div class="mobileOffer__flex-container--flex-item border_radius">
-            <h2>Kosmetyka pielęgnacyjna</h2>
+            <h2 class="mobileOffer--header">Kosmetyka pielęgnacyjna</h2>
             <ul class="mobileOfferDetails--ul">
                 <li>Intensywny - przeciwstarzeniowy rytułał</li>
                 <li>intensywny rytutłał na twarz</li>
                 <li>Wygładzanie zmarszczek</li>
               
               </ul>
-              <p>Tylko 200zł</p>
+              <div class="mobileOffer__flex-container--flex-item--price">
+              <p class="pSecond">Tylko 200zł</p>
               <div class="mobileOfferCenter">
               <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
               </div>
+            </div>
           </div>   
 
         </div>         
@@ -540,7 +542,7 @@
       
         <div class="mobileOffer__flex-container">   
             <div class="mobileOffer__flex-container--flex-item border_radius">
-              <h2>Zabiegi laserowe</h2>
+              <h2 class="mobileOffer--header">Zabiegi laserowe</h2>
               <ul class="mobileOfferDetails--ul">
                   <li>Laser Bio-Light
                   <li>Światło niebieskie</li>
@@ -553,7 +555,7 @@
                   </div>
             </div>   
             <div class="mobileOffer__flex-container--flex-item border_radius">
-                <h2>Kosmetyka lecznicza</h2>
+                <h2 class="mobileOffer--header">Kosmetyka lecznicza</h2>
                 <ul class="mobileOfferDetails--ul">
                     <li>mechaniczne oczyszczanie skóry</li>
                     <li>eksfoliacje kwasowe</li>
@@ -570,12 +572,12 @@
 
             <div class="mobileOffer__flex-container">   
                 <div class="mobileOffer__flex-container--flex-item border_radius">
-                  <h2>Depilacja</h2>
+                  <h2 class="mobileOffer--header">Depilacja</h2>
                   <ul class="mobileOfferDetails--ul">
                       <li><strong>To zabieg całkowicie bezpieczny</strong>, dający świetny efekt gładkiej
                         skóry.<br>
                         Kosmetyczki pracujące w dermoklinice Villa Uroda wykonują<br> zabieg depilacji woskiem
-                        z<br>
+                        z<li>
                         najwyższą starannością o komfort i dobre samopoczucie Klientów.</li>
                     </ul>
                     <p>Tylko 500zł</p>
@@ -591,12 +593,12 @@
                         <li>Masaż gorącą świecą</li>
                         <li>Masaż gorącymi kamieniami</li>
                       </ul>
-                      <p>Tylko 600zł</p>
+                      <br>
+                      <p class="mobileOffer--header">Tylko 600zł</p>
                       <div class="mobileOfferCenter">
                         <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
                         </div>
-                  </div>   
-        
+                  </div>
                 </div>  
     
                 <div class="mobileOffer__flex-container">   
@@ -606,7 +608,7 @@
                       <li>Zabiegi z użyciem wypełniaczy oraz toksyny botulinowej</li>
                       <li>Zabieg wypełniania zmarszczek i modelowania twarzy przy użyciu wypełniaczy</li>
                     </ul>
-                      <p>Tylko 100zł</p>
+                      <p class="mobileOffer--header">Tylko 100zł</p>
                       <div class="mobileOfferCenter">
                         <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
                         </div>
@@ -630,7 +632,7 @@
                 
                   <div class="mobileOffer__flex-container">   
                       <div class="mobileOffer__flex-container--flex-item border_radius">
-                        <h2>Trychologia</h2>
+                        <h2 class="mobileOffer--header">Trychologia</h2>
                         <ul class="mobileOfferDetails--ul">
                           <li><strong>Klinika Dermokosmetyczna Villa Uroda</strong> jako pierwsza w Białymstoku oraz jedena z nielicznych w Polsce oferuje Państwu zabiegi w zakresie <strong>TRYCHOLOGII</strong>, czyli leczenia wypadania włosów oraz łysienia.</li>
                         </li>
@@ -642,34 +644,38 @@
                             </div>
                       </div>   
                       <div class="mobileOffer__flex-container--flex-item border_radius">
-                          <h2>Kosmetyka lecznicza</h2>
+                          <h2 class="mobileOffer--header">Kosmetyka lecznicza</h2>
                           <ul class="mobileOfferDetails--ul">
                               <li>mechaniczne oczyszczanie skóry</li>
                               <li>eksfoliacje kwasowe</li>
                               <li>peelingi medyczne</li>
                               <li>pelling kawitacyjny</li>
                             </ul>
+                            <div class="mobileOffer__flex-container--flex-item--price">
                             <p>Tylko 400zł</p>
                             <div class="mobileOfferCenter">
                               <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
                               </div>
+                      </div>
                         </div>   
               
                       </div>  
           
                       <div class="mobileOffer__flex-container">   
                           <div class="mobileOffer__flex-container--flex-item border_radius">
-                            <h2>Karboksyterapia</h2>
+                            <h2 class="mobileOffer--header">Karboksyterapia</h2>
                             <ul class="mobileOfferDetails--ul">
                               <li>Karboksyterapia jest to wysoce specjalistyczna kuracja wykorzystująca dwutlenek węgla w celu poprawy metabolizmu i regeneracji skóry. Zabieg bazuje na precyzyjnym aplikowaniu odpowiednich dawek dwutlenku węgla.</li>
                             </ul>
+                            <div class="mobileOffer__flex-container--flex-item--price">
                               <p>Tylko 500zł</p>
                               <div class="mobileOfferCenter">
                               <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
+                          </div>
                           </div>  
                         </div> 
                           <div class="mobileOffer__flex-container--flex-item border_radius">
-                              <h2>Day Spa</h2>
+                              <h2 class="mobileOffer--header">Day Spa</h2>
                               <ul class="mobileOfferDetails--ul">
                                 <li>Dermoklinika Villa Uroda serdeczne do ekskluzywnego DAY  SPA  na zabiegi upiększające i relaksujące.  W naszej ofercie SPA poza zabiegami relaksującymi proponujemy masaż i usługi kosmetyczne. Mogą Państwo zarezerwować też specjalne opracowane pakiety łączące zabiegi</li>
                               </ul>
@@ -679,13 +685,11 @@
                                   </div>
                             </div>   
                           </div>  
-      
-
-    </section> 
+    </section>   -->
 
     <!-- Section Packets -->
 
-    <!-- <section class="packets">  
+     <!-- <section class="packets">  
     <h2 class="packets__packageContainer--header">Dermoklinika Villa Uroda oferuje Bony Upominkowe na Wyjątkowe Okazje</h2>
       <div class="packets__container ">
         <div class="packets__container__item ">
@@ -809,8 +813,8 @@
             </div>
       </div>
       
-    </section> 
-   -->
+    </section>  -->
+   
 
     <!--CONTACT-->
 

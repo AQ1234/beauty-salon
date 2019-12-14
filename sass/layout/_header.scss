@@ -50,12 +50,15 @@
     &__nav {
 
         text-align: center;
-      
+        opacity: 1;
+        @include respond(tab-small) {
+          opacity: 1;
+        }
         @include respond(phone) {
 
           margin-top: .8rem;
           margin-left: 40rem;
-            opacity: 1;
+           opacity: 0;
             display: block; 
             text-align: center;
             width: 12%;
