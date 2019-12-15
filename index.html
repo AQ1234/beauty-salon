@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="resources/css/style.css">
   <title>Salon Urody</title>
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9d5faf12b5/UntitledProject/style-svg.css">
 </head>
 
 <body>
@@ -18,14 +19,14 @@
         <a href="/index.html"><img src="./resources/img/villalogo.png" alt="Villauroda"></a>
       </div>
 
-      <div class="headNavIcon border_radius">
-          <button class="headMenu" id="head" onclick="headNavAppear()">
+      <div class="headNavIcon border_radius" onclick="headNavAppear()">
+          <button class="headMenu" id="head">
             <span class="headMenu__box">
               <span class="headMenu__inner"></span>
             </span>
           </button>
         </div>
-      <div class="head__nav" id="headList">
+      <div class="head__nav" id="headList" >
         <ul class="head__nav--list">
           <li><a href="#">O nas</a></li>
           <li onclick="treatmentsApper()"><a href="#">Zabiegi</a>
@@ -53,6 +54,7 @@
             </ul>
           </li>
           <li><a href="#">Kontakt</a></li>
+          
         </ul>
     </div>
 
@@ -70,7 +72,6 @@
      <div class="main-slideshow">
 
         <div class="main-slideshow__slide main-slideshow__slide--1 fade" id="main-slideshow__slide">
-            <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a>
           <div class="main-slideshow__slide--img">
                 </div>
             <div class="main-slideshow__slide--text ">Gabinet Kosmetyczny,<br>
@@ -80,12 +81,9 @@
                 <a href="#popup" class="btn btn--gold">Więcej informacji!</a>
               </div>
             </div>
-           
-           
         </div>
 
         <div class="main-slideshow__slide main-slideshow__slide--2 fade" id="main-slideshow__slide">
-            <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a>
 
             <div class="main-slideshow__slide--img--2">
           </div>
@@ -99,25 +97,22 @@
             
         </div> 
      </div>
-
-   
        
         <div class="down__nav">
           <ul class="down__nav--list">
-          <li><a href="#">Adres:<img id="phone" src="resources/icons/svg/home-icon-silhouette.svg"><br />Podleśna 11/1. Białystok<br /><br /></a></li>
-          <li><a href="#"><br>Telefon:<br /><img id="phone" src="resources/icons/svg/call-answer.svg">(85) 742-74-67<br /><br /></a></li>
+          <li><a href="#">Adres:<svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg><br />Podleśna 11/1. Białystok<br /><br /></a></li>
+          <li><a href="#"><br>Telefon:<br /><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>(85) 742-74-67<br /><br /></a></li>
           <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
-          <li><a href="#">Dołącz na:<br /><br /><img id="fb" src="resources/icons/svg/036-facebook.svg"></a>
+          <li><a href="www.facebook.com">Dołącz na:<br /></a><svg class="icon icon-facebook2--down"><use xlink:href="#icon-facebook2"></use></svg><br /><br>
         
           </li>
+          
           </ul>
       </div>
-
-
-    </section> -->
+    </section>  -->
 
    <!-- Section About -->
-
+    <!--PARGRAPH HEADER cokolwiek (opakuj tekst), jak najeżdzam na about__header--2 myszką to zmiania kolor-->
  <!-- <section class="about"> 
       <h2 class="about__header u-margin-top-default">Villa Uroda</h2>
       <div class="about__container">
@@ -161,7 +156,7 @@
       </div>
 
       <div class="about__header--2">
-        Salon kosmetyczny Villa Uroda jest pierwszą i jedyną w Białymstoku kliniką dbającą o wygląd i zdrowie klienta
+       <p>Salon kosmetyczny Villa Uroda jest pierwszą i jedyną w Białymstoku kliniką dbającą o wygląd i zdrowie klienta</p>
       </div>
       </div>
       </div>
@@ -503,8 +498,9 @@
     </section>  -->
 
     <!--Section Mobile Offer -->
-
-   <!-- <section class="mobileOffer">
+    <!--TRZEBA POPRAWIĆ FORMATOWANIE TEKSTU, i troche chyba czcionke poprawić dodatkwo może więcej wolnych przestrzeni bo strasznie 
+    zagnieżdzone i backgroun w kartach jakoś filtr narzucić żeby karta była lepiej czytelna-->
+    <!-- <section class="mobileOffer">
       <div class="offer__center-text">
         <h2 class="mobileOffer__header u-margin-top-default">
           Oferta zabiegów
@@ -512,7 +508,7 @@
       </div>
       <div class="mobileOffer__flex-container">   
         <div class="mobileOffer__flex-container--flex-item border_radius">
-          <h2>Zabiegi na ciało</h2>
+          <h2 class="mobileOffer--header">Zabiegi na ciało</h2 cl>
           <ul class="mobileOfferDetails--ul">
               <li>Gold & Pearls Ceremony</li>
               <li>Zabieg Cynamonowy</li>
@@ -522,19 +518,22 @@
             <p>Tylko 100zł</p>
             <div class="mobileOfferCenter">
             <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
-          </div>
+        </div>
         </div>   
         <div class="mobileOffer__flex-container--flex-item border_radius">
-            <h2>Kosmetyka pielęgnacyjna</h2>
+            <h2 class="mobileOffer--header">Kosmetyka pielęgnacyjna</h2>
             <ul class="mobileOfferDetails--ul">
                 <li>Intensywny - przeciwstarzeniowy rytułał</li>
                 <li>intensywny rytutłał na twarz</li>
                 <li>Wygładzanie zmarszczek</li>
+              
               </ul>
-              <p>Tylko 200zł</p>
+              <div class="mobileOffer__flex-container--flex-item--price">
+              <p class="pSecond">Tylko 200zł</p>
               <div class="mobileOfferCenter">
               <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
               </div>
+            </div>
           </div>   
 
         </div>         
@@ -542,7 +541,7 @@
       
         <div class="mobileOffer__flex-container">   
             <div class="mobileOffer__flex-container--flex-item border_radius">
-              <h2>Zabiegi laserowe</h2>
+              <h2 class="mobileOffer--header">Zabiegi laserowe</h2>
               <ul class="mobileOfferDetails--ul">
                   <li>Laser Bio-Light
                   <li>Światło niebieskie</li>
@@ -555,7 +554,7 @@
                   </div>
             </div>   
             <div class="mobileOffer__flex-container--flex-item border_radius">
-                <h2>Kosmetyka lecznicza</h2>
+                <h2 class="mobileOffer--header">Kosmetyka lecznicza</h2>
                 <ul class="mobileOfferDetails--ul">
                     <li>mechaniczne oczyszczanie skóry</li>
                     <li>eksfoliacje kwasowe</li>
@@ -572,12 +571,12 @@
 
             <div class="mobileOffer__flex-container">   
                 <div class="mobileOffer__flex-container--flex-item border_radius">
-                  <h2>Depilacja</h2>
+                  <h2 class="mobileOffer--header">Depilacja</h2>
                   <ul class="mobileOfferDetails--ul">
                       <li><strong>To zabieg całkowicie bezpieczny</strong>, dający świetny efekt gładkiej
                         skóry.<br>
                         Kosmetyczki pracujące w dermoklinice Villa Uroda wykonują<br> zabieg depilacji woskiem
-                        z<br>
+                        z<li>
                         najwyższą starannością o komfort i dobre samopoczucie Klientów.</li>
                     </ul>
                     <p>Tylko 500zł</p>
@@ -593,12 +592,12 @@
                         <li>Masaż gorącą świecą</li>
                         <li>Masaż gorącymi kamieniami</li>
                       </ul>
-                      <p>Tylko 600zł</p>
+                      <br>
+                      <p class="mobileOffer--header">Tylko 600zł</p>
                       <div class="mobileOfferCenter">
                         <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
                         </div>
-                  </div>   
-        
+                  </div>
                 </div>  
     
                 <div class="mobileOffer__flex-container">   
@@ -608,7 +607,7 @@
                       <li>Zabiegi z użyciem wypełniaczy oraz toksyny botulinowej</li>
                       <li>Zabieg wypełniania zmarszczek i modelowania twarzy przy użyciu wypełniaczy</li>
                     </ul>
-                      <p>Tylko 100zł</p>
+                      <p class="mobileOffer--header">Tylko 100zł</p>
                       <div class="mobileOfferCenter">
                         <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
                         </div>
@@ -632,7 +631,7 @@
                 
                   <div class="mobileOffer__flex-container">   
                       <div class="mobileOffer__flex-container--flex-item border_radius">
-                        <h2>Trychologia</h2>
+                        <h2 class="mobileOffer--header">Trychologia</h2>
                         <ul class="mobileOfferDetails--ul">
                           <li><strong>Klinika Dermokosmetyczna Villa Uroda</strong> jako pierwsza w Białymstoku oraz jedena z nielicznych w Polsce oferuje Państwu zabiegi w zakresie <strong>TRYCHOLOGII</strong>, czyli leczenia wypadania włosów oraz łysienia.</li>
                         </li>
@@ -644,32 +643,38 @@
                             </div>
                       </div>   
                       <div class="mobileOffer__flex-container--flex-item border_radius">
-                          <h2>Kosmetyka lecznicza</h2>
+                          <h2 class="mobileOffer--header">Kosmetyka lecznicza</h2>
                           <ul class="mobileOfferDetails--ul">
                               <li>mechaniczne oczyszczanie skóry</li>
                               <li>eksfoliacje kwasowe</li>
                               <li>peelingi medyczne</li>
                               <li>pelling kawitacyjny</li>
                             </ul>
+                            <div class="mobileOffer__flex-container--flex-item--price">
                             <p>Tylko 400zł</p>
                             <div class="mobileOfferCenter">
                               <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
                               </div>
+                      </div>
                         </div>   
               
                       </div>  
           
                       <div class="mobileOffer__flex-container">   
                           <div class="mobileOffer__flex-container--flex-item border_radius">
-                            <h2>Karboksyterapia</h2>
+                            <h2 class="mobileOffer--header">Karboksyterapia</h2>
                             <ul class="mobileOfferDetails--ul">
                               <li>Karboksyterapia jest to wysoce specjalistyczna kuracja wykorzystująca dwutlenek węgla w celu poprawy metabolizmu i regeneracji skóry. Zabieg bazuje na precyzyjnym aplikowaniu odpowiednich dawek dwutlenku węgla.</li>
                             </ul>
+                            <div class="mobileOffer__flex-container--flex-item--price">
                               <p>Tylko 500zł</p>
+                              <div class="mobileOfferCenter">
                               <a href="#popup" class="btn btn--gold">Zobacz więcej!</a>
-                          </div>   
+                          </div>
+                          </div>  
+                        </div> 
                           <div class="mobileOffer__flex-container--flex-item border_radius">
-                              <h2>Day Spa</h2>
+                              <h2 class="mobileOffer--header">Day Spa</h2>
                               <ul class="mobileOfferDetails--ul">
                                 <li>Dermoklinika Villa Uroda serdeczne do ekskluzywnego DAY  SPA  na zabiegi upiększające i relaksujące.  W naszej ofercie SPA poza zabiegami relaksującymi proponujemy masaż i usługi kosmetyczne. Mogą Państwo zarezerwować też specjalne opracowane pakiety łączące zabiegi</li>
                               </ul>
@@ -679,13 +684,12 @@
                                   </div>
                             </div>   
                           </div>  
-      
-
-    </section>  -->
+    </section> -->
 
     <!-- Section Packets -->
-
-    <!-- <section class="packets">  
+    <!---Wyrównać karty, i tak samo pzestrzeń między tekstowa bo zlewa się to strasznie-->
+    <!---KOniecznie trzbea mocniej przydymić header-->
+     <!-- <section class="packets">  
     <h2 class="packets__packageContainer--header">Dermoklinika Villa Uroda oferuje Bony Upominkowe na Wyjątkowe Okazje</h2>
       <div class="packets__container ">
         <div class="packets__container__item ">
@@ -810,10 +814,11 @@
       </div>
       
     </section> 
-   -->
+    -->
 
     <!--CONTACT-->
-
+    <!--Tak to nie może wyglądć tu musisz wygląd poparwić żeby było czyto i schludnie,
+    mapa wygląda jakby nie była z tej strony-->
      <!-- <section class="contact"> 
     <div class="contact__flex-container">
       <div class="contact__flex-container--flex-item border_radius">
@@ -837,16 +842,16 @@
 
      <!-- Nav icon -->
 
-   <div class="hamburgerNavIcon">
+   <!-- <div class="hamburgerNavIcon">
      <button class="hamburger" id="hamb">
       <span class="hamburger__box">
           <span class="hamburger__inner"></span>
       </span>
     </button>
-  </div>
+  </div> -->
 
     <!-- Treatsments  -->
-
+ <!--TEGO NIE CZAJE-->
     <!-- <section class="treatments" id="treat">
         <h2 class="treatments__mainHeader">Zabiegi w dermoklinice Villa Uroda</h2>
         <div class="treatmentsContainer">  -->
@@ -854,9 +859,9 @@
    
     <!-- Sidebar  -->
 
-<!-- 
 
-    <div class="treatments__navigation border_radius" id="slidebar">
+
+    <!-- <div class="treatments__navigation border_radius" id="slidebar">
         <ul class="treatments__navigation--list" > 
           <li><a href=#>Kosmetyka pielęgnacyjna</a></li>
           <li><a href= />Kosmetyka lecznicza</a></li>
@@ -871,11 +876,11 @@
           <li><a href= />Makijaż</a></li>
           <li><a href= />Day Spa</a></li>
         </ul>
-      </div>   -->
- <!-- <div class="treatmentsContainer__treatments">   -->
+      </div>  
+ <div class="treatmentsContainer__treatments">   -->
 
     <!-- Skin Care offer -->
-    
+        <!--Tu widok się rozjeżdza contener z kartami nachodzi na header-->
        <!-- <section class="skinCare border_radius"> 
           <h2 class="skinCare__header--2">KOSMETYKA PIELĘGNACYJNA</h2>
           <div class="skinCare__image skinCare__image--1 border_radius">
@@ -1164,6 +1169,8 @@
 
     <!-- Healing Cosmetics offer -->
 
+    <!--OGÓLNIE NA CAŁEJ STRONIE BRAKUJE ODPOWIEDNIEJ CZCIONKI, tekst nigdy nie powinien być czarny, w wielu
+    miejscach masz wysztko z dużej, tak to nie wygląda popatrz inne strony i bierz przykład z designu-->
     <!-- <section class="healingCosmetics border_radius">
           <h2 class="skinCare__header--2">KOSMETYKA LECZNICZA</h2>
           <div class="article">
@@ -1211,7 +1218,7 @@
               </ul>
             </div>
           </div>
-        </section>
+        </section> -->
 
     <!-- AestheticMedicine offer -->
 
@@ -2228,7 +2235,9 @@
 
 
 
-
+    <!--TU TO SAMO jak chcesz mieć czcionkę i formatowanie tekstu to musisz to opakować w znacznik tekstu
+    kolejna sprawa że nie może być wielkich drukowanych czarny liter to nie wygląda, styl formatowania musi być zachowany
+na całej stronie nie może to się rozjeżdzac bo nie wyglada, musisz przemyśleć jakiej czcionki chcesz uzywać i takiej używać, color na litry ładnie się komponujący to ciemny szary np ale nigdy czarny, popatrz na przykładowe stronki na necie i na ich design-->
     <footer class="mainFooter">
       <div class="mainFooter__logo">
         <a href="/"><img src="./resources/img/villalogo.png" alt="Villauroda"></a>
@@ -2236,15 +2245,15 @@
       <div class="mainFooter__container">
         <div class="mainFooter__container__item">
           <ul class="mainFooter__container__item--nav-list">
-            <li><a href="#">Adres:<br />Podleśna 11/1. Białystok<br /><img id="phone" src="resources/icons/svg/home-icon-silhouette.svg"></a></li>
-            <li><a href="#">Telefon: <img id="phone" src="resources/icons/svg/call-answer.svg"><br />(85) 742-74-67<br />Kom: 606-406-540<br /></a></li>
+            <li><a href="#">Adres:<br />Podleśna 11/1. Białystok<br /><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg></a></li>
+            <li><a href="#">Telefon:<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><br />(85) 742-74-67<br />Kom: 606-406-540<br /></a></li>
             <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
           </ul>
         </div>
         <div class="mainFooter__container__item">
           <ul class="mainFooter__container__item--nav-links">
             <h3>Dołącz na:</h3>
-            <li><a href="www.facebook.com"><img id="fb" src="resources/icons/svg/036-facebook.svg"> </a></li>
+            <li><a href="www.facebook.com"><svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg> </a></li>
            
           </ul>
 
@@ -2257,7 +2266,12 @@
       </div>
     </footer>
 
+    
+
     <script src="resources/js/script.js"></script>
+    <!--to przypadkiem nie wygaśnie? pownineś pobrać sprite i podstawić normalnie plik, pamiętaj że serwer póniej będzie to
+    przetwarzał -->
+    <script defer src="https://i.icomoon.io/public/temp/3b9382b8f5/UntitledProject/svgxuse.js"></script>
 </body>
 
 </html>
