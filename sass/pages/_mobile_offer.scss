@@ -1,14 +1,15 @@
 .mobileOffer {
 
     &__header {
-        margin: 5rem .3rem .7rem;
+        margin: 6rem .3rem .7rem;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: $gold-darker;
     
         @include respond(phone) {
 
             margin-top: 8rem;
+            margin-bottom: 3rem;
         }
     }
 
@@ -69,7 +70,7 @@
     flex-direction: row;
     -webkit-justify-content:center;
     justify-content:center;
-    margin: 2rem 0;
+    margin: 5rem 0;
 
         @include respond(tab-small) {
 
@@ -80,21 +81,19 @@
 
         &--flex-item {
 
-            margin: 0 1rem;
-            @include respond(offer-break) {
-
-                width: 48vw;
-            }
-
+            margin: 0 2rem;
+            padding: .9rem;
+            width: 46vw;
+            background-color: rgba($color-grey-light-1, 0.611);
             @include respond(tab-small) {
 
                margin-bottom: 2rem;
                width: 65vw;
             }
 
-            &--price {
+        &--price {
 
-                margin-top: 4rem;
+           margin-top: 4rem;
             }
         }
     }

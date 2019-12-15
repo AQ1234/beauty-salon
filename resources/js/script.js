@@ -1,17 +1,14 @@
-//Slide
 
-/**
- * TEN PLIK JEST BARDZO KRÓTKI A MOZE BYC DOBRYM ĆWICZENIEM
- * NAPISZ TO TAK ŻEBY BYŁO CZYSTO i ŻEBY DAŁO SIĘ TO CZYTAĆ
- */
-showSlides = () => {
+ /*Slideshow*/
+
+//Show images in mainPage
+showSlides = () => { 
    
   let slides = document.getElementsByClassName("main-slideshow__slide");
 
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     
-      
   }
   slideIndex++;
 
@@ -22,7 +19,6 @@ showSlides = () => {
 }
 let slideIndex = 0;
 showSlides();
-
 
 /* Hamburger menu  */
 
@@ -64,8 +60,6 @@ head.style.opacity = "0";
   }
 }
 }
-
-
 
 /*Dropdownlist appear DRY!! */ 
 // TO RÓWNIE DOBRZE MOŻNA ZROBIĆ POPRZEZ ANIMATION w CSS
@@ -136,21 +130,6 @@ function packetsApper() {
     }
 
 
-        // if (listPack.style.opacity === "0") {
-
-        //     setTimeout(() => {
-        //         listPack.style.opacity = "1";
-        //     },200);
-
-        //  } else {
-        //     setTimeout(() => {
-        //         listPack.style.opacity = "0";
-        //     },100);
-
-        //     if(window.innerWidth <= 600) {
-        //         listPack.style.opacity === "1";
-        //     }
-        // }
 }
 
 
