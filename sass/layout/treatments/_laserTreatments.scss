@@ -1,8 +1,7 @@
 .laserTreatments {
     font-size: 1.6rem;
-    margin: 9rem 3rem 1rem ;
-    padding: 2rem 3rem;
-    color: $bronze-dark;
+    margin: 4rem 0rem 1rem ;
+    padding: 2rem 2rem;
 
     @include respond(phone) {
         margin: 3rem 0rem  1rem 0rem;
@@ -10,7 +9,7 @@
 
     &__header {
 
-        color: $gold-darker;
+        color: $gold;
         margin-bottom: 2rem;
         margin-right: 2%;
         font-size: 3rem;
@@ -21,7 +20,7 @@
             color: $gold;
             font-size: 3rem;
             margin: 3rem 0;
-            
+            text-align: center;
 
         }
 

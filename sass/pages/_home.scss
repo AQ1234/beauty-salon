@@ -5,15 +5,17 @@
 
     height: 50vh;
   }
-
 }
 
 .down__nav {
   position: absolute;
-  width: 99.0%;
+ // width: 98.6vw;
+  left: 1%;
+  right: 1%;
   bottom: 0;
   background-color: rgba($gold, .35);
-  height: 12rem;
+  margin-bottom: 2rem;
+  
 
   @include respond(phone) {
 
@@ -58,7 +60,6 @@
         margin-bottom: 2rem;
       }
 
-
     }
 
     a {
@@ -80,9 +81,7 @@
         color: $color-white;
       }
     }
-
   }
-
 }
 
 /* Slideshow container */
@@ -94,9 +93,7 @@
     opacity: 0;
 
   }
-
   
-
   /*Slide-Image*/
   &__slide {
     display: none;

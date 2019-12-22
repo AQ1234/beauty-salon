@@ -20,12 +20,18 @@
     padding: .5rem;
     border: 1px solid $gold;
 
+
+    &--2 {
+        border-radius: 1.2rem;
+        padding: 0;
+        border: 1px solid $gold;
+    }
+
     &--price {
 
         padding: .5rem;
         border: 2px solid $gold;
     }
-    
 }
 
 .article {
@@ -112,8 +118,8 @@
 
         &--down {
 
-            width: 2.1rem;
-            height: 2.1rem;
+            width: 2.7rem;
+            height: 2.7rem;
             fill: $color-grey-dark-2;
             margin-top: 1rem;
             &:hover {

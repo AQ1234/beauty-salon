@@ -141,7 +141,8 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.4;
-  padding: 0 .5rem; }
+  padding: 0 .5rem;
+  color: #555; }
   @media (max-width: 56.25em) {
     body {
       padding: 0 0; } }
@@ -171,6 +172,10 @@ body {
   border-radius: 2rem;
   padding: .5rem;
   border: 1px solid #ad9b6d; }
+  .border_radius--2 {
+    border-radius: 1.2rem;
+    padding: 0;
+    border: 1px solid #ad9b6d; }
   .border_radius--price {
     padding: .5rem;
     border: 2px solid #ad9b6d; }
@@ -226,8 +231,8 @@ body {
     width: 1.2em;
     height: 1.2em; }
     .icon-facebook2--down {
-      width: 2.1rem;
-      height: 2.1rem;
+      width: 2.7rem;
+      height: 2.7rem;
       fill: #555;
       margin-top: 1rem; }
       .icon-facebook2--down:hover {
@@ -585,7 +590,7 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
   @media (max-width: 37.5em) {
@@ -609,7 +614,7 @@ body {
       @media (max-width: 37.5em) {
         .head__logo img {
           height: 4rem;
-          margin-left: 3rem; } }
+          background-color: rgba(255, 255, 255, 0.7); } }
   .head__nav {
     text-align: center;
     opacity: 1; }
@@ -623,7 +628,7 @@ body {
         opacity: 0;
         display: block;
         text-align: center;
-        width: 12%;
+        width: 9rem;
         background-color: rgba(255, 255, 255, 0.9); } }
     @media (max-width: 30em) {
       .head__nav {
@@ -679,7 +684,7 @@ body {
         margin-left: -.5rem;
         margin-top: .2rem;
         width: 16rem;
-        background-color: rgba(255, 255, 255, 0.9); }
+        background-color: rgba(255, 255, 255, 0.7); }
       .head__nav--list > li:hover > ul {
         max-height: 500px;
         transition: max-height .6s ease-in;
@@ -827,36 +832,48 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem 1rem; }
+    @media (max-width: 56.25em) {
+      .mainFooter__container {
+        -webkit-justify-content: center;
+        justify-content: center; } }
     .mainFooter__container__item {
       margin: 0 1rem;
       padding: 0 1rem; }
       .mainFooter__container__item--nav-list {
         animation: fadeIn 2s ease;
         text-align: center;
-        list-style: none; }
+        list-style: none;
+        margin-left: 2rem; }
         @media (max-width: 37.5em) {
           .mainFooter__container__item--nav-list {
             margin: 2rem 5rem 2rem 2rem; } }
-        @media (max-width: 30em) {
-          .mainFooter__container__item--nav-list {
-            margin: 1rem; } }
         .mainFooter__container__item--nav-list li {
-          display: inline-block;
-          margin: 0 3.5rem; }
+          margin: 1rem 4rem;
+          display: inline-block; }
           @media (max-width: 75em) {
             .mainFooter__container__item--nav-list li {
-              margin: 0 2rem; } }
+              margin: 0 1.7rem; } }
+          @media (max-width: 56.25em) {
+            .mainFooter__container__item--nav-list li {
+              margin: 2rem 3.5rem;
+              display: block;
+              border-bottom: 2px dotted #fff; } }
           @media (max-width: 37.5em) {
             .mainFooter__container__item--nav-list li {
               margin: 1.5rem;
-              border-bottom: 2px dotted #fff;
               display: block;
-              min-width: 17rem; } }
+              min-width: 16rem; } }
         .mainFooter__container__item--nav-list a {
           text-align: justify;
           text-decoration: none;
           font-size: 2rem;
           transition: all .2s; }
+          @media (max-width: 62.5em) {
+            .mainFooter__container__item--nav-list a {
+              font-size: 1.8rem; } }
+          @media (max-width: 56.25em) {
+            .mainFooter__container__item--nav-list a {
+              font-size: 2rem; } }
           .mainFooter__container__item--nav-list a, .mainFooter__container__item--nav-list a:link, .mainFooter__container__item--nav-list a:visited {
             color: #555; }
           .mainFooter__container__item--nav-list a:hover {
@@ -865,10 +882,14 @@ body {
         animation: moveInRight 1s ease-in-out;
         font-size: 2rem;
         text-align: center;
-        list-style: none; }
-        @media (max-width: 37.5em) {
+        list-style: none;
+        margin-right: 3rem; }
+        @media (max-width: 56.25em) {
           .mainFooter__container__item--nav-links {
             margin-bottom: 15rem; } }
+        @media (max-width: 37.5em) {
+          .mainFooter__container__item--nav-links {
+            margin-right: 3rem; } }
         .mainFooter__container__item--nav-links li {
           display: inline-block;
           margin: .8rem 3rem 2rem; }
@@ -882,11 +903,13 @@ body {
             color: #fff; }
   .mainFooter__origin {
     font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 2rem 0 5rem;
     text-align: center;
-    padding: 2rem 0 1rem; }
+    width: 60%; }
     @media (max-width: 37.5em) {
       .mainFooter__origin {
-        padding: .5rem; } }
+        padding: 2rem; } }
 
 #phone {
   width: 2rem; }
@@ -903,7 +926,7 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem 2rem 1rem 4rem;
   z-index: 100; }
   @media (max-width: 37.5em) {
@@ -927,7 +950,7 @@ body {
       @media (max-width: 37.5em) {
         .head__logo img {
           height: 4rem;
-          margin-left: 3rem; } }
+          background-color: rgba(255, 255, 255, 0.7); } }
   .head__nav {
     text-align: center;
     opacity: 1; }
@@ -941,7 +964,7 @@ body {
         opacity: 0;
         display: block;
         text-align: center;
-        width: 12%;
+        width: 9rem;
         background-color: rgba(255, 255, 255, 0.9); } }
     @media (max-width: 30em) {
       .head__nav {
@@ -997,7 +1020,7 @@ body {
         margin-left: -.5rem;
         margin-top: .2rem;
         width: 16rem;
-        background-color: rgba(255, 255, 255, 0.9); }
+        background-color: rgba(255, 255, 255, 0.7); }
       .head__nav--list > li:hover > ul {
         max-height: 500px;
         transition: max-height .6s ease-in;
@@ -1159,7 +1182,7 @@ body {
     width: 20rem;
     position: absolute;
     z-index: 1;
-    top: 22%;
+    top: 27%;
     left: 0;
     transform: translateX(-210px);
     -webkit-transform: translateX(-210px);
@@ -1171,6 +1194,9 @@ body {
     -moz-transition: transform .3s .1s ease-in-out;
     -ms-transition: transform .3s .1s ease-in-out;
     -o-transition: transform .3s .1s ease-in-out; }
+    @media (max-width: 42em) {
+      .treatments__navigation {
+        width: 45%; } }
     @media (max-width: 37.5em) {
       .treatments__navigation {
         transform: translateX(-100%);
@@ -1209,13 +1235,17 @@ body {
       @media (max-width: 42em) {
         .treatments__navigation li {
           height: 5rem; } }
+      @media (max-width: 37.5em) {
+        .treatments__navigation li {
+          width: 100%;
+          height: 5.5rem; } }
       .treatments__navigation li a {
         text-decoration: none;
         color: #ad9b6d;
         font-size: 2.2rem; }
         @media (max-width: 42em) {
           .treatments__navigation li a {
-            font-size: 3.5rem; } }
+            font-size: 3.2rem; } }
         .treatments__navigation li a:hover {
           color: #555; }
 
@@ -1247,14 +1277,14 @@ body {
     font-weight: bold;
     position: absolute;
     font-size: 35rem;
-    top: -20%;
-    color: black; }
+    top: -20%; }
   .article__content--list {
     padding: 2rem;
     list-style: square; }
     .article__content--list li {
       padding: .2rem; }
     .article__content--list--2 {
+      margin: 0 2rem;
       text-align: center; }
   .article__content--aesthetic {
     padding: 1.5rem;
@@ -1293,10 +1323,11 @@ body {
 
 .pricelist {
   font-size: 1.5rem;
-  margin: 10rem 0 0;
+  margin: 9rem 0 0;
   padding: 2rem 2rem;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(252, 251, 250, 0.95) 100%), url(../img/background-images/decorative-1298149_1280.png);
-  background-size: cover; }
+  background-size: cover;
+  color: #555; }
   .pricelist__header {
     animation: moveInRight 1.4s ease;
     color: #ad9b6d;
@@ -1334,13 +1365,16 @@ body {
     -moz-transition: transform .3s .1s ease-in-out;
     -ms-transition: transform .3s .1s ease-in-out;
     -o-transition: transform .3s .1s ease-in-out; }
+    @media (max-width: 42em) {
+      .pricelist__navigation {
+        width: 45%; } }
     @media (max-width: 37.5em) {
       .pricelist__navigation {
-        transform: translateX(-98%);
-        -webkit-transform: translateX(-98%);
-        -moz-transform: translateX(-98%);
-        -ms-transform: translateX(-98%);
-        -o-transform: translateX(-98%);
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
         background-color: white;
         top: 20%;
         width: 65%;
@@ -1355,8 +1389,7 @@ body {
       margin-top: 4.5rem;
       list-style: none; }
     .pricelist__navigation li {
-      margin: 1rem;
-      text-align: center; }
+      margin: 1rem; }
       .pricelist__navigation li:not(:last-child) {
         border-bottom: 1px solid #ad9b6d;
         width: 90%; }
@@ -1364,6 +1397,9 @@ body {
       text-decoration: none;
       color: #ad9b6d;
       font-size: 2.2rem; }
+      @media (max-width: 42em) {
+        .pricelist__navigation a {
+          font-size: 3.2rem; } }
       .pricelist__navigation a:hover {
         color: #555; }
 
@@ -1398,7 +1434,7 @@ body {
     width: 20rem;
     position: absolute;
     z-index: 1;
-    top: 22%;
+    top: 27%;
     left: 0;
     transform: translateX(-210px);
     -webkit-transform: translateX(-210px);
@@ -1410,9 +1446,20 @@ body {
     -moz-transition: transform .3s .1s ease-in-out;
     -ms-transition: transform .3s .1s ease-in-out;
     -o-transition: transform .3s .1s ease-in-out; }
+    @media (max-width: 42em) {
+      .pricelist--2__navigation {
+        width: 45%; } }
     @media (max-width: 37.5em) {
       .pricelist--2__navigation {
-        background-color: white; } }
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        background-color: white;
+        top: 20%;
+        width: 65%;
+        left: 1%; } }
     .pricelist--2__navigation--active {
       transform: translateX(0rem);
       -webkit-transform: translateX(0rem);
@@ -1426,8 +1473,7 @@ body {
         .pricelist--2__navigation--list {
           width: 100px; } }
       .pricelist--2__navigation--list li {
-        margin: 1rem;
-        text-align: center; }
+        margin: 1rem; }
         .pricelist--2__navigation--list li:not(:last-child) {
           border-bottom: 1px solid #ad9b6d;
           width: 90%; }
@@ -1443,7 +1489,7 @@ body {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  margin: 0rem 0 5rem;
+  margin: 4rem 0 2rem;
   text-align: center; }
   .pricelistContainer__sidenav {
     width: 31%;
@@ -1451,7 +1497,7 @@ body {
   .pricelistContainer__pricelist {
     width: 100%;
     height: 100%;
-    margin: 0 1.5rem;
+    margin: 4rem 1.5rem;
     padding: 1rem; }
 
 .article__content {
@@ -1506,18 +1552,19 @@ body {
 .bodyTreatments {
   font-size: 1.6rem;
   margin: 3rem 0 1rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  padding: 2rem 2rem; }
   .bodyTreatments__header {
-    color: #88784d;
-    margin-bottom: 2rem; }
+    color: #ad9b6d;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem; }
     .bodyTreatments__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0;
       animation: moveInLeft 1s ease-in-out; }
   .bodyTreatments__image {
-    margin: auto;
+    margin: 0 auto;
     width: 31rem;
     height: 8rem;
     background-size: cover;
@@ -1525,14 +1572,19 @@ body {
     margin-bottom: 3rem;
     margin-top: 3rem; }
     .bodyTreatments__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype--2.png); }
+      padding: .7rem .6rem .4rem;
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .bodyTreatments__image--2 {
+      padding: .7rem .6rem .4rem;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
     .bodyTreatments__image--3 {
+      padding: .7rem .6rem .4rem;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
     .bodyTreatments__image--4 {
+      padding: 1.1rem 0;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
     .bodyTreatments__image--5 {
+      padding: .7rem .6rem .4rem;
       background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .bodyTreatments__content {
     display: -webkit-flex;
@@ -1550,9 +1602,21 @@ body {
       animation: moveInBottom 1.2s ease-in-out;
       width: 95rem;
       height: 30rem;
+      margin: 0 auto;
       background-size: cover;
       background-image: url(/resources/img/offers-images/pink-roses.jpg);
-      display: inline-block; }
+      display: block; }
+      @media (max-width: 75em) {
+        .bodyTreatments__content--img {
+          width: 80rem; } }
+      @media (max-width: 56.25em) {
+        .bodyTreatments__content--img {
+          width: 75rem; } }
+      @media (max-width: 42em) {
+        .bodyTreatments__content--img {
+          width: 65rem; } }
+      .bodyTreatments__content--img--2 {
+        display: block; }
       @media (max-width: 37.5em) {
         .bodyTreatments__content--img {
           display: none; } }
@@ -1584,8 +1648,7 @@ body {
 .healingCosmetics {
   font-size: 1.6rem;
   margin: 4rem 0 1rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  padding: 2rem 2rem; }
   .healingCosmetics__header {
     color: #88784d;
     margin-bottom: 2rem; }
@@ -1626,34 +1689,16 @@ body {
 
 .aestheticMedicine {
   font-size: 1.6rem;
-  margin: 9rem -1rem  1rem 1rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  margin: 4rem 0rem 1rem;
+  padding: 2rem 2rem; }
   .aestheticMedicine__header {
     color: #88784d;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 3rem; }
     .aestheticMedicine__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0; }
-  .aestheticMedicine__image {
-    margin: auto;
-    width: 31rem;
-    height: 8rem;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem; }
-    .aestheticMedicine__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
-    .aestheticMedicine__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
-    .aestheticMedicine__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
-    .aestheticMedicine__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
-    .aestheticMedicine__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
 
 .article__content {
   padding: 1.5rem;
@@ -1683,51 +1728,11 @@ body {
     .article__content--aesthetic a {
       text-decoration: none;
       color: #ad9b6d; }
-      .article__content--aesthetic a:hover, .article__content--aesthetic a:active, .article__content--aesthetic a:after {
-        color: #88784d; }
-
-.content {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  align-items: stretch;
-  margin: 2rem; }
-  .content__end {
-    text-align: justify;
-    margin: 5rem 2rem;
-    display: inline-block; }
-  .content--img {
-    animation: moveInLeft 1s ease-in-out;
-    background-size: cover;
-    background-image: url(/resources/img/offers-images/gettyimages-802557220-612x612.jpg);
-    display: inline-block;
-    width: 50%;
-    height: 20rem;
-    display: inline-block;
-    margin: 0 2rem; }
-    @media (max-width: 37.5em) {
-      .content--img {
-        display: block; } }
-  .content--img-2 {
-    animation: moveInRight 1s ease-in-out;
-    display: inline-block;
-    background-color: aqua;
-    height: 20rem;
-    background-size: cover;
-    background-image: url(/resources/img/offers-images/gettyimages-810288106-612x612.jpg);
-    display: inline-block;
-    width: 50%; }
-    @media (max-width: 37.5em) {
-      .content--img-2 {
-        display: block;
-        width: 50%; } }
 
 .skinCare {
   font-size: 1.6rem;
-  margin: 8rem 1rem 1rem -1rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  margin: 4rem 0 1rem;
+  padding: 2rem 2rem; }
   @media (max-width: 37.5em) {
     .skinCare {
       padding: 1rem;
@@ -1742,8 +1747,8 @@ body {
     .skinCare__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0;
-      animation: moveInLeft 1s ease; }
+      animation: moveInLeft 1s ease;
+      text-align: center; }
       @media (max-width: 37.5em) {
         .skinCare__header--2 {
           margin: 2rem 0; } }
@@ -1780,13 +1785,12 @@ body {
     font-weight: bold;
     position: absolute;
     font-size: 35rem;
-    top: -20%;
-    color: black; }
+    top: -20%; }
   .article__content--list {
-    padding: 2rem;
+    padding: 4rem;
     list-style: none; }
     .article__content--list li {
-      padding: .2rem  0; }
+      padding: 3rem  0; }
   .article__content--intraceuticals {
     padding: 1.5rem;
     font-size: 1.8rem;
@@ -1796,39 +1800,19 @@ body {
 
 .massage {
   font-size: 1.6rem;
-  margin: 8rem 2rem 1rem 0rem;
-  padding: 2rem 3rem;
-  color: #302c24; }
+  margin: 4rem 0rem 1rem;
+  padding: 2rem 3rem; }
   .massage__header {
-    color: #88784d;
+    color: #ad9b6d;
     margin-bottom: 2rem;
-    margin-right: 2%; }
+    margin-right: 2%;
+    text-align: center; }
     .massage__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0;
-      animation: moveInBottom 1s ease-in-out; }
-  .massage__image {
-    margin: auto;
-    width: 29rem;
-    height: 8rem;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    display: inline-block; }
-    .massage__image--1 {
-      display: inline-block;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
-    .massage__image--2 {
-      display: inline-block;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
-    .massage__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
-    .massage__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
-    .massage__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      margin: 3rem 0 0;
+      animation: moveInBottom 1s ease-in-out;
+      text-align: center; }
   .massage__content {
     display: -webkit-flex;
     display: flex;
@@ -1842,14 +1826,20 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .massage__content--img {
-      margin: 1rem 23%;
+      margin: 1.5rem auto;
       width: 70rem;
       height: 30rem;
       background-position: center;
       background-size: cover;
       background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
-      display: inline-block;
+      display: block;
       animation: moveInLeft 1s ease-in-out; }
+      @media (max-width: 56.25em) {
+        .massage__content--img {
+          width: 65rem; } }
+      @media (max-width: 42em) {
+        .massage__content--img {
+          width: 60rem; } }
       @media (max-width: 37.5em) {
         .massage__content--img {
           display: none; } }
@@ -1882,21 +1872,22 @@ body {
 .handsAndFeet {
   animation: fade .8s ease;
   font-size: 1.6rem;
-  margin: 8rem 2rem  1rem -2rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  margin: 4rem 0rem 1rem;
+  padding: 2rem 2rem; }
   @media (max-width: 37.5em) {
     .handsAndFeet {
       margin: 3rem 0rem  1rem 0rem; } }
   .handsAndFeet__header {
     color: #88784d;
     margin-bottom: 2rem;
-    margin-right: 2%; }
+    margin-right: 2%;
+    text-align: center; }
     .handsAndFeet__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0;
-      animation: moveInRight 1s ease-in; }
+      margin: 3rem 0 0;
+      animation: moveInRight 1s ease-in;
+      text-align: center; }
   .handsAndFeet__image {
     margin: auto;
     width: 31rem;
@@ -1928,31 +1919,29 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .handsAndFeet__content--img {
-      animation: moveInLeft 1.3s ease-in;
-      margin: 2rem 3rem;
-      width: 50rem;
-      height: 30rem;
-      background-position: center;
-      background-size: cover;
       background-image: url(/resources/img/offers-images/gettyimages-155317037-612x612.jpg);
-      display: inline-block; }
+      background-size: cover;
+      display: inline-block;
+      width: 35%;
+      height: 20rem;
+      display: inline-block;
+      margin: 0 1rem; }
       @media (max-width: 37.5em) {
         .handsAndFeet__content--img {
-          display: none; } }
+          display: block;
+          width: 50%; } }
       .handsAndFeet__content--img--2 {
-        animation: moveInRight 1.3s ease-in;
-        margin: 2rem 3rem;
-        width: 50rem;
-        height: 30rem;
-        background-position: center;
-        background-size: cover;
         background-image: url(/resources/img/offers-images/pexels-photo-939835.jpeg);
-        display: inline-block; }
+        background-size: cover;
+        display: inline-block;
+        width: 35%;
+        height: 20rem;
+        display: inline-block;
+        margin: 0 1rem; }
         @media (max-width: 37.5em) {
           .handsAndFeet__content--img--2 {
-            margin: 2rem -2rem 2rem -2rem;
-            width: 35rem;
-            height: 25rem; } }
+            display: block;
+            width: 50%; } }
 
 .article__content {
   padding: 1.5rem;
@@ -1979,43 +1968,39 @@ body {
     position: relative;
     text-align: justify; }
 
+.content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem; }
+  .content__end {
+    text-align: justify;
+    margin: 5rem 2rem;
+    display: inline-block; }
+
 .trychology {
   font-size: 1.6rem;
   margin: 3rem 0 1rem;
-  padding: 2rem 3rem;
-  color: #302c24; }
+  padding: 2rem 3rem; }
   .trychology__header {
-    color: #88784d;
+    color: #ad9b6d;
     margin-bottom: 2rem;
     margin-right: 2%;
-    animation: moveInRight 1s ease-out; }
+    animation: moveInRight 1s ease-out;
+    text-align: center; }
     .trychology__header--2 {
       animation: moveInBottom 0.9s ease-in-out;
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      text-align: center; }
     .trychology__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0 0rem; }
-  .trychology__image {
-    margin: auto;
-    width: 31rem;
-    height: 8rem;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem; }
-    .trychology__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
-    .trychology__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
-    .trychology__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
-    .trychology__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
-    .trychology__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      margin: 3rem 0 0rem;
+      text-align: center; }
   .trychology__content {
     display: -webkit-flex;
     display: flex;
@@ -2030,21 +2015,29 @@ body {
       display: inline-block; }
     .trychology__content--img {
       animation: moveInBottom 1.2s ease-in;
-      margin: 2rem 3rem;
       width: 50rem;
       height: 30rem;
+      margin: 1rem auto;
       background-position: center;
       background-size: cover;
       background-image: url(/resources/img/offers-images/laser-treatments.jpg);
-      display: inline-block; }
+      display: block; }
+      @media (max-width: 56.25em) {
+        .trychology__content--img {
+          width: 40rem;
+          height: 35rem; } }
       @media (max-width: 37.5em) {
         .trychology__content--img {
-          margin: 2rem -2rem 2rem -2rem;
           width: 35rem;
-          height: 25rem; } }
-  @media (max-width: 37.5em) {
-    .trychology iframe {
-      width: 90%; } }
+          height: 20rem; } }
+  .trychology iframe {
+    width: 70rem;
+    height: 42rem;
+    margin: 0 auto;
+    display: block; }
+    @media (max-width: 37.5em) {
+      .trychology iframe {
+        width: 90%; } }
 
 .article__content {
   padding: 1.5rem;
@@ -2078,14 +2071,13 @@ body {
 
 .carboxytherapy {
   font-size: 1.6rem;
-  margin: 8rem 3rem 1rem -3rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  margin: 4rem 0rem 1rem 0rem;
+  padding: 2rem 2rem; }
   @media (max-width: 37.5em) {
     .carboxytherapy {
       margin: 3rem 0rem  1rem 0rem; } }
   .carboxytherapy__header {
-    color: #88784d;
+    color: #ad9b6d;
     margin-bottom: 1rem;
     margin-right: 2%;
     font-size: 3rem; }
@@ -2098,7 +2090,8 @@ body {
       animation: moveInLeft 1s ease-in;
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      text-align: center; }
     .carboxytherapy__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
@@ -2164,7 +2157,7 @@ body {
     .article__content--list--2 {
       color: #88784d; }
       .article__content--list--2 li {
-        text-align: center;
+        text-align: left;
         list-style: square; }
   .article__content--carboxytherapy {
     margin: auto;
@@ -2175,14 +2168,13 @@ body {
 
 .laserTreatments {
   font-size: 1.6rem;
-  margin: 9rem 3rem 1rem;
-  padding: 2rem 3rem;
-  color: #302c24; }
+  margin: 4rem 0rem 1rem;
+  padding: 2rem 2rem; }
   @media (max-width: 37.5em) {
     .laserTreatments {
       margin: 3rem 0rem  1rem 0rem; } }
   .laserTreatments__header {
-    color: #88784d;
+    color: #ad9b6d;
     margin-bottom: 2rem;
     margin-right: 2%;
     font-size: 3rem; }
@@ -2190,7 +2182,8 @@ body {
       animation: moveInBottom 1s ease-in;
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      text-align: center; }
     .laserTreatments__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
@@ -2278,7 +2271,8 @@ body {
       animation: moveInLeft 1s ease;
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      text-align: center; }
     .depilation__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
@@ -2360,48 +2354,31 @@ body {
 
 .makeup {
   font-size: 1.6rem;
-  margin: 9rem 0 1rem;
-  padding: 2rem 3rem;
-  color: #302c24; }
+  margin: 4rem 0 1rem;
+  padding: 2rem 3rem; }
   .makeup__header {
-    color: #88784d;
+    color: #ad9b6d;
     margin-bottom: 2rem;
     margin-right: 2%;
-    font-size: 3rem; }
+    font-size: 3rem;
+    text-align: center; }
     .makeup__header--2 {
       animation: moveInBottom .9s ease;
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      text-align: center; }
     .makeup__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0 0rem; }
-  .makeup__image {
-    margin: auto;
-    width: 31rem;
-    height: 8rem;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem; }
-    .makeup__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
-    .makeup__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
-    .makeup__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
-    .makeup__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
-    .makeup__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .makeup__content {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-around;
     justify-content: space-around;
     align-items: stretch;
-    margin: 0 5rem;
+    margin: 0 0rem;
     padding: 2rem 0; }
     .makeup__content__end {
       text-align: justify;
@@ -2467,41 +2444,24 @@ body {
 
 .daySpa {
   font-size: 1.6rem;
-  margin: 9rem 0 1rem;
-  padding: 2rem 3rem;
-  color: #302c24; }
+  margin: 4rem 0 1rem;
+  padding: 2rem 3rem; }
   .daySpa__header {
-    color: #88784d;
     margin-bottom: 2rem;
     margin-right: 2%;
-    font-size: 3rem; }
+    font-size: 3rem;
+    text-align: center; }
     .daySpa__header--2 {
       color: #ad9b6d;
       font-size: 3rem;
       margin: 3rem 0;
-      animation: moveInLeft 1s ease-in-out; }
+      animation: moveInLeft 1s ease-in-out;
+      text-align: center; }
     .daySpa__header--3 {
       color: #ad9b6d;
       font-size: 3rem;
-      margin: 3rem 0 0rem; }
-  .daySpa__image {
-    margin: auto;
-    width: 31rem;
-    height: 8rem;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem; }
-    .daySpa__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
-    .daySpa__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
-    .daySpa__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
-    .daySpa__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
-    .daySpa__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      margin: 3rem 0 0rem;
+      text-align: center; }
   .daySpa__content {
     display: -webkit-flex;
     display: flex;
@@ -2578,7 +2538,7 @@ strong-number {
 
 .eyeStylization {
   font-size: 1.6rem;
-  margin: 9rem 0 1rem;
+  margin: 4rem 0 1rem;
   padding: 2rem 2rem;
   color: #302c24; }
   .eyeStylization__header {
@@ -2622,15 +2582,13 @@ strong-number {
 
 .others {
   font-size: 1.6rem;
-  margin: 10rem 0 3rem;
-  padding: 2rem 3rem;
-  color: #302c24; }
+  margin: 4rem 0 3rem;
+  padding: 2rem 3rem; }
 
 .about {
   font-size: 1.5rem;
   margin: 3rem 0 .5rem;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  padding: 2rem 2rem; }
   .about__container {
     display: -webkit-flex;
     display: flex;
@@ -2777,7 +2735,8 @@ strong-number {
     align-items: center;
     margin: 7rem 6rem;
     padding: 5rem 0 5rem 0;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    width: 90vw; }
     @media (max-width: 56.25em) {
       .contact__flex-container {
         flex-direction: column;
@@ -2872,10 +2831,11 @@ strong-number {
 
 .down__nav {
   position: absolute;
-  width: 99.0%;
+  left: 1%;
+  right: 1%;
   bottom: 0;
   background-color: rgba(173, 155, 109, 0.35);
-  height: 12rem; }
+  margin-bottom: 2rem; }
   @media (max-width: 37.5em) {
     .down__nav {
       display: none; } }
@@ -3153,8 +3113,7 @@ strong-number {
 .packets {
   font-size: 1.5rem;
   margin: 5rem 0;
-  padding: 2rem 2rem;
-  color: #302c24; }
+  padding: 2rem 2rem; }
   @media (max-width: 75em) {
     .packets {
       font-size: 1.8rem; } }
@@ -3214,8 +3173,6 @@ strong-number {
           .packets__container__item--2--image {
             width: 0;
             height: 0; } }
-  .packets__content {
-    color: #302c24; }
   .packets__packageContainer {
     display: -webkit-flex;
     display: flex;
@@ -3235,7 +3192,7 @@ strong-number {
         align-items: center;
         margin: 2rem; } }
     .packets__packageContainer--header {
-      margin: 3rem 0;
+      margin: 4.5rem 0 3rem;
       text-align: center;
       color: #ad9b6d;
       font-size: 4rem;

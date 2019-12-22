@@ -3,7 +3,7 @@
     font-size: 1.5rem;
     margin: 5rem 0;
     padding: 2rem 2rem;
-    color: $bronze-dark;
+   
 
     @include respond(tab-land) {
 
@@ -91,7 +91,7 @@
     }
 
     &__content {
-        color: $bronze-dark;
+       
 
     }
 
@@ -121,7 +121,7 @@
         }
 
         &--header {
-            margin: 3rem 0;
+            margin: 4.5rem 0 3rem;
             text-align: center;
             color: $gold;
             font-size: 4rem;
@@ -224,13 +224,10 @@
                     margin: 1rem 0;
 
                 }
-
             }
         }
-
     }
 }
-
 
 #packets-2 {
     -webkit-animation: pulsate-fwd 7s ease-in-out 4s forwards;

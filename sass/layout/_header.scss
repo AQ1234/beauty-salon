@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
     top: 0;
-    background-color: rgba(#fff, .7);
+    background-color: rgba(#fff, .9);
     padding: 2rem 2rem 1rem 4rem;
     z-index: 100;
 
@@ -39,12 +39,10 @@
           }
             @include respond(phone) {
                 height: 4rem;
-              margin-left: 3rem;
+              background-color: rgba(255, 255, 255, 0.7);
+
             }
-           
-           
         }
-      
     }
 
     &__nav {
@@ -61,8 +59,8 @@
            opacity: 0;
             display: block; 
             text-align: center;
-            width: 12%;
-            background-color: rgba(#fff, .9);
+            width: 9rem;
+           background-color: rgba(#fff, .9);
            }
 
         @include respond(phone-small) {
@@ -84,9 +82,6 @@
          // margin-left: 10rem;
            }
           
-         
-           
-            
             & > li {
            
                 font-size: 2.2rem;
@@ -100,12 +95,11 @@
                     
                 }
                 
-
                 @include respond(tab-port) {
 
                   margin: 1rem .1rem 0;
                 }
-
+               
                
                 @include respond(phone) {
                   border-bottom: 1px dashed $gold; 
@@ -121,8 +115,6 @@
                 @include respond(phone-small) {
                   margin: 0 .2rem;
               }
-
-              
             }
 
             a {
@@ -159,7 +151,7 @@
             margin-left: -.5rem;
             margin-top: .2rem;
             width: 16rem;
-            background-color: rgba(#fff, .9);
+            background-color: rgba(#fff, .7);
               
                
            }
@@ -181,8 +173,6 @@
   
            }
 
-           
-
            & > li > ul > li:first-child {
                 
                border: none;
@@ -193,7 +183,6 @@
                 
             //   background-color: rgba(#fff, 1);
            
-            
                opacity: 1;
                
           }

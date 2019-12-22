@@ -1,8 +1,8 @@
 .skinCare {
     font-size: 1.6rem;
-    margin: 8rem 1rem 1rem -1rem;
+    margin: 4rem 0 1rem ;
     padding: 2rem 2rem;
-    color: $bronze-dark;
+    
 
     @include respond(phone) {
 
@@ -24,14 +24,13 @@
         &--2 {
             color: $gold;
             font-size: 3rem;
-            margin: 3rem 0;
+           
             animation: moveInLeft 1s ease;
-
+            text-align: center;
             @include respond(phone) {
 
                 margin: 2rem 0;
             }
-
         }
     }
 
@@ -51,36 +50,28 @@
         }
 
         &--2 {
-            padding: .8rem .8rem 1.2rem;
-            
+            padding: .8rem .8rem 1.2rem; 
             background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png);
 
         }
 
         &--3 {
-
             background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intra-1.jpg);
 
         }
 
         &--4 {
             padding: 1.1rem 0;
-
             background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg);
 
         }
 
         &--5 {
-
             background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/ellabache-logo.jpg);
 
         }
-
-
     }
-
 }
-
 
 .article__content {
 
@@ -90,7 +81,6 @@
     text-align: justify;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
    
-   
     &::before {
     
         z-index: -1;
@@ -98,18 +88,16 @@
         position: absolute;
         font-size: 35rem;
         top: -20%;
-        color: black;
-
-        
+      
 
     }
 
     &--list {
-        padding: 2rem;
+        padding: 4rem;
         list-style: none;
 
         li {
-           padding: .2rem  0;
+           padding: 3rem  0;
 
         }
     }
@@ -122,44 +110,4 @@
     text-align: center;
     width: 90%;
     } 
-
 }
-
-// .content {
-//     display: -webkit-flex;
-//         display: flex;
-//         -webkit-justify-content: space-around;
-//         justify-content: space-around;
-//         align-items: stretch;
-//         margin: 0 5rem;
-//         padding: 2rem 0;
-
-//         @include respond(phone) {
-//            flex-direction: column ;
-
-//         }
-    
-//     &__end {
-//         text-align: justify;
-//         margin: 5rem 2rem;
-//         display: inline-block;
-
-        
-//     }
-
-//     &__img--skinCare {
-//         width: 95rem;
-//         height: 30rem;
-//         background-size: cover;
-//         background-image: url(/resources/img/offers-images/rozalia.jpg);
-//         display: block;
-
-
-//         @include respond(phone) {
-//             display: none;
-
-//         }
-//     }
-// }
-
-

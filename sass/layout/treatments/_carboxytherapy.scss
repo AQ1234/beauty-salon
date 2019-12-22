@@ -1,8 +1,7 @@
 .carboxytherapy {
     font-size: 1.6rem;
-    margin: 8rem 3rem 1rem -3rem;
+    margin: 4rem 0rem 1rem 0rem;
     padding: 2rem 2rem;
-    color: $bronze-dark;
 
     @include respond(phone) {
         margin: 3rem 0rem  1rem 0rem;
@@ -10,10 +9,11 @@
 
     &__header {
 
-        color: $gold-darker;
+        color: $gold;
         margin-bottom: 1rem;
         margin-right: 2%;
         font-size: 3rem;
+       
 
         @include respond(phone) {
 
@@ -27,7 +27,7 @@
             color: $gold;
             font-size: 3rem;
             margin: 1rem 0;
-            
+            text-align: center;
 
         }
 
@@ -151,16 +151,18 @@
         &--2 {
             
             color: $gold-darker;
-          
+        
         
             li {
-                text-align:center;
+                text-align:left;
                 list-style: square;
   
             }
         
             
         }
+
+       
     }
 
    

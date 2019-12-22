@@ -5,31 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/261c475b83/UntitledProject/style-svg.css">
   <link rel="stylesheet" href="resources/css/style.css">
   <title>Salon Urody</title>
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9d5faf12b5/UntitledProject/style-svg.css">
 </head>
 
 <body>
-
   <!-- MainHeader -->
   <header>
     <div class="head">
       <div class="head__logo">
         <a href="/index.html"><img src="./resources/img/villalogo.png" alt="Villauroda"></a>
       </div>
-
-      <div class="headNavIcon border_radius" onclick="headNavAppear()">
-          <button class="headMenu" id="head">
-            <span class="headMenu__box">
-              <span class="headMenu__inner"></span>
+      <div class="headNavIcon border_radius" onclick="changeOpacity('headList')">
+        <button class="headMenu" id="head">
+          <span class="headMenu__box">
+            <span class="headMenu__inner">
             </span>
-          </button>
-        </div>
-      <div class="head__nav" id="headList" >
+        </button>
+      </div>
+      <div class="head__nav" id="headList">
         <ul class="head__nav--list">
           <li><a href="#">O nas</a></li>
-          <li onclick="treatmentsApper()"><a href="#">Zabiegi</a>
+          <li onclick="changeOpacity('listTreatments')"><a href="#">Zabiegi</a>
             <ul id="listTreatments">
               <li><a href="/">Kosmetyka pielęgnacyjna</a></li>
               <li><a href="/">Kosmetyka lecznicza</a></li>
@@ -46,7 +44,7 @@
             </ul>
           </li>
           <li><a href="#">Cennik</a></li>
-          <li onclick="packetsApper()"><a href="#">Pakiety</a>
+          <li onclick="changeOpacity('listPackets')"><a href="#">Pakiety</a>
             <ul id="listPackets">
               <li><a href="/">Pakiet 1</a></li>
               <li><a href="/">Pakiet 2</a></li>
@@ -54,21 +52,16 @@
             </ul>
           </li>
           <li><a href="#">Kontakt</a></li>
-          
         </ul>
-    </div>
-
-
-    
-   
+      </div>
   </header>
 
   <!-- Container -->
 
-   <main class="mainContainer">
+  <!-- <main class="mainContainer"> -->
 
-    <!--HOME-->
-    <!-- <section class="home">
+  <!--HOME-->
+  <!-- <section class="home">
      <div class="main-slideshow">
 
         <div class="main-slideshow__slide main-slideshow__slide--1 fade" id="main-slideshow__slide">
@@ -84,7 +77,6 @@
         </div>
 
         <div class="main-slideshow__slide main-slideshow__slide--2 fade" id="main-slideshow__slide">
-
             <div class="main-slideshow__slide--img--2">
           </div>
             <div class="main-slideshow__slide--text--2">Gabinet Kosmetyczny,<br>
@@ -94,25 +86,22 @@
                 <a href="#popup" class="btn btn--gold">Więcej informacji!</a>
               </div>
             </div>
-            
         </div> 
      </div>
        
         <div class="down__nav">
           <ul class="down__nav--list">
-          <li><a href="#">Adres:<svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg><br />Podleśna 11/1. Białystok<br /><br /></a></li>
-          <li><a href="#"><br>Telefon:<br /><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>(85) 742-74-67<br /><br /></a></li>
+          <li><a href="#">Adres: <svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg><br />Podleśna 11/1. Białystok<br /><br /></a></li>
+          <li><a href="#"><br>Telefon: <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><br />(85) 742-74-67<br /><br /></a></li>
           <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
           <li><a href="www.facebook.com">Dołącz na:<br /></a><svg class="icon icon-facebook2--down"><use xlink:href="#icon-facebook2"></use></svg><br /><br>
-        
           </li>
-          
           </ul>
       </div>
     </section>  -->
 
-   <!-- Section About -->
- <!-- <section class="about"> 
+  <!-- Section About -->
+  <!-- <section class="about"> 
       <h2 class="about__header u-margin-top-default">Villa Uroda</h2>
       <div class="about__container">
         <div class="about__container--item">
@@ -159,11 +148,11 @@
       </div>
       </div>
       </div>
-    </section>  -->
+    </section>   -->
 
-    <!--OFFER-->
+  <!--OFFER-->
 
-      <!-- <section class="offer">
+  <!-- <section class="offer">
     <div class="offer__center-text">
       <h2 class="offer__header u-margin-top-default">
         Oferta zabiegów
@@ -496,12 +485,12 @@
       </div>
     </section>  -->
 
-    <!--Section Mobile Offer -->
-    <!--Czy tak wystarczy?-->
+  <!--Section Mobile Offer -->
+  <!--Czy tak wystarczy?-->
 
 
-    <!--Apears from 1000px to 0-->
-     <!-- <section class="mobileOffer">  
+  <!--Apears from 1000px to 0-->
+  <!-- <section class="mobileOffer">  
       <div class="offer__center-text">
         <h2 class="mobileOffer__header u-margin-top-default">
           Oferta zabiegów
@@ -693,10 +682,8 @@
                           </div>  
     </section>  -->
 
-    <!-- Section Packets -->
-    <!---Wyrównać karty, i tak samo pzestrzeń między tekstowa bo zlewa się to strasznie-->
-    <!---KOniecznie trzbea mocniej przydymić header-->
-      <section class="packets">  
+  <!-- Section Packets -->
+  <!-- <section class="packets">  
     <h2 class="packets__packageContainer--header">Dermoklinika Villa Uroda oferuje Bony Upominkowe na Wyjątkowe Okazje</h2>
       <div class="packets__container ">
         <div class="packets__container__item ">
@@ -820,13 +807,13 @@
             </div>
       </div>
       
-    </section> 
- 
+    </section>  -->
 
-    <!--CONTACT-->
-    <!--Tak to nie może wyglądć tu musisz wygląd poparwić żeby było czyto i schludnie,
+
+  <!--CONTACT-->
+  <!--Tak to nie może wyglądć tu musisz wygląd poparwić żeby było czyto i schludnie,
     mapa wygląda jakby nie była z tej strony-->
-     <!-- <section class="contact"> 
+  <!-- <section class="contact"> 
     <div class="contact__flex-container">
       <div class="contact__flex-container--flex-item border_radius">
           <h3 class="contact__content--header">Kontakt</h3>
@@ -839,36 +826,33 @@
           sdasdsad
         
       </div>
-        <div class="contact__map">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="490" height="340" id="gmap_canvas" src="https://maps.google.com/maps?q=Villauroda&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net"></a></div>
+        <div class="contact__map ">
+            <div class="mapouter "><div class="gmap_canvas"><iframe width="490" height="340" id="gmap_canvas " src="https://maps.google.com/maps?q=Villauroda&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a  href="https://www.bitgeeks.net"></a></div>
         </div>
       </div>
   
-  </section>   -->
-   </main>
+  </section>    -->
+  <!-- </main> -->
 
-     <!-- Nav icon -->
+  <!-- Nav icon -->
 
-   <!-- <div class="hamburgerNavIcon">
-     <button class="hamburger" id="hamb">
+  <div class="hamburgerNavIcon">
+    <button class="hamburger" id="hamb">
       <span class="hamburger__box">
-          <span class="hamburger__inner"></span>
+        <span class="hamburger__inner"></span>
       </span>
     </button>
-  </div> -->
+  </div>
 
-    <!-- Treatsments  -->
- <!--TEGO NIE CZAJE-->
-    <!-- <section class="treatments" id="treat">
+  <!-- TreatsmentsContainer  -->
+
+  <!--To jest kontener na opis zabiegów - na wszyskie sekcje Treatments-->
+  <section class="treatments" id="treat">
         <h2 class="treatments__mainHeader">Zabiegi w dermoklinice Villa Uroda</h2>
-        <div class="treatmentsContainer">  -->
 
-   
-    <!-- Sidebar  -->
+  <!-- Sidebar  -->
 
-
-
-    <!-- <div class="treatments__navigation border_radius" id="slidebar">
+  <div class="treatments__navigation border_radius" id="slidebar">
         <ul class="treatments__navigation--list" > 
           <li><a href=#>Kosmetyka pielęgnacyjna</a></li>
           <li><a href= />Kosmetyka lecznicza</a></li>
@@ -884,19 +868,18 @@
           <li><a href= />Day Spa</a></li>
         </ul>
       </div>  
- <div class="treatmentsContainer__treatments">   -->
 
-    <!-- Skin Care offer -->
-        <!--Tu widok się rozjeżdza contener z kartami nachodzi na header-->
-       <!-- <section class="skinCare border_radius"> 
-          <h2 class="skinCare__header--2">KOSMETYKA PIELĘGNACYJNA</h2>
-          <div class="skinCare__image skinCare__image--1 border_radius">
+  <!-- Skin Care offer -->
+
+ <section class="skinCare border_radius"> 
+          <h2 class="skinCare__header--2">Kosmetyka pielęgnacyjna</h2>
+          <div class="skinCare__image skinCare__image--1 border_radius--2">
 
           </div>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">ULTIMATE TIME SOLUTION RITUAL</h2><br>
-              <strong>INTENSYWNY LIFTINGUJĄCO – PRZECIWSTARZENIOWY RYTUAŁ</strong><br>
+              <h2 class="article__header">Ultimate Time Solution Ritual</h2><br>
+              <strong>Intensywny liftigująco - przeciwstarzeniowy rytułał</strong><br>
               Z wiekiem skóra kobiet pod wpływem spadku poziomu hormonów może tracić nawet do 2% kolagenu rocznie.
               Spadek ten powoduje nieodwracalne szkody w jakości skóry, jej sprężystości i odporności na zmarszczki
               mimiczne. Dodatkowo, z wiekiem zmniejsza się aktywność fibroblastów – komórek, odpowiedzialnych za
@@ -921,7 +904,7 @@
 
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">COLD CREAM MARINE RITUAL</h2><br>
+              <h2 class="article__header">Cold Cream Marine Ritual</h2><br>
               <strong>INTENSYWNY LIFTINGUJĄCO – PRZECIWSTARZENIOWY RYTUAŁ</strong><br>
               <strong>REGENERUJĄCO-ODŻYWCZY ZABIEG DLA SKÓRY SUCHEJ I WRAŻLIWEJ</strong><br>
               Odwodnienie skóry jest spowodowane uszkodzeniem płaszcza hydro-lipidowego. Dehydratacja jest przyczyną
@@ -937,7 +920,7 @@
           </div>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">PRODIGE DES OCEANES FACE & BODY RITUAL</h2><br>
+              <h2 class="article__header">Prodige Des Oceanes Face & Body Ritual</h2><br>
               <strong>INTENSYWNY REGENERUJĄCO-ODMŁADZAJĄCY RYTUAŁ NA TWARZ I CIAŁO</strong>
               Każda kobieta marzy o wiecznej młodości, pięknej skórze, chce zatrzymać czas, szuka swojego eliksiru
               młodości. Odpowiedzią jest Rytuał Prodige, który kryje moc 5 oceanów. Morze to ogromne, wspaniale
@@ -957,7 +940,7 @@
           </div>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">HYALURONIC MARINE TREATMENT </h2>
+              <h2 class="article__header">Hydraluronic Marine Treament</h2>
               <strong>WYGŁADZENIE I WYPEŁNIENIE ZMARSZCZEK</strong><br>
               Innowacyjny zabieg na bazie kwasu hialuronowego. Usuwa pierwsze oznaki starzenia się skóry i precyzyjnie
               wypełnia zmarszczki. Błyskawiczny efekt zapewniają mikrosfery z cząsteczkami kwasu hialuronowego. Przy
@@ -974,11 +957,11 @@
           </div>
         </section>
      
-        <div class="skinCare__image skinCare__image--2 border_radius">
+        <div class="skinCare__image skinCare__image--2 border_radius--2">
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">HYDRADERMIE PODWÓJNA JONIZACJA </h2><br>
+            <h2 class="article__header">Hydradermie podwójna jonizacja</h2><br>
             <strong>ZABIEG DLA KAŻDEGO CELU PIELĘGNACYJNEGO</strong><br>
             Ekskluzywny zabieg pielęgnacyjny, który zapewnia wyjątkową skuteczność. Jego innowacyjność umożliwia
             szybkie i dogłębne wchłanianie zjonizowanych składników aktywnych oraz niesamowicie piękną skórę.
@@ -992,7 +975,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">HYDRADERMIE LIFT PODWÓJNA JONIZACJA</h2><br>
+            <h2 class="article__header">Hydradermie Lift podwójna jonizacja</h2><br>
             <strong>REGENERUJĄCO-ODŻYWCZY ZABIEG DLA SKÓRY SUCHEJ I WRAŻLIWEJ</strong><br>
             NATYCHMIASTOWY „LIFTING”
             Zapewnia rewolucyjne odmłodzenie dzięki stymulacji mięśni twarzy, przywracając im odpowiednie napięcie
@@ -1007,7 +990,7 @@
 
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">AGE SUMMUM</h2><br>
+            <h2 class="article__header">Age Summum</h2><br>
             <strong>HIGH TECH ANTI-AGE</strong><br>
             Kwintesencja największych osiągnięć marki w zakresie pielęgnacji anti-age. manualny zabieg high-tech z
             wykorzystaniem doskonale przebadanych, przetestowanych, uznanych przez świat naukowy aktywnych składników
@@ -1021,7 +1004,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">LIFTOSOME</h2><br>
+            <h2 class="article__header">Liftsome</h2><br>
             Zabieg ujędrniający i odmładzający rysy twarzy. Wykorzystuje termiczną maskę gipsową i zapewnia wyjątkowe
             działanie antystarzeniowe.<br><br>
             <strong>REZULTATY</strong><br>
@@ -1032,7 +1015,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">BEAUTÉ NEUVE</h2><br>
+            <h2 class="article__header">Beaute Neuve</h2><br>
             <strong>ODNOWIONA I PEŁNA BLASKU SKÓRA </strong><br>
             Zabieg z efektem podwójnego peelingu, usuwa martwe komórki naskórka i odsłania blask „nowej” skóry. Oparty
             na kwasach owocowych AHA i czystej witaminie C.<br><br>
@@ -1043,7 +1026,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">EYE LOGIC</h2><br>
+            <h2 class="article__header">Eye Logic</h2><br>
             Zabieg ujędrniający i odmładzający rysy twarzy. Wykorzystuje termiczną maskę gipsową i zapewnia wyjątkowe
             działanie antystarzeniowe.<br><br>
             <strong>REZULTATY</strong><br>
@@ -1053,7 +1036,7 @@
           </div>
         </div>
         <div class="article">
-          <div class="article__content border_radius">
+          <div class="article__content border_radius--2">
             <ul class="article__content--list article__content--list--2">
               <li><strong>ŹRÓDŁO DELIKATNOŚCI I UKOJENIA</strong> – Polecany dla skóry WRAŻLIWEJ i ALERGICZNEJ</li>
               <li><strong>ŹRÓDŁO KOMFORTU</strong> – Pielęgnacja skóry suchej i ekstremalnie suchej</li>
@@ -1067,7 +1050,7 @@
         </div>
 
         <section class="skinCare border_radius">
-          <div class="skinCare__image skinCare__image--3 border_radius"></div>
+          <div class="skinCare__image skinCare__image--3 border_radius--2"></div>
 
           <div class="article__content">
             Zabieg ujędrniający i odmładzający rysy twarzy. Wykorzystuje termiczną maskę gipsową i zapewnia wyjątkowe
@@ -1143,10 +1126,10 @@
             </div>
           </div>
         </section>
-        <div class="skinCare__image skinCare__image--4 border_radius">
+        <div class="skinCare__image skinCare__image--4 border_radius--2">
         </div>
         <div class="article__content border_radius">
-          <h2 class="article__header" style="text-align: center">HYDRADERMIE PODWÓJNA JONIZACJA </h2><br>
+          <h2 class="article__header" style="text-align: center">Hydradermie podwójna jonizacja</h2><br>
           Ceremonia rekomendowana dla skóry tłustej, mieszanej i problematycznej w każdym wieku, z widocznymi
           zaskórnikami i rozszerzonymi porami. Celem zabiegu jest regulacja pracy gruczołów łojowych, przyśpieszenie
           gojenia się stanów zapalnych, detoksykacja, zwężenie i oczyszczenie porów. Polecany jako pojedynczy seans
@@ -1154,18 +1137,18 @@
 
         </div>
         <section class="skinCare border_radius">
-          <div class="skinCare__image skinCare__image--5 border_radius">
+          <div class="skinCare__image skinCare__image--5 border_radius--2">
           </div>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">ELLA BACHE PERFECT RADIANCE NEW SKIN</h2><br>
+              <h2 class="article__header">Ella Bache Perfect Radiance New Skin</h2><br>
               Intensywny rytuał rozświetlający, przywracający zdrowy i promienny wygląd skórze. Szczególnie polecany dla
               cery szarej i zmęczonej. Doskonały na specjalne okazje, jak i przed wielkim wyjściem.
             </div>
           </div>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">ELLA BACHE HYDRA REPULP’MOISTURIZING </h2><br>
+              <h2 class="article__header">Ella Bache Hydra Repulp’ Moistrizing</h2><br>
               Nawilżająco- wygładzający rytuał dla wszystkich typów skóry odwodnionej- suchej, tłustej, mieszanej,
               zdradzającej oznaki przesuszenia (drobne zmarszczki, utrata sprężystości, dyskomfort, napięcie). Zabieg
               pobudza skórę właściwą, odbudowując jej zdolność do produkcji lipidów i GAG. Zapobiega nadmiernej utracie
@@ -1174,15 +1157,13 @@
           </div>
         </section>   -->
 
-    <!-- Healing Cosmetics offer -->
+  <!-- Healing Cosmetics offer -->
 
-    <!--OGÓLNIE NA CAŁEJ STRONIE BRAKUJE ODPOWIEDNIEJ CZCIONKI, tekst nigdy nie powinien być czarny, w wielu
-    miejscach masz wysztko z dużej, tak to nie wygląda popatrz inne strony i bierz przykład z designu-->
-    <!-- <section class="healingCosmetics border_radius">
-          <h2 class="skinCare__header--2">KOSMETYKA LECZNICZA</h2>
+   <section class="healingCosmetics border_radius">
+          <h2 class="skinCare__header--2">Kosmetyka lecznicza</h2>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">ULTIMATE TIME SOLUTION RITUAL</h2><br>
+              <h2 class="article__header">Ultimate Time Solution Ritual</h2><br>
               <strong>INTENSYWNY LIFTINGUJĄCO – PRZECIWSTARZENIOWY RYTUAŁ</strong><br>
               Z wiekiem skóra kobiet pod wpływem spadku poziomu hormonów może tracić nawet do 2% kolagenu rocznie.
               Spadek ten powoduje nieodwracalne szkody w jakości skóry, jej sprężystości i odporności na zmarszczki
@@ -1211,7 +1192,7 @@
           </div>
           <div class="article">
             <div class="article__content border_radius">
-              <h2 class="article__header">PH FORMUŁA RESURFACING</h2><br>
+              <h2 class="article__header">PH Formuła Resurfacing</h2><br>
               To przełom w dziedzinie walki z najczęstszymi problemami skóry. Jedyny system w którym skumulowano moc
               wielu kwasów, witamin, antyoksydantów, aminokwasów, pierwiastków śladowych oraz substancji
               przeciwzapalnych dzięki czemu zmaksymalizowano ich wpływ na skórę. W rezultacie prowadzi to do osiągnięcia
@@ -1225,12 +1206,12 @@
               </ul>
             </div>
           </div>
-        </section> -->
+        </section>  -->
 
-    <!-- AestheticMedicine offer -->
+  <!-- AestheticMedicine offer -->
 
-    <!-- <section class="aestheticMedicine border_radius">
-          <h2 class="skinCare__header--2">KOSMETYKA ESTETYCZNA</h2>
+   <section class="aestheticMedicine border_radius">
+          <h2 class="skinCare__header--2">Kosmetyka estetyczna</h2>
           <div class="article__content--aesthetic">
             <strong>Medycyna estetyczna</strong> to zabiegi upiększające ciało, wykonywane w dermoklinice Villa Uroda w
             Białymstoku. Specjalizujemy się w zabiegach z użyciem wypełniaczy i toksyny botulinowej.<br><br>
@@ -1294,7 +1275,7 @@
 
         <section class="aestheticMedicine border_radius">
           <div class="article__content--aesthetic">
-            <h2 class="article__header--2">ZABIEG WYPEŁNIANIA ZMARSZCZEK I MODELOWANIA TWARZY PRZY UŻYCIU WYPEŁNIACZY
+            <h2 class="article__header--2">Zabieg wypełniania zmarszczek i modelowania twarzy przy użyciu wypełniaczy
             </h2><br>
             <div class="article__content">
             Jest wiele czynników, które mają wpływ na powstawanie zmarszczek i fałdów na skórze: wiek, zmiany
@@ -1331,14 +1312,106 @@
           </div>
         </section> -->
 
-    <!-- body Treatmens offer -->
+  <!-- body Treatmens offer -->
 
-   
+   <section class="bodyTreatments border_radius">
+      <h2 class="bodyTreatments__header">Zabiegi na ciało</h2>
+      <div class="article__content--treatments">
+        Ciało w zależności od sposobu naszego odżywiania i trybu życia potrzebuje wyjątkowej pielęgnacji, szczególnie jeśli zmaga się z takimi problemami jak cellulit, brak jędrności skóry, przebarwienia, rozstępy. Ukojeniem dla zmęczonego ciała będą specjalne zabiegi aromaterapeutyczne połączone z masażem.
+        Villa Uroda przygotowała specjalne zabiegi, które przywrócą naturalne piękno naszego ciała, pomogą pozbyć się problemów skóry i jednocześnie przyniosą uczucie harmonii, relaksu i odprężenia.
+      </div>
+      <div class="bodyTreatments__content--img">
+    </div>
+    </section>
+    <div class="bodyTreatments__image bodyTreatments__image--1 border_radius--2">
+    </div>
+      <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">High – Precision shaping treatment</h2><br>
+          <strong>Intensywny modelująco – antycellulitowy zabieg na ciało</strong><br><br>
+          Innowacyjny zabieg, który skutecznie walczy z cellulitem i niedoskonałościami sylwetki. Zwiększa elastyczność i jędrność skóry. Zabieg celnie trafia w samo serce problemu. Technologia Oxy Active pomaga przywrócić prawidłowe dotlenienie tkankom, aby zahamować proces tworzenia się cellulitu. Technologia Sculpt Active skutecznie zwiększa napięcie we wszystkich warstwach skóry, działa w trzech kierunkach na jej jędrność, zwiększa elastyczność i gęstość. Zabieg modeluje sylwetkę i redukuje cellulit.<br><br>
+          <strong>WSKAZANIA</strong><br>
+          cellulit, nadmiar tkanki tłuszczowej, skóra wymagająca ujędrnienia i wygładzenia.
+          </div>
+        </div>
+        <div class="article">
+          <div class="article__content border_radius">
+            <h2 class="article__header">Frigi – Thalgo wrap</h2><br>
+            <strong>Hipotermiczny ujędrniająco – wyszczuplający zabieg na ciało</strong><br><br>
+            <strong>REGENERUJĄCO-ODŻYWCZY ZABIEG DLA SKÓRY SUCHEJ I WRAŻLIWEJ</strong><br><br>
+            Zabieg z mikronizowanymi algami morskimi. Uaktywnia krążenie krwi, ujędrnia skórę oraz poprawia elastyczność ścian naczyń poprzez ich rozkurczanie i obkurczanie (tzw. gimnastyka naczyń). Zabieg eliminuje nadmiar wody z tkanek. W intensywnym programie zabieg polecamy na problemy z krążeniem, cellulit krążeniowy, opuchnięte i „ciężkie” nogi oraz zwiotczenie skóry brzucha, pośladków i nóg. Prawdziwy starter wyszczuplania!<br><br>
+          <strong>WSKAZANIA</strong><br>
+          cellulit spowodowany złym krążeniem, rozszerzone naczynia włosowate, opuchnięte i „ciężkie” nogi, zwiotczała skóra.
+            </div>
+          </div>
+          <div class="article">
+            <div class="article__content border_radius">
+              <h2 class="article__header">Prodige des oceanes face & Body ritual</h2><br>
+              <strong>Intensywny regenerująco-odmładzający rytuał na twarz i ciało</strong>
+              Każda kobieta marzy o wiecznej młodości, pięknej skórze, chce zatrzymać czas, szuka swojego eliksiru młodości. Odpowiedzią jest Rytuał Prodige, który kryje moc 5 oceanów. Morze to ogromne, wspaniale zaopatrzone laboratorium, w którym znajdują się prawie wszystkie pierwiastki chemiczne występujące na ziemi – część w postaci rozpuszczalnych soli, inne w postaci nierozpuszczalnej zawiesiny. To właśnie bogactwo tych substancji sprawia, że woda morska ma tak dobroczynny wpływ na zdrowie i urodę. Rytuał łączy w sobie elementy 7 technik masażu, w tym masażu Kobido, skutecznie poprawia wygład skóry – wygładza, nawilża, przyspiesza syntezę włókien podporowych skóry i kwasu hialuronowego, zmniejsza widoczność i ilość zmarszczek. Skóra odzyskuje gładkość, elastyczność, jednolity koloryt i młodzieńczy wygląd.<br><br>
+          <strong>WSKAZANIA</strong><br>
+          Skóra o obniżonej elastyczności, wymagająca nawilżenia, ujędrnienia, liftingu i regeneracji<br><br>
+          <strong>CEL RYTUŁAŁU</strong><br>
+          Opóźnienie procesu starzenia się skóry, wygładzenie drobnych zmarszczek mimicznych, pobudzenie produkcji kolagenu i elastyny, poprawa napięcia i odżywienia skóry, modelowanie owalu oraz przywrócenie promiennego wyglądu.
+              </div>
+            </div>
+        <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">Micronized marine algae body wrap</h2><br>
+              <strong>Zabieg wyszczuplająco – antycellulitowy</strong>
+              Zabieg wyszczuplający, remineralizujący i przeciwcellulitowy, na bazie 100% mikronizowanej algi morskiej bogatej w minerały, witaminy i mikroelementy. Zabieg stymuluje mikrokrążenie krwi, odżywia, nawilża i detoksykuje skórę. Redukuje złogi tłuszczowe, eliminuje nadmiar wody z tkanek, poprawia strukturę skóry.<br><br>
+          <strong>WSKAZANIA</strong><br>
+          cellulit, nadmiar tkanki tłuszczowej, skóra potrzebująca odżywienia i oczyszczenia z toksyn.<br><br>
+          <strong>CEL</strong><br>
+          detoksykacja, redukcja tkanki tłuszczowej, remineralizacja, modelowanie sylwetki.
+        </div>
+      </div> 
+<section class="bodyTreatments border_radius">
+     <div class="bodyTreatments__image bodyTreatments__image--4 border_radius--2">
+      </div>
+      <h2 class="article__header">Gold & Pearls Ceremony</h2><br>
+      <div class="article__content--treatments">
+        Holistyczna ceremonia pełna drogocennych składników, zaprojektowana dla koneserów, poszukujących wyjątkowych, luksusowych kuracji i unikalnych receptur upiększających. Przybliża ekskluzywny mistycyzm świata złota, kawioru i pereł. Kawior stanowi niekończące się bogactwo witamin A, B i D, pierwiastków śladowych oraz aminokwasów, jest kluczowym składnikiem intensyfikującym regenerację komórek. Perły to składnik redukujący zmarszczki i rozświetlający skórę. Sesję piękności rozpoczyna rytualna kąpiel w złotym nektarze, której doświadczała sama Kleopatra. Zaczaruje zmysły, nawilży skórę i przygotuje na boski peeling, kuszący złocistymi drobinkami i cząsteczkami bursztynu. Wygładzi i przywróci aksamitność skórze. Doznanie subtelnej rozkoszy zapewni relaksujący masaż, wzmacniający poczucie błogości oraz rozluźniający mięśnie. Skóra po zabiegu jest wyraźnie odmłodzona, ujędrniona, promienieje opruszona drobinkami złota i pereł. Ciało i dusza po terapii nasycyca doznanie luksusu i poczucie relaksu.
+      </div>
+</section>
+</br>
+        <h2 class="article__header">Pozostałe zabiegi na ciało</h2><br>
+      <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">Zabieg Cynamonowy</h2><br>
+          Zabieg cynamonowy to rozgrzewająca i aromatyczna terapia. Zabieg pozwala na skuteczną redukcję cellulitu, intensywnie wyszczupla ciało, przyspiesza spalanie tkanki tłuszczowej oraz zapobiega jej odkładaniu się. Wykonywany w naszym salonie zabieg sprawia, że skóra jest gładka i napięta.
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">Zabieg Owocowy</h2><br>
+          Relaksująco-odprężająca ceremonia o zapachu tropikalnych owoców pobudzi wasze zmysły i zapewni niezapomniane doznania . Zabieg składa się z peelingu, maski oraz masażu dłoni oraz częściowego masażu całego ciała. Ma właściwości regenerujące oraz głęboko nawilżające.
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">Zabieg Czekoladowy</h2><br>
+          Czekolada oprócz walorów smakowych, posiada wiele właściwości kosmetycznych oraz terapeutycznych. Czekoladoterapia to luksusowy zabieg łączący działanie odprężające i wyszczuplające. Ponadto, kakaowiec wpływa na spowolnienie procesu starzenia się skóry, poprawia koloryt i ujędrnia. Zabieg jest połączeniem peelingu całego ciała oraz masażu gorącą czekoladą. Gwarantujemy niezwykłą atmosferę, która pozwoli w pełni się zrelaksować.
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">Peeling Ciała</h2><br>
+          Peeling ciała to nieinwazyjny i delikatny sposób na usunięcie obumarłych komórek i wszystkich zanieczyszczeń z powierzchni ciała w celu przyśpieszenia regeneracji skóry. Efektem zabiegu jest rozświetlona, wygładzona i oczyszczona skóra. Stosowanie peelingów wzmacnia tkanki skóry i poprawia ich strukturę.
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__content border_radius">
+          <h2 class="article__header">Maska na Ciało</h2><br>
+          Maska nakładana na całe ciało doskonale wpływa na wygląd skóry. Rodzaj preparatu dobierany jest indywidualnie do potrzeb klienta. Produkty używane podczas zabiegu pobudzają produkcję kolagenu, ujędrniają, nawilżają, uczestniczą w regeneracji skóry oraz modelują sylwetkę.
+        </div>
+      </div> -->
 
-    <!-- Massage section -->
 
-    <!-- <section class="massage border_radius">
-          <h2 class="massage__header--2">MASAŻE</h2>
+  <!-- Massage section -->
+
+  <section class="massage border_radius">
+          <h2 class="massage__header--2">Masaże</h2>
           <div class="article__content--massages">
             Wielokrotnie mówimy, że zdrowie jest najważniejsze, jednakże niewielu z nas może poszczycić się jego dobrym
             stanem. Doskonałą metodą poprawy sprawności zarówno fizycznej jak i psychicznej jest masaż. Dla wielu z nas
@@ -1353,13 +1426,13 @@
 
             <div class="massage__content--img border_radius">
             </div>
-        </section>
+        </section> 
 
-        <h2 class="massage__header--2">RODZAJE OFEROWANYCH MASAŻY:</h2><br>
+        <h2 class="massage__header--2">Rodzaje oferowany masaży:</h2><br>
 
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Klasyczny</h2><br>
+            <h2 class="article__header">Masaż klasyczny</h2><br>
             Jest to jeden z najpopularniejszych rodzai masażu. Jest metodą leczenia wielu objawów chorobowych, a także
             przyczyn szeregu schorzeń. W zależności od rodzaju oraz intensywności może być leczniczy, relaksacyjny lub
             pobudzający. Tak więc z masażu klasycznego może skorzystać każdy, a w szczególności osoby cierpiące na: bóle
@@ -1370,7 +1443,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Relaksacyjny</h2><br>
+            <h2 class="article__header">Masaż relaksacyjny</h2><br>
             Masaż dedykowany tak naprawdę dla każdego. Dzięki płynnym i relaksującym technikom odpręży ciało i ukoi
             nerwy. Sprzyja regeneracji organizmu eliminując negatywne efekty stresu. Dodatkowo przynosi ulgę
             przemęczonym i spiętym mięśniom dając rezultat pełnego rozluźnienia.
@@ -1378,7 +1451,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Aromaterapeutyczny Gorącymi Olejami</h2><br>
+            <h2 class="article__header">Masaż aromaterapeutyczny gorącymi olejami</h2><br>
             Zabieg jest połączeniem masażu relaksacyjnego z aromaterapią. Uśmierza ból, eliminuje objawy stresu oraz
             łagodzi napięcia mięśniowe. Dzięki wykorzystaniu wcześniej rozgrzanych olejków eterycznych przywraca
             harmonię dla ciała i ducha zapewniając niezapomniane doznania.
@@ -1386,7 +1459,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Gorącą Świecą</h2><br>
+            <h2 class="article__header">Masaż gorącą świecą</h2><br>
             Wspaniały aromaterapeutyczny zabieg wykonywany z użyciem specjalnej świecy kosmetycznej. Połączenie błogiego
             zapachu z niezwykle cennymi fitoolejkami, olejkiem kokosowym i woskiem pszczelim pobudzi zmysły i doskonale
             odżywi skórę. Światło świecy, czuły dotyk, krople ciepłego olejku i zmysłowy zapach odprężą całe ciało i
@@ -1396,7 +1469,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Gorącymi Kamieniami</h2><br>
+            <h2 class="article__header">Masaż gorącymi kamieniami</h2><br>
             Masaż z wykorzystaniem specjalnych kamieni bazaltowych pochodzenia wulkanicznego, które dzięki swojemu
             składowi długo utrzymują ciepło. Połączenie gorących kamieni z relaksacyjnymi technikami masażu łagodzi
             stany bólowe mięśni i stawów. Masaż uwalnia od stresu, odpręża i przywraca siły witalne całego organizmu.
@@ -1404,7 +1477,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Gorącą Czekoladą</h2><br>
+            <h2 class="article__header">Masaż gorącą czekoladą</h2><br>
             Holistyczna ceremonia z wykorzystaniem gorzkiej czekolady. Masaż uwodzi zapachem i rozbudza zmysły. Pozwala
             na chwilę wytchnienia w zgiełku codziennych zajęć. Czekolada ma silne właściwości odżywcze dla skóry,
             pobudza mikrokrążenie i ujędrnia ciało. Jej dobroczynne działanie nawilży, wygładzi i doda blasku skórze.
@@ -1414,7 +1487,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Antycellulitowy Bańką Chińską</h2><br>
+            <h2 class="article__header">Masaż antycellulitowy bańką chińską</h2><br>
             Jest skutecznym rozwiązaniem na pozbycie się cellulitu. Efektem masażu jest poprawienie krążenia krwi i
             limfy, widocznie bardziej elastyczna skóra oraz redukcja pomarańczowej skórki. Systematyczne stosowanie
             pozwala modelować sylwetkę w zależności od indywidualnych potrzeb. Do masażu używane są specjalne olejki o
@@ -1423,7 +1496,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Uciskowy Aparatem BOA</h2><br>
+            <h2 class="article__header">Masaż uciskowy aparatem BOA</h2><br>
             Zabieg Boa jest przyjemny, relaksujący i nie wymaga wysiłku. Jest wyjątkowo lubiany przez korzystających. Po
             zabiegu, wstajemy z fotela z poczuciem lekkości, pełni energii. Znikają obrzmienia i obrzęki nóg, ustępuje
             uczucie ociężałości. Zabieg reguluje proces wydalania zbędnych dla organizmu produktów przemiany materii.
@@ -1435,7 +1508,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">MASAŻ PRÓŻNIOWY aparatem BIOvacuus</h2><br>
+            <h2 class="article__header">MASAŻ próżniowy aparatem BIOvacuus</h2><br>
             Zabiegi można stosować w różnych miejscach ciała i przy różnych problemach skóry, takich jak: cellulit,
             nadmiar tkanki tłuszczowej, obwisła skóra i zmarszczki, odchudzanie, regeneracja skóry twarzy i dekoltu oraz
             odprężanie mięśni karku i barków.<br><br>
@@ -1449,7 +1522,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Twarzy</h2><br>
+            <h2 class="article__header">Masaż twarzy</h2><br>
             Masaż twarzy, szyi i karku ma na celu poprawę samopoczucia oraz uwolnienie od stresu gromadzącego się w tych
             okolicach. Polepsza kondycję skóry likwidując oznaki zmęczenia, działa ujędrniająco i napinająco na cerę.
             Przy systematycznych masażach twarzy drobne zmarszczki mogą zostać zmniejszone a te większe i głębsze ?
@@ -1458,7 +1531,7 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Dłoni</h2><br>
+            <h2 class="article__header">Masaż dłoni</h2><br>
             Zabieg który ma na celu zniwelowanie zmian powstałych na skutek czynników zewnętrznych takich jak: woda,
             zimno, środki chemiczne czy przemęczenie. Masaż doskonale odpręży dłonie, zregeneruje skórę oraz przywróci
             im prawidłowy poziomu nawilżenia. Skóra stanie się miękka i elastyczna. Dodatkową korzyścią płynącą z masażu
@@ -1467,31 +1540,33 @@
         </div>
         <div class="article">
           <div class="article__content border_radius">
-            <h2 class="article__header">Masaż Stóp</h2><br>
+            <h2 class="article__header">Masaż stóp</h2><br>
             Wyjątkowo przyjemny i odprężający masaż, przynoszący ulgę obolałym stopom. Zabieg rozpoczyna się aromatyczną
             kąpielą stóp z dodatkiem zmiękczającej soli morskiej. Masaż obejmuje stopę, staw skokowy oraz łydkę. Pomaga
             zlikwidować ból i napięcie umiejscowione w rejonie stopy ale również pośrednio w innych obszarach ciała.
           </div>
-        </div> -->
+        </div>
 
-        <!-- Hands and feet-->
+  <!-- Hands and feet-->
 
-    <!-- <section class="handsAndFeet border_radius">
-          <h2 class="handsAndFeet__header--2">DŁONIE I STOPY</h2>
+   <section class="handsAndFeet border_radius">
+          <h2 class="handsAndFeet__header--2">Dłonie i stopy</h2>
           <div class="article__content">
           Dłonie są wizytówką człowieka. Jeśli zależy nam na zrobieniu jak najlepszego wrażenia , musimy o nie
           odpowiednio zadbać aby prezentowały się znakomicie.<br>
           Villa Uroda w swojej ofercie posiada zabiegi, które pomogą zregenerować skórę, wypielęgnować paznokcie i
           równocześnie pomogą nam pozbyć się zbędnych kompleksów dłoni.
             </div>
-
+            
+            <div class="content">
           <div class="handsAndFeet__content--img border_radius">
           </div>
           <div class="handsAndFeet__content--img--2 border_radius">
           </div>
-        </section>
+        </div>
+          
         <div class="article__content">
-          <h2 class="article__header">POLECAMY ZABIEGI:</h2><br>
+          <h2 class="article__header">Polecamy zabiegi:</h2><br>
           Jest skutecznym rozwiązaniem na pozbycie się cellulitu. Efektem masażu jest poprawienie krążenia krwi i limfy,
           widocznie bardziej elastyczna skóra oraz redukcja pomarańczowej skórki. Systematyczne stosowanie pozwala
           modelować sylwetkę w zależności od indywidualnych potrzeb. Do masażu używane są specjalne olejki o działaniu
@@ -1507,12 +1582,12 @@
             <li>Przedłużanie paznokci metodą żelową</li>
 
           </ul>
-        </div> -->
+        </div> 
 
-    <!--Trychology section-->
-<!-- 
-      <section class="trychology border_radius">
-          <h2 class="trychology__header--2">TRYCHOLOGIA W VILLA URODA</h2>
+  <!--Trychology section-->
+
+   <section class="trychology border_radius">
+          <h2 class="trychology__header--2">Trychologia w Villa Uroda</h2>
           Nasz gabinet jako pierwszy w Białymstoku oraz jeden z nielicznych w Polsce oferuje Państwu zabiegi w zakresie
           TRYCHOLOGII, czyli leczenia wypadania włosów, łysienia oraz chorób skóry głowy.
           <br><br>
@@ -1530,15 +1605,12 @@
           <br><br><br>
 
           <picture>
-          <iframe width="420" height="345" src="https://www.youtube.com/watch?time_continue=1&v=2DZnhOcYPPY" media="(min-width: 1200px)">
-          </iframe>
-        
-        </picture>
-          <br><br>  -->
+          <iframe src="https://www.youtube.com/watch?time_continue=1&v=2DZnhOcYPPY">
+          </iframe >
+          </picture>
+          <br><br>  
 
-
-
-   <!-- <h2 class="trychology__header">Trychologia w Klinice Dermokosmetycznej Villa Uroda</h2><br>
+    <h2 class="trychology__header">Trychologia w Klinice Dermokosmetycznej Villa Uroda</h2><br>
           <strong>Klinika Dermokosmetyczna Villa</strong> Uroda jako pierwsza w Białymstoku oraz jedena z nielicznych w
           Polsce oferuje Państwu zabiegi w zakresie TRYCHOLOGII, czyli leczenia wypadania włosów oraz łysienia.
 
@@ -1668,13 +1740,11 @@
             </h3>
           </ul>
         </div>
-        </section> -->
+        </section> 
 
-    <!-- Carboxytherapy section -->
+  <!-- Carboxytherapy section -->
 
-  
-
-           <!-- <section class="carboxytherapy border_radius">
+   <section class="carboxytherapy border_radius">
             <h2 class="carboxytherapy__header--2">Karboksyterapia w Salonie Kosmetycznym Villa Uroda</h2><br>
             Karboksyterapia jest to wysoce specjalistyczna kuracja wykorzystująca dwutlenek węgla (CO2) w celu poprawy
             metabolizmu i regeneracji skóry. Zabieg bazuje na podskórnym lub śródskórnym precyzyjnym aplikowaniu
@@ -1729,11 +1799,11 @@
               <strong>W celu uzyskania najkorzystniejszych efektów zalecane jest wykonanie serii zabiegów, której liczba
                 uzależniona jest od indywidualnych potrzeb klienta.</strong>
             </div>
-          </section>  -->
+          </section> 
 
-    <!-- LaserTreatments section -->
+  <!-- LaserTreatments section -->
 
- <!-- <section class="laserTreatments border_radius">
+  <section class="laserTreatments border_radius">
     <h2 class="laserTreatments__header--2">Laser Bio-Light</h2><br>
 
           Urządzenie emitujące aktywne zimne światło biologii genowej. Wykorzystuje unikalne technologie do łagodnego i
@@ -1779,18 +1849,20 @@
           </div>
           <h2 class="laserTreatments__header">Laser Biostymulacyjny</h2><br>
           Opis w przygotowaniu…
-        </section> -->
+        </section>
 
-    <!-- Depilation section -->
+  <!-- Depilation section -->
 
-    <!-- <section class="depilation border_radius">
+  <section class="depilation border_radius">
           <h2 class="depilation__header--2">DEPILACJA</h2>
           <div class="article__content--massages">
             <strong>To zabieg całkowicie bezpieczny</strong> bezinwazyjny, dający świetny efekt gładkiej skóry.
             Kosmetyczki pracujące w białostockiej dermoklinice Villa Uroda wykonują zabieg depilacji woskiem z najwyższą
             starannością i dbałością o komfort i dobre samopoczucie Klientów.
           </div>
+          <div class="content">
           <div class="depilation__content--img border_radius">
+            </div>
           </div>
           <div class="article__content">
             <h2 class="depilation__header">Jakie są efekty depilacji?</h2>
@@ -1798,31 +1870,35 @@
             odrastają włosy. Po zabiegu skóra jest miękka w dotyku, gładka. Prawidłowo wydepilowana powierzchnia skóry
             daje poczucie aksamitnego, przyjemnego wrażenia lekkości.
           </div>
-        </section>  -->
+        </section> 
 
-        <!-- Makeup section -->
+  <!-- Makeup section -->
 
-    <!-- <section class="makeup border_radius">
-          <h2 class="makeup__header--2">MAKIJAŻ</h2>
+  <section class="makeup border_radius">
+          <h2 class="makeup__header--2">Makijaż</h2>
           <h3 class="makeup__header">Makijaż w Salonie Kosmetycznym Villa Uroda w Białymstoku</h3>
           <div class="article__content--massages">
             Każda kobieta wie, jak ważny dla dobrego samopoczucia jest dobrze wykonany i profesjonalny <strong>makijaż.</strong>
             <strong>W białostockiej dermoklinice Villa Uroda</strong> w zależności od okazji, kosmetyczka wykonuje stosowny make up, który zatuszuje niedoskonałości cery, wydobędzie blask i naturalne piękno kobiety, podkreśli wszystkie atuty urody, tym samym sprawi, że <strong>każda z Pań poczuję się wyjątkowo.</strong>
           </div>
+
+          <div class="content">
           <div class="makeup__content--img border_radius">
           </div>
           <div class="makeup__content--img--2 border_radius">
           </div>
+          </div>
+         
           <div class="article__content">
            <strong>Poprzez dobór odpowiednich technik, kolorów i cieniowania, przy wykorzystaniu profesjonalnych kosmetyków najwyższej jakości, gwarantujemy Państwu zadowolenie i satysfakcję. W Villa Uroda wykonujemy m.in. makijaż permanentny, dzienny, wieczorowy, ślubny, karnawałowy, fotograficzny, próbny.</strong>
           </div>
-        </section> -->
+        </section>
 
 
-    <!-- DAYSPA section -->
+  <!-- DAYSPA section -->
 
-    <!-- <section class="daySpa border_radius">
-          <h2 class="daySpa__header--2">DAY SPA</h2>
+  <section class="daySpa border_radius">
+          <h2 class="daySpa__header--2">Day Spa</h2>
           <div class="article__content--massages">
             <strong>Dermoklinika Villa Uroda</strong> mieszcząca się w centrum Białegostoku zaprasza serdeczne do
             <strong>ekskluzywnego DAY SPA</strong> na zabiegi upiększające i relaksujące. Nowe i komfortowe wnętrza,
@@ -1830,51 +1906,54 @@
             poza zabiegami relaksującymi proponujemy masaż i usługi kosmetyczne. Mogą Państwo zarezerwować też specjalne
             opracowane pakiety łączące zabiegi z różnych dziedzin.
           </div>
-          <h2 class="article__header">Szukasz dobrego SPA w Białymstoku i okolicy – my zapraszamy do samego centrum!</h2>
+          <h2 class="daySpa__header--2">Szukasz dobrego SPA w Białymstoku i okolicy – my zapraszamy do samego centrum!</h2>
+
+          <div class="content">
           <div class="daySpa__content--img border_radius">
           </div>
           <div class="daySpa__content--img--2 border_radius">
           </div>
+        </div>
           <div class="article__content">
               <strong>Nasze SPA mieści się w centrum Białegostoku na ul. Podleśnej 11/1 w bliskim otoczeniu Parku Zwierzynieckiego i Galerii Handlowej „ALFA”. Zapraszamy serdeczne!
               Więcej informacji i rezerwacja pobytu w SPA pod nr. tel. <strong-number>85 742-74-67</strong-number></strong>
           </div>
-        </section> -->
+        </section>
 
 
-    <!-- End of treatments container-->
-    <!-- </div>
-  </section>  -->
+  <!-- End of treatments container-->
+  </div>  
+  </section> 
 
-    <!-- Pricelist section -->
+  <!-- Pricelist section -->
 
-   <!-- <div class="pricelist__navigation border_radius" id="slidebar">
-      <ul class="pricelist__navigation--list">
-        <li><a href=#>Kosmetyka pielęgnacyjna</a></li>
-        <li><a href= />Kosmetyka lecznicza</a></li>
-        <li><a href= />Medycyna estetyczna</a></li>
-        <li><a href= />Zabiegi na ciało</a></li>
-        <li><a href= />Masaże</a></li>
-        <li><a href= />Dłonie i stopy</a></li>
-        <li><a href= />Trychologia</a></li>
-        <li><a href= />Karboksyterapia</a></li>
-        <li><a href= />Zabiegi laserowe</a></li>
-        <li><a href=#>Depilacja</a></li>
-        <li><a href= />Stylizacja okolic oczu</a></li>
-        <li><a href= />Makijaż</a></li>
-        <li><a href= />Zabiegi Day Spa</a></li>
-        <li><a href= />Inne</a></li>
-      </ul>
-    </div>  -->
+  <!-- <div class="pricelist__navigation border_radius" id="slidebar">
+    <ul class="pricelist__navigation--list">
+      <li><a href=#>Kosmetyka pielęgnacyjna</a></li>
+      <li><a href= />Kosmetyka lecznicza</a></li>
+      <li><a href= />Medycyna estetyczna</a></li>
+      <li><a href= />Zabiegi na ciało</a></li>
+      <li><a href= />Masaże</a></li>
+      <li><a href= />Dłonie i stopy</a></li>
+      <li><a href= />Trychologia</a></li>
+      <li><a href= />Karboksyterapia</a></li>
+      <li><a href= />Zabiegi laserowe</a></li>
+      <li><a href=#>Depilacja</a></li>
+      <li><a href= />Stylizacja okolic oczu</a></li>
+      <li><a href= />Makijaż</a></li>
+      <li><a href= />Zabiegi Day Spa</a></li>
+      <li><a href= />Inne</a></li>
+    </ul>
+  </div> -->
 
+  <!-- Pricelist Container -->
+  <!-- <section class="pricelist">
+    <h2 class="pricelist__mainHeader">Cennik</h2> -->
 
     <!-- HealingCosmetics section-->
 
-    
-     <!-- <section class="pricelist">
-      <h2 class="pricelist__mainHeader">Cennik</h2> 
-     <div class="healingCosmetics border_radius--price"> 
-            <h3 class="pricelist__header">KOSMETYKA LECZNICZA</h3>
+  <!-- <div class="healingCosmetics border_radius--price"> 
+            <h3 class="pricelist__header">Kosmetyka lecznicza</h3>
                 <ul class="price--list ">
                     <li><div><strong>Manualne oczyszczanie twarzy</strong><div class="price">od 129zł</div></li> 
                     <li><strong>Manualne oczyszczanie pleców</strong><div class="price">od 159zł</div></li> 
@@ -1894,7 +1973,7 @@
     </div>
   
       <div class="healingCosmetics border_radius--price">
-          <h3 class="pricelist__header">EKSOFILACJE KWASAMI</h3><br>
+          <h3 class="pricelist__header">Eksofilacje kwasami</h3><br>
           <strong>pHformula – wieloetapowy program walki z różnymi problemami skóry:</strong> 
         
               <ul class="price--list">
@@ -1917,18 +1996,12 @@
                   <li><strong>Zabieg kwasowy na okolice oczu</strong><div class="price">99zł</div></li>
                 
               </ul>
-      </div>
-  </section>   -->
+      </div> -->
 
+    <!-- skinCare price -->
 
-      <!-- skinCare price -->
-
-
-
-     <!-- <section class="pricelist">
-   <div class="pricelistContainer__pricelist"> 
-    <div class="skinCare border_radius--price">
-        <h3 class="pricelist__header">KOSMETYKA PIELĘGNACYJNA</h3>
+     <!-- <div class="skinCare border_radius--price">
+        <h3 class="pricelist__header">Kosmetyka pielęgnacyjna</h3>
         <br>
         <h4>Thalgo</h4>
             <ul class="price--list ">
@@ -1946,10 +2019,10 @@
                 <li><strong>HYALURONIC MARINE TREATMENT (Wygładzenie i wypełnienie zmarszczek)</strong><div class="price">319zł</div></li>
             </ul>
     </div>
-</div>
+</div> -->
 
-<div class="pricelistContainer__pricelist">
-  <div class="skinCare border_radius--price">
+
+  <!-- <div class="skinCare border_radius--price">
       <h3 class="pricelist__header">Guinot</h3><br>
           <ul class="price--list ">
               <li><strong>HYDRADERMIE PODWÓJNA JONIZACJA łagodna elektroterapia, nawilżenie,<br> dotlenienie, masaż modelujący</strong><div class="price">229zł</div></li> 
@@ -1969,10 +2042,7 @@
             
           </ul>
   </div>
-</div>
-
-
-      <div class="pricelistContainer__pricelist">
+     
     <div class="skinCare border_radius--price">
         <h3 class="pricelist__header">Intraceuticals</h3><br>
             <ul class="price--list ">
@@ -2011,94 +2081,109 @@
                 <li><strong>DERMATION TWARZ</strong><div class="price">289zł</div></li>
                 <li><strong>DERMATION CIAŁO</strong><div class="price">299zł</div></li>
             </ul>
-                </div></div>
-    </div> 
-    </section> -->
+                </div>
+    </div>  -->
 
-      <!-- aestheticMedicine pricelist -->
-      <!-- <section class="pricelist">
-      <div class="aestheticMedicine border_radius--price">
-                  <h3 class="pricelist__header">MEDYCYNA ESTETYCZNA</h3>
+    <!-- aestheticMedicine pricelist -->
+
+    <!-- <div class="aestheticMedicine border_radius--price">
+                  <h3 class="pricelist__header">Medycyna estetyczna</h3>
                   <ul class="price--list ">
-                    <li><strong>BOTOX</strong>
+                    <li><strong>Botox</strong>
                       <div class="price">od 400zł</div>
                     </li>
-                    <li><strong>KWAS HIALURONOWY</strong>
+                    <li><strong>Kwas hialuronowy</strong>
                       <div class="price">od 550zł</div>
                     </li>
                   </ul>
                 </div>
-                </div>
-      </section> -->
+                </div> -->
 
-      <!-- bodyTreatments section -->
+    <!-- bodyTreatments section -->
 
-        <!-- <section class="pricelist">
-   <div class="pricelistContainer__pricelist">
-            <div class="skinCare border_radius--price">
-             
-              <h3 class="pricelist__header">ZABIEGI THALGO</h3><br>
+   <!-- <div class="skinCare border_radius--price">
+              <h3 class="pricelist__header">Zabiegi Thalgo</h3><br>
                  <ul class="price--list">
                           <li><strong>HIGH – PRECISION SHAPING TREATMENT – intensywny zabieg <br>modelująco-antycellulitowy</strong><div class="price">259zł</div></li>
                           <li><strong>FRIGI – THALGO WRAP – hipotermiczny zabieg <br>ujędrniająco – wyszczuplający</strong><div class="price">189zł</div></li>
                           <li><strong>MICRONIZED MARINE ALGAE BODY WRAP – zabieg <br>wyszczuplająco – antycellulitowy</strong><div class="price">259zł</div></li>
                   </ul>
-                
-              <h3 class="pricelist__header">ZABIEGI PURLES</h3><br>
+              <h3 class="pricelist__header">Zabiegi Purles</h3><br>
                   <ul class="price--list">
                           <li><strong>Gold & Pearls Ceremony Purles – ekskluzywny zabieg<br> ujędrniająco – nawilżający</strong><div class="price">229zł</div></li>
-                                
                   </ul>
-                
                     <h3 class="pricelist__header">Dermation</h3><br>
                      <ul class="price--list">
                           <li><strong>Peeling ciała<div class="price">99zł</div></li>
                           <li><strong>Maska na ciało</strong><div class="price">69zł</div></li>
-                          <li><strong>Zabieg Cynamonowy wyszczuplająco – ujędrniający</strong><div class="price">159zł</div></li>
+                          <li><strong>Zabieg Cynamonowy wyszczuplająco -<br> ujędrniający</strong><div class="price">159zł</div></li>
                           <li><strong>Zabieg Owocowy relaksująco – odżywczy</strong><div class="price">159zł</div></li>
                           <li><strong>Zabieg Czekoladowy drenująco-relaksujący</strong><div class="price">159zł</div></li>
                       </ul>
-              </div> 
-            </section> -->
-      <!-- Massage section -->
+              </div>   -->
 
-      <!-- <section class="pricelist">
-      <div class="pricelistContainer__pricelist">
-                        <div class="massage border_radius--price">
-                         
-                                <h3 class="pricelist__header">MASAŻE</h3><br>
-                                Więcej informacji odnośnie oferowanych masaży znajdziesz tutaj <a href="#">tutaj</a>
-                                <ul class="price--list">
-                                    <li><strong>Masaż klasyczny</strong><div class="price">1h/159zł, 
-                                        30 min/99zł </div></li>
-                                    <li><strong>Masaż relaksacyjny</strong><div class="price">1h/139zł, 
-                                      30 min/99zł</div></li>
-                                    <li><strong>Masaż aromaterapeutyczny<br> gorącymi olejami</strong><div class="price">1h/159zł,
-                                      30 min/99zł</div></li>
-                                    <li><strong>Masaż gorącą świecą<br> (intensywnie nawilżający)<div class="price">1h/189zł, 
-                                      30 min/99zł</div></li>
-                                    <li><strong>Masaż gorącymi kamieniami</strong><div class="price">1.5h/189zł, 
-                                      45 min/129zł</div></li>
-                                    <li><strong>Masaż gorącą czekoladą</strong><div class="price">1h/209zł</div></li>
-                                    <li><strong>Masaż wyszczuplająco-<br>ujędrniający manualny</strong><div class="price">40 min/209zł</div></li>
-                                    <li><strong>Masaż próżniowy aparatem BIOvacuus</strong><div class="price">70zł</div></li>
-                                    <li><strong>Masaż uciskowy aparatem BOA</strong><div class="price">49zł</div></li>
-                                    <li><strong>Masaż antycellulitowy<br> bańką chińską</strong><div class="price">40 min/139zł,
-                                        20 min/99zł </div></li>
-                                    <li><strong>Masaż twarzy relaksacyjny<br> (peeling, masaż, maska)</strong><div class="price">25 min/99zł</div></li>
-                                    <li><strong>Masaż twarzy liftingujący<br> (peeling, masaż, maska)</strong><div class="price">25 min/99zł</div></li>
-                                    <li><strong>Masaż dłoni</strong><div class="price">25 min/49zł</div></li>
-                                    <li><strong>Masaż stóp</strong><div class="price">25 min/49zł</div></li>
-                                </ul>
-                        </div>  
-</div>
-</section> -->
-      <!--feet and hand-->
-      <!-- <section class="pricelist">
-      <div class="pricelistContainer__pricelist">
-                            <div class="handsAndFeet border_radius--price">
+    <!-- Massage section -->
+
+  <!-- <div class="massage border_radius--price">
+      <h3 class="pricelist__header">Masaże</h3><br>
+      Więcej informacji odnośnie oferowanych masaży znajdziesz tutaj <a href="#">tutaj</a>
+      <ul class="price--list">
+        <li><strong>Masaż klasyczny</strong>
+          <div class="price">1h/159zł,
+            30 min/99zł </div>
+        </li>
+        <li><strong>Masaż relaksacyjny</strong>
+          <div class="price">1h/139zł,
+            30 min/99zł</div>
+        </li>
+        <li><strong>Masaż aromaterapeutyczny<br> gorącymi olejami</strong>
+          <div class="price">1h/159zł,
+            30 min/99zł</div>
+        </li>
+        <li><strong>Masaż gorącą świecą<br> (intensywnie nawilżający)<div class="price">1h/189zł,
+              30 min/99zł</div>
+        </li>
+        <li><strong>Masaż gorącymi kamieniami</strong>
+          <div class="price">1.5h/189zł,
+            45 min/129zł</div>
+        </li>
+        <li><strong>Masaż gorącą czekoladą</strong>
+          <div class="price">1h/209zł</div>
+        </li>
+        <li><strong>Masaż wyszczuplająco-<br>ujędrniający manualny</strong>
+          <div class="price">40 min/209zł</div>
+        </li>
+        <li><strong>Masaż próżniowy aparatem BIOvacuus</strong>
+          <div class="price">70zł</div>
+        </li>
+        <li><strong>Masaż uciskowy aparatem BOA</strong>
+          <div class="price">49zł</div>
+        </li>
+        <li><strong>Masaż antycellulitowy<br> bańką chińską</strong>
+          <div class="price">40 min/139zł,
+            20 min/99zł </div>
+        </li>
+        <li><strong>Masaż twarzy relaksacyjny<br> (peeling, masaż, maska)</strong>
+          <div class="price">25 min/99zł</div>
+        </li>
+        <li><strong>Masaż twarzy liftingujący<br> (peeling, masaż, maska)</strong>
+          <div class="price">25 min/99zł</div>
+        </li>
+        <li><strong>Masaż dłoni</strong>
+          <div class="price">25 min/49zł</div>
+        </li>
+        <li><strong>Masaż stóp</strong>
+          <div class="price">25 min/49zł</div>
+        </li>
+      </ul>
+    </div>
+    </div> -->
+
+  <!--feet and hand-->
+
+  <!--<div class="handsAndFeet border_radius--price">
                              
-                                    <h3 class="pricelist__header">DŁONIE I STOPY</h3>
+                                    <h3 class="pricelist__header">Dłonie i stopy</h3>
                                     <ul class="price--list">
                                         <li><strong>Manicure biologiczny/ Manicure tradycyjny /<br> Spa manicure</strong><div class="price">39zł/49zł/99zł </div></li>
                                         <li><strong>Manicure brazylijski – <br>Balb Care</strong><div class="price">79zł</div></li>
@@ -2116,12 +2201,11 @@
                                         
                                     </ul>
                             </div>
-</div>
-</section> -->
-      <!-- Trychology section -->
-      <!-- <section class="pricelist">
-      <div class="pricelistContainer__pricelist">
-       <div class="handsAndFeet border_radius--price">
+</div> -->
+  
+<!-- Trychology section -->
+
+     <!-- <div class="handsAndFeet border_radius--price">
           <h3 class="pricelist__header">Trychologia</h3>
             <ul class="price--list">
               <li><strong>Konsultacja trychologiczna +<br> badanie mikrokamerą</strong><div class="price">100zł </div></li>
@@ -2129,36 +2213,30 @@
               <li><strong>Mezoterapia igłowa<br> skóry głowy</strong><div class="price">od 319zł</div></li>
                <li><strong>Mezoterapia mezorolerem<div class="price">od 319zł</div></li>
                </ul>
-         </div>
-            </section> -->
-      <!-- Carboxytherapy section -->
-      
-      <!-- <section class="pricelist">
-      <div class="pricelistContainer__pricelist">
-        <div class="carboxytherapy border_radius--price">
+         </div> -->
 
-          <h3 class="carboxytherapy__header">KARBOKSYTERAPIA</h3>
+  <!-- Carboxytherapy section -->
+
+      <!--  <div class="carboxytherapy border_radius--price">
+
+          <h3 class="carboxytherapy__header">Karboksyterapia</h3>
           Więcej informacji o zabiegu karboksyterapii <a href="#">tutaj</a><br></br>
           Wybrana okolica od 129zł
-          </div>
-          </div>
-        </section> -->
+          </div> -->
 
-      <!-- Laser section -->
+  <!-- Laser section -->
 
-           <!-- <div class="pricelist">
-              <div class="laserTreatments border_radius--price">
-               
+   <!-- <div class="laserTreatments border_radius--price">
                       <h3 class="laserTreatments__header">Zabiegi laserowe</h3>
                       <ul class="price--list">
                           <li><strong>LASER BIO-LIGHT</strong><div class="price">59zł </div></li>
                           <li><strong>LASER BIOSTYMULACYJNY</strong><div class="price">69zł</div></li> 
                       </ul>
                       </div>   -->
-   <!--Depilation price section-->
 
-     <!-- <div class="pricelist">
-                            <div class="laserTreatments border_radius--price">
+  <!--Depilation price section-->
+
+     <!-- <div class="laserTreatments border_radius--price">
                              
                                     <h3 class="pricelist__header">Depilacja</h3>
                                     <ul class="price--list">
@@ -2173,12 +2251,12 @@
                                         <li><strong>Bikini</strong><div class="price">od 69zł </div></li>
                                     </ul>
                                     </div>
+                                  </div>
                                     </div> -->
+                                  
+  <!-- EseStylization section -->
 
-    <!-- EseStylization section -->
-
-    <!-- <div class="pricelist">
-      <div class="eyeStylization border_radius--price">
+     <!-- <div class="eyeStylization border_radius--price">
        
               <h3 class="pricelist__header">STYLIZACJA OKOLIC OCZU</h3>
               <ul class="price--list">
@@ -2190,13 +2268,11 @@
                   <li><strong>Przekłuwanie uszu + kolczyki</strong><div class="price">59zł</div></li>
                   <li><strong>1 kolczyk</strong><div class="price">39zł </div></li>
               </ul>
-              </div>
-              </div>  -->
+              </div> -->
 
-     <!-- Makeup section -->
+  <!-- Makeup section -->
 
-    <!-- <div class="pricelist">
-                <div class="makeup border_radius--price">
+   <!-- <div class="makeup border_radius--price">
                  
                         <h3 class="pricelist__header">Makijaż</h3>
                         <ul class="price--list">
@@ -2211,74 +2287,69 @@
                         </div>
                       </div>  -->
 
-     <!-- DaySpa pricelist -->
-                      
-    <!-- <div class="pricelist">
-                          <div class="daySpa border_radius--price">
+  <!-- DaySpa pricelist -->
+
+
+     <!--   <div class="daySpa border_radius--price">
                            
                                   <h3 class="pricelist__header">Zabiegi Day SPA</h3>
                                   <ul class="price--list">
                                       <li><strong>Indywidualnie dobrany pakiet zabiegów obejmujących pielęgnację twarzy i ciała. Razem z nami odkryj relaks,<br> który zapamiętasz na długo (możliwość wykupienia vouchera upominkowego)</strong><div class="price">599zł </div></li>
                                       
                                   </ul>
-                                  </div>
+                                  
                                 </div> -->
 
-     <!--Others pricelist-->
-                                 
-   <!-- <div class="pricelist">
-                                    <div class="others border_radius--price">
+  <!--Others pricelist-->
+
+      <!-- <div class="others border_radius--price">
                                      
-                                            <h3 class="pricelist__header">Inne zabiegi</h3>
-                                            <ul class="price--list">
-                                                <li><strong>Przekłuwanie uszu + kolczyki</strong><div class="price">59zł </div></li>
-                                                <li><strong>1 kolczyk</strong><div class="price">39zł </div></li>
-                                            </ul>
-                                            </div>
-                                            </div>
-                                          </div>  -->
-<!-- End of pricelist container -->
-    <!-- </section> -->
-
-
-
-    <!--TU TO SAMO jak chcesz mieć czcionkę i formatowanie tekstu to musisz to opakować w znacznik tekstu
-    kolejna sprawa że nie może być wielkich drukowanych czarny liter to nie wygląda, styl formatowania musi być zachowany
-na całej stronie nie może to się rozjeżdzac bo nie wyglada, musisz przemyśleć jakiej czcionki chcesz uzywać i takiej używać, color na litry ładnie się komponujący to ciemny szary np ale nigdy czarny, popatrz na przykładowe stronki na necie i na ich design-->
-    <footer class="mainFooter">
-      <div class="mainFooter__logo">
-        <a href="/"><img src="./resources/img/villalogo.png" alt="Villauroda"></a>
-      </div>
-      <div class="mainFooter__container">
-        <div class="mainFooter__container__item">
-          <ul class="mainFooter__container__item--nav-list">
-            <li><a href="#">Adres:<br />Podleśna 11/1. Białystok<br /><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg></a></li>
-            <li><a href="#">Telefon:<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><br />(85) 742-74-67<br />Kom: 606-406-540<br /></a></li>
-            <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
+        <h3 class="pricelist__header">Inne zabiegi</h3>
+         <ul class="price--list">
+         <li><strong>Przekłuwanie uszu + kolczyki</strong><div class="price">59zł </div></li>
+          <li><strong>1 kolczyk</strong><div class="price">39zł </div></li>
           </ul>
-        </div>
-        <div class="mainFooter__container__item">
-          <ul class="mainFooter__container__item--nav-links">
-            <h3>Dołącz na:</h3>
-            <li><a href="www.facebook.com"><svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg> </a></li>
-           
-          </ul>
+               </div> -->
+              
+  <!-- End of pricelist container -->
+  <!-- </section> -->
 
-        </div>
+  
+  <!--Footer jest do przerobienia, póki co to tymczasowe-->
+  <footer class="mainFooter">
+    <div class="mainFooter__logo">
+      <a href="/"><img src="./resources/img/villalogo.png" alt="Villauroda"></a>
+    </div>
+    <div class="mainFooter__container">
+      <div class="mainFooter__container__item">
+        <ul class="mainFooter__container__item--nav-list">
+          <li><a href="#">Adres: <svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg><br />Podleśna 11/1. Białystok<br /></a></li>
+          <li><a href="#">Telefon: <svg class="icon icon-phone">
+                <use xlink:href="#icon-phone"></use>
+              </svg><br />(85) 742-74-67<br />Kom: 606-406-540<br /></a></li>
+          <li><a href="#">Godziny otwarcia:<br /> pon.-pt.: 11:00 – 19:00</br> sob.: 10:00 – 14:00 </a></li>
+        </ul>
       </div>
-      <div class="mainFooter__origin">
-        &copy; Copyright 2019 Villa Uroda Salon Kosmetyczny SPA Masaż Trycholog Białystok - Klinika Dermokosmetyczna
-        Trychologia
-        <strong>Made by AQ & msmikesm</strong>
+      <div class="mainFooter__container__item">
+        <ul class="mainFooter__container__item--nav-links">
+          <h3>Dołącz na:</h3>
+          <li><a href="www.facebook.com"><svg class="icon icon-facebook2">
+                <use xlink:href="#icon-facebook2"></use>
+              </svg> </a></li>
+
+        </ul>
+
       </div>
-    </footer>
-
-    
-
-    <script src="resources/js/script.js"></script>
-    <!--to przypadkiem nie wygaśnie? pownineś pobrać sprite i podstawić normalnie plik, pamiętaj że serwer póniej będzie to
-    przetwarzał -->
-    <script defer src="https://i.icomoon.io/public/temp/3b9382b8f5/UntitledProject/svgxuse.js"></script>
+    </div>
+    <div class="mainFooter__origin">
+      &copy; Copyright 2019 Villa Uroda Salon Kosmetyczny SPA Masaż Trycholog Białystok - Klinika Dermokosmetyczna
+      Trychologia
+      <strong>Made by AQ & msmikesm</strong>
+    </div>
+  </footer>
+  
+  <script src="resources/js/script.js"></script>
+  <script defer src="https://i.icomoon.io/public/temp/261c475b83/UntitledProject/svgxuse.js"></script>
 </body>
 
 </html>
