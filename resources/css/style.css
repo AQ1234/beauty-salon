@@ -1577,19 +1577,19 @@ body {
     margin-top: 3rem; }
     .bodyTreatments__image--1 {
       padding: .7rem .6rem .4rem;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .bodyTreatments__image--2 {
       padding: .7rem .6rem .4rem;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/images.png); }
     .bodyTreatments__image--3 {
       padding: .7rem .6rem .4rem;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/intraceuticals_logo.png); }
     .bodyTreatments__image--4 {
       padding: 1.1rem 0;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Purles-logo.jpg); }
     .bodyTreatments__image--5 {
       padding: .7rem .6rem .4rem;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .bodyTreatments__content {
     display: -webkit-flex;
     display: flex;
@@ -1608,7 +1608,7 @@ body {
       height: 30rem;
       margin: 0 auto;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/pink-roses.jpg);
+      background-image: url(../img/offers-images/pink-roses.jpg);
       display: block; }
       @media (max-width: 75em) {
         .bodyTreatments__content--img {
@@ -1664,7 +1664,7 @@ body {
     background-position: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    background-image: url(/resources/img/offers-images/offer-logos/phFormula123.png); }
+    background-image: url(../img/offers-images/offer-logos/phFormula123.png); }
 
 .article__content {
   padding: 1.5rem;
@@ -1766,17 +1766,17 @@ body {
     margin-top: 3rem; }
     .skinCare__image--1 {
       padding: .7rem .6rem .4rem;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .skinCare__image--2 {
       padding: .8rem .8rem 1.2rem;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/images.png); }
     .skinCare__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intra-1.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/intra-1.jpg); }
     .skinCare__image--4 {
       padding: 1.1rem 0;
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(..img/offers-images/offer-logos/Purles-logo.jpg); }
     .skinCare__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/ellabache-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/ellabache-logo.jpg); }
 
 .article__content {
   padding: 1.5rem;
@@ -1835,7 +1835,7 @@ body {
       height: 30rem;
       background-position: center;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
+      background-image: url(../img/offers-images/massageimage-2-small.jpg);
       display: block;
       animation: moveInLeft 1s ease-in-out; }
       @media (max-width: 56.25em) {
@@ -1901,15 +1901,15 @@ body {
     margin-bottom: 3rem;
     margin-top: 3rem; }
     .handsAndFeet__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .handsAndFeet__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/images.png); }
     .handsAndFeet__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/intraceuticals_logo.png); }
     .handsAndFeet__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Purles-logo.jpg); }
     .handsAndFeet__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .handsAndFeet__content {
     display: -webkit-flex;
     display: flex;
@@ -1923,7 +1923,7 @@ body {
       margin: 5rem 2rem;
       display: inline-block; }
     .handsAndFeet__content--img {
-      background-image: url(/resources/img/offers-images/gettyimages-155317037-612x612.jpg);
+      background-image: url(../img/offers-images/gettyimages-155317037-612x612.jpg);
       background-size: cover;
       display: inline-block;
       width: 35%;
@@ -1935,7 +1935,7 @@ body {
           display: block;
           width: 50%; } }
       .handsAndFeet__content--img--2 {
-        background-image: url(/resources/img/offers-images/pexels-photo-939835.jpeg);
+        background-image: url(../img/offers-images/pexels-photo-939835.jpeg);
         background-size: cover;
         display: inline-block;
         width: 35%;
@@ -2109,15 +2109,15 @@ body {
     margin-bottom: 3rem;
     margin-top: 3rem; }
     .carboxytherapy__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .carboxytherapy__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/images.png); }
     .carboxytherapy__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/intraceuticals_logo.png); }
     .carboxytherapy__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Purles-logo.jpg); }
     .carboxytherapy__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .carboxytherapy__content {
     display: -webkit-flex;
     display: flex;
@@ -2136,7 +2136,7 @@ body {
       height: 30rem;
       background-position: center;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/laser-treatments.jpg);
+      background-image: url(../img/offers-images/laser-treatments.jpg);
       display: inline-block; }
 
 .article__content {
@@ -2201,15 +2201,15 @@ body {
     margin-bottom: 3rem;
     margin-top: 3rem; }
     .laserTreatments__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .laserTreatments__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/images.png); }
     .laserTreatments__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/intraceuticals_logo.png); }
     .laserTreatments__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Purles-logo.jpg); }
     .laserTreatments__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .laserTreatments__content {
     display: -webkit-flex;
     display: flex;
@@ -2228,7 +2228,7 @@ body {
       height: 30rem;
       background-position: center;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/laser-treatments.jpg);
+      background-image: url(../img/offers-images/laser-treatments.jpg);
       display: inline-block; }
 
 .article__content {
@@ -2290,15 +2290,15 @@ body {
     margin-bottom: 3rem;
     margin-top: 3rem; }
     .depilation__image--1 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Thalgo_logo_logotype.png); }
     .depilation__image--2 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/images.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/images.png); }
     .depilation__image--3 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/intraceuticals_logo.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/intraceuticals_logo.png); }
     .depilation__image--4 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/Purles-logo.jpg); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/Purles-logo.jpg); }
     .depilation__image--5 {
-      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(/resources/img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
+      background-image: radial-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 0)), url(../img/offers-images/offer-logos/1280px-Ella_Baché_logo.svg.png); }
   .depilation__content {
     display: -webkit-flex;
     display: flex;
@@ -2318,7 +2318,7 @@ body {
       height: 25rem;
       background-position: center;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/depilation.jpg);
+      background-image: url(../img/offers-images/depilation.jpg);
       display: inline-block; }
       @media (max-width: 37.5em) {
         .depilation__content--img {
@@ -2395,7 +2395,7 @@ body {
       height: 25rem;
       background-position: center;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/woman-660806_1920-copy.jpg);
+      background-image: url(../img/offers-images/woman-660806_1920-copy.jpg);
       display: inline-block; }
       @media (max-width: 37.5em) {
         .makeup__content--img {
@@ -2407,7 +2407,7 @@ body {
         height: 25rem;
         background-position: center;
         background-size: cover;
-        background-image: url(/resources/img/offers-images/manicure-870857_640.jpg);
+        background-image: url(../img/offers-images/manicure-870857_640.jpg);
         display: inline-block; }
         @media (max-width: 37.5em) {
           .makeup__content--img--2 {
@@ -2485,7 +2485,7 @@ body {
       height: 25rem;
       background-position: center;
       background-size: cover;
-      background-image: url(/resources/img/offers-images/relaxation-686392_640.jpg);
+      background-image: url(../img/offers-images/relaxation-686392_640.jpg);
       display: inline-block; }
       @media (max-width: 37.5em) {
         .daySpa__content--img {
@@ -2497,7 +2497,7 @@ body {
         height: 25rem;
         background-position: center;
         background-size: cover;
-        background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
+        background-image: url(../img/offers-images/massageimage-2-small.jpg);
         display: inline-block; }
         @media (max-width: 37.5em) {
           .daySpa__content--img--2 {
@@ -2557,7 +2557,7 @@ strong-number {
     background-position: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    background-image: url(/resources/img/offers-images/offer-logos/phFormula123.png); }
+    background-image: url(../img/offers-images/offer-logos/phFormula123.png); }
 
 .article__content {
   padding: 1.5rem;

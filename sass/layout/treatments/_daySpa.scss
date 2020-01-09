@@ -51,7 +51,7 @@
             height: 25rem;
             background-position: center;
             background-size: cover;
-            background-image: url(/resources/img/offers-images/relaxation-686392_640.jpg);
+            background-image: url(../img/offers-images/relaxation-686392_640.jpg);
             display: inline-block;
 
             @include respond(phone) {
@@ -66,7 +66,7 @@
                 height: 25rem;
                 background-position: center;
                 background-size: cover;
-                background-image: url(/resources/img/offers-images/massageimage-2-small.jpg);
+                background-image: url(../img/offers-images/massageimage-2-small.jpg);
                 display: inline-block;
 
                 @include respond(phone) {

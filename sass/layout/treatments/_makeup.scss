@@ -54,7 +54,7 @@
             height: 25rem;
             background-position: center;
             background-size: cover;
-            background-image: url(/resources/img/offers-images/woman-660806_1920-copy.jpg);
+            background-image: url(../img/offers-images/woman-660806_1920-copy.jpg);
             display: inline-block;
 
             @include respond(phone) {
@@ -70,7 +70,7 @@
                 height: 25rem;
                 background-position: center;
                 background-size: cover;
-                background-image: url(/resources/img/offers-images/manicure-870857_640.jpg);
+                background-image: url(../img/offers-images/manicure-870857_640.jpg);
                 display: inline-block;
 
                 @include respond(phone) {
