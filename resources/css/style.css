@@ -2895,7 +2895,7 @@ strong-number {
   .main-slideshow__slide {
     display: none; }
     .main-slideshow__slide--img {
-      background-image: url(/resources/img/OSCYRO0.jpg);
+      background-image: url(../img/OSCYRO0.jpg);
       background-size: cover;
       height: 100vh; }
       @media (max-width: 37.5em) {
@@ -2906,12 +2906,11 @@ strong-number {
           background-image: none;
           height: 15vh; } }
       .main-slideshow__slide--img--2 {
-        background-image: url(/resources/img//OSCYQT0.jpg);
+        background-image: url(../img/OSCYQT0.jpg);
         background-size: cover;
         height: 100vh; }
         @media (max-width: 37.5em) {
           .main-slideshow__slide--img--2 {
-            background-image: url(/resources/img/OSCYQT0x1.jpg);
             height: 45vh; } }
         @media (max-width: 30em) {
           .main-slideshow__slide--img--2 {
