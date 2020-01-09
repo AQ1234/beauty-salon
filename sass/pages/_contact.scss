@@ -1,5 +1,6 @@
 .contact {
-    height: 55vh;
+    min-height: 60vh;
+
 
     @include respond(tab-port) {
 
@@ -16,21 +17,30 @@
         display: flex;
         -webkit-justify-content: space-around;
         justify-content: space-around;
-        align-items: center;
-        margin: 7rem 6rem;
+        
+        margin: 7rem 6rem 0;
         padding: 5rem 0 5rem 0;
         font-size: 1.6rem;
         width: 90vw;
-        @include respond(tab-port) {
+
+
+        @include respond(offer-break) {
             flex-direction: column;
+
+        }
+       
+        @include respond(tab-port) {
+           
             margin: 5rem 3rem;
         }
 
         &--flex-item {
-            width: 100%;
+            width: 50%;
             animation: moveInBottom 1s ease-in;
-            padding: 0 1rem;
+            padding: 1rem;
             margin: 1rem;
+            text-align: center;
+            background-color: rgba(234, 172, 117, 0.1);
 
             @include respond(tab-port) {
                 width: 80%;
@@ -42,34 +52,18 @@
             }
         }
 
-        &--flex-item-2 {
-            width: 40%;
+        &--flex-item--2 {
+          //  width: 40%;
+          background-color: rgba(234, 172, 117, 0.1);
             margin: 1rem;
+            padding: 1rem;
             animation: fadeIn 1.5s ease;
+           
+           
 
         }
     }
 
-    &__map {
-        // background-color: $bronze;
-        width: 50rem;
-        height: 35rem;
-        margin-left: 1rem;
-
-        @include respond(tab-port) {
-            margin-left: .3rem;
-            // margin: 0;
-            width: 40rem;
-            height: 30rem;
-
-        }
-
-        @include respond(phone) {
-
-            width: 25rem;
-            height: 20rem;
-        }
-    }
 
     &__content {
         text-align: justify;
@@ -83,6 +77,15 @@
             text-transform: uppercase;
             margin-bottom: 0rem;
 
+            &::after {
+                display: block;
+                height: 1.5px;
+                background-color: #ad9b6d;
+                content: "";
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 1rem; }
+
         }
     }
 }
@@ -90,14 +93,19 @@
 .mapouter {
 
     position: relative;
-    text-align: right;
+    text-align: center;
     height: 350px;
-    width: 500px;
+    width: 580px;
 
     @include respond(tab-land) {
 
-        width: 450px;
+      width: 530px;
 
+    }
+
+    @include respond(offer-break) {
+
+   
     }
 
     @include respond(tab-port) {
@@ -124,16 +132,17 @@
     overflow: hidden;
     background: none !important;
     height: 350px;
-    width: 500px;
+    width: 585px;
 
     @include respond(tab-land) {
 
-        width: 470px;
-
+        width: 530px;
+        text-align: center;
     }
 
 
     @include respond(tab-port) {
+        text-align: center;
         height: 250px;
         width: 400px;
 
@@ -144,13 +153,27 @@
         width: 350px;
 
     }
-}
 
+    iframe {
 
-iframe {
-    @include respond(phone) {
-        height: 200px;
-        width: 300px;
-
+        width: 580px;
+        height: 340px;
+    
+        @include respond(tab-land) {
+            width: 490px;
+    
+        }
+    
+        @include respond(phone) {
+            height: 340px;
+            width: 300px;
+            
+        }
     }
+    
+    
+
 }
+
+
+

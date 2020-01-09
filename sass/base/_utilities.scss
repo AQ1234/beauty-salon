@@ -27,6 +27,12 @@
         border: 1px solid $gold;
     }
 
+    &Map {
+        border-radius: 1.2rem;
+        padding: 0;
+        border: 2px solid $gold;
+    }
+
     &--price {
 
         padding: .5rem;
