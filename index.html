@@ -11,6 +11,10 @@
 </head>
 
 <body>
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
   <!-- MainHeader -->
   <header>
     <div class="head">
@@ -26,10 +30,10 @@
       </div>
       <div class="head__nav" id="headList">
         <ul class="head__nav--list">
-          <li><a href="#">O nas</a></li>
-          <li onclick="changeOpacity('listTreatments')"><a href="#">Zabiegi</a>
+          <li><a href="#" onclick="changone('abt')">O nas</a></li>
+          <li onclick="changeOpacity('listTreatments')"><a href="#" id="treatments-button">Zabiegi</a>
             <ul id="listTreatments">
-              <li><a href="/">Kosmetyka pielęgnacyjna</a></li>
+              <li><a href="#" onclick="changone('skinCare')">Kosmetyka pielęgnacyjna</a></li>
               <li><a href="/">Kosmetyka lecznicza</a></li>
               <li><a href="/">Medycyna estetyczna</a></li>
               <li><a href="/">Zabiegi na ciało</a></li>
@@ -43,7 +47,7 @@
               <li><a href="/">Day Spa</a></li>
             </ul>
           </li>
-          <li><a href="#">Cennik</a></li>
+          <li><a href="#" id="prices1">Cennik</a></li>
           <li onclick="changeOpacity('listPackets')"><a href="#">Pakiety</a>
             <ul id="listPackets">
               <li><a href="/">Pakiet 1</a></li>
@@ -51,7 +55,7 @@
               <li><a href="/">Pakiet 3</a></li>
             </ul>
           </li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#" onclick="changone('conct')">Kontakt</a></li>
         </ul>
       </div>
   </header>
@@ -61,7 +65,8 @@
   <main class="mainContainer">
 
   <!--HOME-->
-  <section class="home">
+  
+  <section class="home" id="homes">
      <div class="main-slideshow">
 
         <div class="main-slideshow__slide main-slideshow__slide--1 fade" id="main-slideshow__slide">
@@ -98,10 +103,11 @@
           </li>
           </ul>
       </div>
+     
     </section>  
 
   <!-- Section About -->
-  <!-- <section class="about"> 
+  <!-- <section class="about" id="abt"> 
       <h2 class="about__header u-margin-top-default">Villa Uroda</h2>
       <div class="about__container">
         <div class="about__container--item">
@@ -811,7 +817,7 @@
 
   <!--CONTACT-->
 
-  <!-- <section class="contact"> 
+  <!-- <section class="contact" id="conct"> 
     <div class="contact__flex-container">
       <div class="contact__flex-container--flex-item border_radius">
           <h3 class="contact__content--header">Kontakt</h3>
@@ -877,7 +883,7 @@
 
   <!-- Skin Care offer -->
 
-  <!--<section class="skinCare border_radius"> 
+  <!--<section class="skinCare border_radius" id="skinCare"> 
           <h2 class="skinCare__header--2">Kosmetyka pielęgnacyjna</h2>
           <div class="skinCare__image skinCare__image--1 border_radius--2">
 
@@ -2355,6 +2361,7 @@
   </footer>
   
   <script src="resources/js/script.js"></script>
+  
   <!-- <script defer src="https://i.icomoon.io/public/temp/b6191f112e/UntitledProject/svgxuse.js"></script> -->
 </body>
 
